@@ -4,6 +4,21 @@
 #define ANIM_SPRITE_INDEX_COUNT 8
 #define ANIM_ARGS_COUNT 8
 
+// stereo panning constants [0-255]
+//
+//          0
+//         .  .
+//      .        .
+// 192 .          . 63
+//     .          .
+//      .        .
+//         .  .
+//          127
+//        
+#define SOUND_PAN_TARGET        63
+#define SOUND_PAN_ATTACKER     192
+#define SOUND_PAN_ATTACKER_NEG -64
+
 // Sprites start at 10000 and thus must be subtracted of 10000 to account for the true index.
 #define GET_TRUE_SPRITE_INDEX(i) ((i - ANIM_SPRITES_START))
 
