@@ -1,870 +1,554 @@
 	.include "MPlayDef.s"
 
-	.equ	bgm_kachi22_grp, voicegroup022
+	.equ	bgm_kachi22_grp, voicegroup000
 	.equ	bgm_kachi22_pri, 0
-	.equ	bgm_kachi22_rev, reverb_set+50
+	.equ	bgm_kachi22_rev, 0
 	.equ	bgm_kachi22_mvl, 127
 	.equ	bgm_kachi22_key, 0
 	.equ	bgm_kachi22_tbs, 1
-	.equ	bgm_kachi22_exg, 0
+	.equ	bgm_kachi22_exg, 1
 	.equ	bgm_kachi22_cmp, 1
 
 	.section .rodata
 	.global	bgm_kachi22
 	.align	2
 
-@********************** Track  1 **********************@
+@**************** Track 1 ****************@
 
 bgm_kachi22_1:
+@ 000	----------------------------------------
 	.byte	KEYSH , bgm_kachi22_key+0
-	.byte	TEMPO , 140*bgm_kachi22_tbs/2
+	.byte	TEMPO , 76*bgm_kachi22_tbs/2
+	.byte		VOICE , 1
+	.byte		N48   , As4 , v080
+	.byte		VOL   , 127*bgm_kachi22_mvl/mxv
+	.byte	W48
+	.byte		N06   , Ds5 , v070
 	.byte	W12
-bgm_kachi22_1_B1:
-	.byte		VOICE , 73
-	.byte		PAN   , c_v+0
-	.byte		MOD   , 0
-	.byte		VOL   , 80*bgm_kachi22_mvl/mxv
-	.byte		N06   , Bn4 , v112
+	.byte		N06   , As5 , v070
 	.byte	W12
-	.byte		        An4 
+bgm_kachi22_1_001:
+	.byte		N06   , Gn4 , v070
 	.byte	W12
-	.byte		        Gs4 
+	.byte		N06   , Ds5 , v070
 	.byte	W12
-	.byte		        An4 
-	.byte	W12
-	.byte		        Bn4 
-	.byte	W12
-	.byte		N06   
-	.byte	W12
-	.byte		N06   
-	.byte	W24
-	.byte		        Cs5 
-	.byte	W12
-	.byte		N06   
-	.byte	W12
-	.byte		N24   
-	.byte	W12
-	.byte		MOD   , 5
-	.byte	W12
-	.byte		        0
-	.byte		N06   , Bn4 
-	.byte	W12
-	.byte		N06   
-	.byte	W12
-	.byte		N06   
-	.byte	W24
-	.byte		N06   
-	.byte	W12
-	.byte		        An4 
-	.byte	W12
-	.byte		        Gs4 
-	.byte	W12
-	.byte		        An4 
-	.byte	W12
-	.byte		        Bn4 
-	.byte	W12
-	.byte		N06   
-	.byte	W12
-	.byte		N06   
-	.byte	W24
-	.byte		        Cs5 
-	.byte	W12
-	.byte		N06   
-	.byte	W12
-	.byte		N24   
-	.byte	W12
-	.byte		MOD   , 5
-	.byte	W12
-	.byte		        0
-	.byte		N06   , Bn4 
-	.byte	W24
-	.byte		        Cn4 
-	.byte	W06
-	.byte		        En4 
-	.byte	W06
-	.byte		        Gn4 
-	.byte	W06
-	.byte		        As4 
-	.byte	W06
+@ 001	----------------------------------------
 bgm_kachi22_1_000:
-	.byte		N06   , Cn5 , v112
+	.byte		N06   , As5 , v070
 	.byte	W12
-	.byte		        As4 
+	.byte		N06   , Gn4 , v070
 	.byte	W12
-	.byte		        An4 
+	.byte		N06   , Ds5 , v070
 	.byte	W12
-	.byte		        As4 
+	.byte		N06   , As5 , v070
 	.byte	W12
-	.byte		        Cn5 
+	.byte		N06   , Gs4 , v070
 	.byte	W12
-	.byte		N06   
+	.byte		N06   , Ds5 , v070
 	.byte	W12
-	.byte		N06   
-	.byte	W24
+	.byte		N06   , As5 , v070
+	.byte	W12
+	.byte		N06   , Gs4 , v070
+	.byte	W12
+@ 002	----------------------------------------
 	.byte	PEND
-	.byte		        Dn5 
+	.byte		N06   , Ds5 , v070
 	.byte	W12
-	.byte		N06   
+	.byte		N06   , As5 , v070
 	.byte	W12
-	.byte		N24   
+	.byte		N06   , Gn4 , v070
 	.byte	W12
-	.byte		MOD   , 5
+	.byte		N06   , Ds5 , v070
 	.byte	W12
-	.byte		        0
-	.byte		N06   , Cn5 
+	.byte		N06   , As5 , v070
 	.byte	W12
-	.byte		N06   
+	.byte		N06   , Gn4 , v070
 	.byte	W12
-	.byte		N06   
-	.byte	W24
+	.byte		N06   , Ds5 , v070
+	.byte	W12
+	.byte		N06   , As5 , v070
+	.byte	W12
+@ 003	----------------------------------------
+	.byte		N06   , Gs4 , v070
+	.byte	W12
+	.byte		N06   , Ds5 , v070
+	.byte	W12
+	.byte		N06   , As5 , v070
+	.byte	W12
+	.byte		N06   , Gs4 , v070
+	.byte	W12
+	.byte		N06   , Ds5 , v070
+	.byte	W12
+	.byte		N06   , As5 , v070
+	.byte	W12
+	.byte		N06   , Gn4 , v070
+	.byte	W12
+	.byte		N06   , Ds5 , v070
+	.byte	W12
+@ 004	----------------------------------------
 	.byte	PATT
 	 .word	bgm_kachi22_1_000
-	.byte		N06   , Dn5 , v112
+	.byte		N06   , Ds5 , v070
 	.byte	W12
-	.byte		N06   
+	.byte		N06   , As5 , v070
 	.byte	W12
-	.byte		N24   
+	.byte		N06   , Gn4 , v070
 	.byte	W12
-	.byte		MOD   , 5
+	.byte		N06   , Ds5 , v070
 	.byte	W12
-	.byte		        0
-	.byte		N06   , Cn5 
-	.byte	W24
-	.byte		        Bn3 
-	.byte	W06
-	.byte		        Ds4 
-	.byte	W06
-	.byte		        Fs4 
-	.byte	W06
-	.byte		        An4 
-	.byte	W06
+	.byte	TEMPO , 74*bgm_kachi22_tbs/2
+	.byte		N06   , As5 , v070
+	.byte	W12
+	.byte	TEMPO , 76*bgm_kachi22_tbs/2
+	.byte		N06   , Gn4 , v070
+	.byte	W12
+	.byte		N06   , Ds5 , v070
+	.byte	W12
+	.byte		N06   , As5 , v070
+	.byte	W12
+@ 005	----------------------------------------
+	.byte		N06   , Gs4 , v070
+	.byte	W12
+	.byte		N06   , Ds5 , v070
+	.byte	W12
+	.byte		N06   , As5 , v070
+	.byte	W12
+	.byte		N06   , Gs4 , v070
+	.byte	W12
+	.byte		N06   , Ds5 , v070
+	.byte	W12
+	.byte		N06   , As5 , v070
+	.byte	W12
 	.byte	GOTO
-	 .word	bgm_kachi22_1_B1
+	 .word	bgm_kachi22_1_001
+	.byte	W24
+@ 006	----------------------------------------
+	.byte	W96
+@ 007	----------------------------------------
+	.byte	W96
+@ 008	----------------------------------------
+	.byte	W72
+	.byte	TEMPO , 86*bgm_kachi22_tbs/2
+	.byte	W24
+@ 009	----------------------------------------
+	.byte	W96
+@ 010	----------------------------------------
+	.byte	W96
+@ 011	----------------------------------------
+	.byte	W96
+@ 012	----------------------------------------
+	.byte	W40
+	.byte	W01
+	.byte	TEMPO , 90*bgm_kachi22_tbs/2
+	.byte	W54
+	.byte	W01
+@ 013	----------------------------------------
+bgm_kachi22_1_002:
+	.byte	W17
+	.byte	TEMPO , 88*bgm_kachi22_tbs/2
+	.byte	W24
+	.byte	TEMPO , 90*bgm_kachi22_tbs/2
+	.byte	W48
+	.byte	TEMPO , 88*bgm_kachi22_tbs/2
+	.byte	W07
+@ 014	----------------------------------------
+	.byte	PEND
+	.byte	W17
+	.byte	TEMPO , 90*bgm_kachi22_tbs/2
+	.byte	W78
+	.byte	W01
+@ 015	----------------------------------------
+	.byte	W96
+@ 016	----------------------------------------
+	.byte	W96
+@ 017	----------------------------------------
+	.byte	W96
+@ 018	----------------------------------------
+	.byte	W96
+@ 019	----------------------------------------
+	.byte	PATT
+	 .word	bgm_kachi22_1_002
+	.byte	W17
+	.byte	TEMPO , 90*bgm_kachi22_tbs/2
+	.byte	W05
+	.byte	TEMPO , 130*bgm_kachi22_tbs/2
+	.byte	W72
+	.byte	W02
+@ 020	----------------------------------------
+	.byte	W92
+	.byte	W02
+	.byte	TEMPO , 132*bgm_kachi22_tbs/2
+	.byte	W02
+@ 021	----------------------------------------
+	.byte	W22
+	.byte	TEMPO , 130*bgm_kachi22_tbs/2
+	.byte	W72
+	.byte	W02
+@ 022	----------------------------------------
+	.byte	W44
+	.byte	W02
+	.byte	TEMPO , 132*bgm_kachi22_tbs/2
+	.byte	W24
+	.byte	TEMPO , 130*bgm_kachi22_tbs/2
+	.byte	W24
+	.byte	TEMPO , 132*bgm_kachi22_tbs/2
+	.byte	W02
+@ 023	----------------------------------------
+	.byte	W22
+	.byte	TEMPO , 134*bgm_kachi22_tbs/2
+	.byte	W24
+	.byte	TEMPO , 128*bgm_kachi22_tbs/2
+	.byte	W24
+	.byte	TEMPO , 130*bgm_kachi22_tbs/2
+	.byte	W24
+	.byte	TEMPO , 132*bgm_kachi22_tbs/2
+	.byte	W02
+@ 024	----------------------------------------
+	.byte	W44
+	.byte	W02
+	.byte	TEMPO , 130*bgm_kachi22_tbs/2
+	.byte	W48
+	.byte	TEMPO , 132*bgm_kachi22_tbs/2
+	.byte	W02
+@ 025	----------------------------------------
+	.byte	W22
+	.byte	TEMPO , 130*bgm_kachi22_tbs/2
+	.byte	W48
+	.byte	TEMPO , 134*bgm_kachi22_tbs/2
+	.byte	W24
+	.byte	TEMPO , 130*bgm_kachi22_tbs/2
+	.byte	W02
+@ 026	----------------------------------------
+	.byte	W68
+	.byte	W02
+	.byte	TEMPO , 132*bgm_kachi22_tbs/2
+	.byte	W24
+	.byte	TEMPO , 130*bgm_kachi22_tbs/2
+	.byte	W02
+@ 027	----------------------------------------
+bgm_kachi22_1_003:
+	.byte	W22
+	.byte	TEMPO , 132*bgm_kachi22_tbs/2
+	.byte	W24
+	.byte	TEMPO , 130*bgm_kachi22_tbs/2
+	.byte	W24
+	.byte	TEMPO , 132*bgm_kachi22_tbs/2
+	.byte	W24
+	.byte	TEMPO , 130*bgm_kachi22_tbs/2
+	.byte	W02
+@ 028	----------------------------------------
+	.byte	PEND
+	.byte	W44
+	.byte	W02
+	.byte	TEMPO , 132*bgm_kachi22_tbs/2
+	.byte	W48
+	.byte	TEMPO , 130*bgm_kachi22_tbs/2
+	.byte	W02
+@ 029	----------------------------------------
+	.byte	W22
+	.byte	TEMPO , 132*bgm_kachi22_tbs/2
+	.byte	W24
+	.byte	TEMPO , 130*bgm_kachi22_tbs/2
+	.byte	W48
+	.byte	W02
+@ 030	----------------------------------------
+	.byte	W22
+	.byte	TEMPO , 132*bgm_kachi22_tbs/2
+	.byte	W24
+	.byte	TEMPO , 130*bgm_kachi22_tbs/2
+	.byte	W24
+	.byte	TEMPO , 132*bgm_kachi22_tbs/2
+	.byte	W24
+	.byte	TEMPO , 128*bgm_kachi22_tbs/2
+	.byte	W02
+@ 031	----------------------------------------
+	.byte	PATT
+	 .word	bgm_kachi22_1_003
+	.byte	W96
+@ 032	----------------------------------------
+	.byte	W96
+@ 033	----------------------------------------
+	.byte	W72
+	.byte	W01
+	.byte	TEMPO , 136*bgm_kachi22_tbs/2
+	.byte	W16
+	.byte	TEMPO , 132*bgm_kachi22_tbs/2
+	.byte	W07
+@ 034	----------------------------------------
+	.byte	W64
+	.byte	W01
+	.byte	TEMPO , 134*bgm_kachi22_tbs/2
+	.byte	W24
+	.byte	TEMPO , 132*bgm_kachi22_tbs/2
+	.byte	W07
+@ 035	----------------------------------------
+	.byte	W40
+	.byte	W01
+	.byte	TEMPO , 130*bgm_kachi22_tbs/2
+	.byte	W24
+	.byte	TEMPO , 136*bgm_kachi22_tbs/2
+	.byte	W24
+	.byte	TEMPO , 134*bgm_kachi22_tbs/2
+	.byte	W07
+@ 036	----------------------------------------
+	.byte	W40
+	.byte	W01
+	.byte	TEMPO , 130*bgm_kachi22_tbs/2
+	.byte	W24
+	.byte	TEMPO , 134*bgm_kachi22_tbs/2
+	.byte	W30
+	.byte	W01
+@ 037	----------------------------------------
+	.byte	W96
+@ 038	----------------------------------------
+	.byte	W88
+	.byte	W01
+	.byte	TEMPO , 98*bgm_kachi22_tbs/2
+	.byte	W07
+@ 039	----------------------------------------
+	.byte	W36
+	.byte	W02
+	.byte	TEMPO , 130*bgm_kachi22_tbs/2
+	.byte	W48
+	.byte	TEMPO , 168*bgm_kachi22_tbs/2
+	.byte	W10
+@ 040	----------------------------------------
+	.byte	W60
+	.byte	W01
+	.byte	TEMPO , 120*bgm_kachi22_tbs/2
 	.byte	FINE
 
-@********************** Track  2 **********************@
+@**************** Track 2 ****************@
 
 bgm_kachi22_2:
+@ 000	----------------------------------------
 	.byte	KEYSH , bgm_kachi22_key+0
-	.byte	W12
-bgm_kachi22_2_B1:
-	.byte		VOICE , 56
-	.byte		PAN   , c_v+0
-	.byte		MOD   , 0
-	.byte		VOL   , 80*bgm_kachi22_mvl/mxv
-	.byte	W12
-	.byte		N06   , En3 , v092
-	.byte	W24
-	.byte		N06   
-	.byte	W24
-	.byte		N06   
-	.byte	W24
-	.byte		N06   
-	.byte	W12
-	.byte		N06   
-	.byte	W36
-	.byte		VOICE , 47
-	.byte		PAN   , c_v+10
-	.byte		N12   , An1 , v112
-	.byte	W12
-	.byte		        Bn1 
-	.byte	W48
-	.byte		VOICE , 56
-	.byte		PAN   , c_v+0
-	.byte	W12
-	.byte		N06   , En3 , v092
-	.byte	W24
-	.byte		N06   
-	.byte	W24
-	.byte		N06   
-	.byte	W24
-	.byte		N06   
-	.byte	W12
-	.byte		N06   
-	.byte	W24
-	.byte		VOICE , 47
-	.byte		PAN   , c_v+10
-	.byte		N12   , An1 , v112
-	.byte	W24
-	.byte		        Bn1 
-	.byte	W48
+	.byte		VOICE , 3
+	.byte		N15   , Gs4 , v080
+	.byte		VOL   , 127*bgm_kachi22_mvl/mxv
+	.byte	W15
+	.byte		N18   , Gn4 , v080
+	.byte	W56
+	.byte	W01
 bgm_kachi22_2_000:
-	.byte		VOICE , 56
-	.byte		PAN   , c_v+0
-	.byte	W12
-	.byte		N06   , Fn3 , v092
 	.byte	W24
-	.byte		N06   
-	.byte	W24
-	.byte		N06   
-	.byte	W24
-	.byte		N06   
-	.byte	W12
-	.byte	PEND
-	.byte		N06   
-	.byte	W36
-	.byte		VOICE , 47
-	.byte		PAN   , c_v+10
-	.byte		N12   , As1 , v112
-	.byte	W12
-	.byte		        Cn2 
-	.byte	W48
-	.byte	PATT
-	 .word	bgm_kachi22_2_000
-	.byte		N06   , Fn3 , v092
-	.byte	W24
-	.byte		VOICE , 47
-	.byte		PAN   , c_v+10
-	.byte		N12   , As1 , v112
-	.byte	W24
-	.byte		        Cn2 
-	.byte	W48
+@ 001	----------------------------------------
+	.byte	W96
+@ 002	----------------------------------------
+	.byte	W96
+@ 003	----------------------------------------
+	.byte	W96
+@ 004	----------------------------------------
+	.byte	W96
+@ 005	----------------------------------------
+	.byte	W96
+@ 006	----------------------------------------
+	.byte	W72
 	.byte	GOTO
-	 .word	bgm_kachi22_2_B1
+	 .word	bgm_kachi22_2_000
+	.byte	W24
+@ 007	----------------------------------------
+	.byte	W96
+@ 008	----------------------------------------
+	.byte	W96
+@ 009	----------------------------------------
+	.byte	W96
+@ 010	----------------------------------------
+	.byte	W96
+@ 011	----------------------------------------
+	.byte	W96
+@ 012	----------------------------------------
+	.byte	W96
+@ 013	----------------------------------------
+	.byte	W96
+@ 014	----------------------------------------
+	.byte	W96
+@ 015	----------------------------------------
+	.byte	W96
+@ 016	----------------------------------------
+	.byte	W96
+@ 017	----------------------------------------
+	.byte	W96
+@ 018	----------------------------------------
+	.byte	W96
+@ 019	----------------------------------------
+	.byte	W96
+@ 020	----------------------------------------
+	.byte	W96
+@ 021	----------------------------------------
+	.byte	W96
+@ 022	----------------------------------------
+	.byte	W96
+@ 023	----------------------------------------
+	.byte	W96
+@ 024	----------------------------------------
+	.byte	W96
+@ 025	----------------------------------------
+	.byte	W96
+@ 026	----------------------------------------
+	.byte	W96
+@ 027	----------------------------------------
+	.byte	W96
+@ 028	----------------------------------------
+	.byte	W96
+@ 029	----------------------------------------
+	.byte	W96
+@ 030	----------------------------------------
+	.byte	W96
+@ 031	----------------------------------------
+	.byte	W96
+@ 032	----------------------------------------
+	.byte	W96
+@ 033	----------------------------------------
+	.byte	W96
+@ 034	----------------------------------------
+	.byte	W96
+@ 035	----------------------------------------
+	.byte	W96
+@ 036	----------------------------------------
+	.byte	W96
+@ 037	----------------------------------------
+	.byte	W96
+@ 038	----------------------------------------
+	.byte	W96
+@ 039	----------------------------------------
+	.byte	W96
+@ 040	----------------------------------------
+	.byte	W96
+@ 041	----------------------------------------
+	.byte	W96
+@ 042	----------------------------------------
+	.byte	W96
+@ 043	----------------------------------------
+	.byte	W60
+	.byte	W01
 	.byte	FINE
 
-@********************** Track  3 **********************@
+@**************** Track 3 ****************@
 
 bgm_kachi22_3:
+@ 000	----------------------------------------
 	.byte	KEYSH , bgm_kachi22_key+0
-	.byte	W12
-bgm_kachi22_3_B1:
-	.byte		VOICE , 58
-	.byte		VOL   , 80*bgm_kachi22_mvl/mxv
-	.byte		N21   , En1 , v127
-	.byte	W12
-	.byte		VOL   , 73*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        61*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        37*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        25*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        80*bgm_kachi22_mvl/mxv
-	.byte		N21   , Bn0 
-	.byte	W12
-	.byte		VOL   , 73*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        61*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        37*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        25*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        80*bgm_kachi22_mvl/mxv
-	.byte		N21   , En1 
-	.byte	W12
-	.byte		VOL   , 73*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        61*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        37*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        25*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        80*bgm_kachi22_mvl/mxv
-	.byte		N21   , Bn0 
-	.byte	W12
-	.byte		VOL   , 73*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        61*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        37*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        25*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        80*bgm_kachi22_mvl/mxv
-	.byte		N48   , An1 
-	.byte	W06
-	.byte		VOL   , 67*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        58*bgm_kachi22_mvl/mxv
-	.byte	W06
-	.byte		        54*bgm_kachi22_mvl/mxv
-	.byte	W06
-	.byte		        57*bgm_kachi22_mvl/mxv
-	.byte	W06
-	.byte		        64*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        69*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        76*bgm_kachi22_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_kachi22_mvl/mxv
-	.byte	W09
-	.byte		        62*bgm_kachi22_mvl/mxv
-	.byte		N48   , Bn1 
-	.byte	W06
-	.byte		VOL   , 65*bgm_kachi22_mvl/mxv
-	.byte	W06
-	.byte		        67*bgm_kachi22_mvl/mxv
-	.byte	W06
-	.byte		        69*bgm_kachi22_mvl/mxv
-	.byte	W06
-	.byte		        73*bgm_kachi22_mvl/mxv
-	.byte	W09
-	.byte		        76*bgm_kachi22_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_kachi22_mvl/mxv
-	.byte	W09
-	.byte		N21   , En1 
-	.byte	W12
-	.byte		VOL   , 73*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        61*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        37*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        25*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        80*bgm_kachi22_mvl/mxv
-	.byte		N21   , Bn0 
-	.byte	W12
-	.byte		VOL   , 73*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        61*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        37*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        25*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        80*bgm_kachi22_mvl/mxv
-	.byte		N21   , En1 
-	.byte	W12
-	.byte		VOL   , 73*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        61*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        37*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        25*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        80*bgm_kachi22_mvl/mxv
-	.byte		N21   , Bn0 
-	.byte	W12
-	.byte		VOL   , 73*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        61*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        37*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        25*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        80*bgm_kachi22_mvl/mxv
-	.byte		N24   , An1 
-	.byte	W12
-	.byte		VOL   , 73*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        61*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        37*bgm_kachi22_mvl/mxv
-	.byte	W30
-	.byte		        80*bgm_kachi22_mvl/mxv
-	.byte		N21   , En1 
-	.byte	W12
-	.byte		VOL   , 73*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        61*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        37*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        25*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        80*bgm_kachi22_mvl/mxv
-	.byte		N21   , Cn1 
-	.byte	W12
-	.byte		VOL   , 73*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        61*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        37*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        25*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        80*bgm_kachi22_mvl/mxv
-	.byte		N21   , Fn1 
-	.byte	W12
-	.byte		VOL   , 73*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        61*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        37*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        25*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        80*bgm_kachi22_mvl/mxv
-	.byte		N21   , Cn1 
-	.byte	W12
-	.byte		VOL   , 73*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        61*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        37*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        25*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        80*bgm_kachi22_mvl/mxv
-	.byte		N21   , Fn1 
-	.byte	W12
-	.byte		VOL   , 73*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        61*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        37*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        25*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        80*bgm_kachi22_mvl/mxv
-	.byte		N21   , Cn1 
-	.byte	W12
-	.byte		VOL   , 73*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        61*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        37*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        25*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        80*bgm_kachi22_mvl/mxv
-	.byte		N48   , As1 
-	.byte	W06
-	.byte		VOL   , 67*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        58*bgm_kachi22_mvl/mxv
-	.byte	W06
-	.byte		        54*bgm_kachi22_mvl/mxv
-	.byte	W06
-	.byte		        57*bgm_kachi22_mvl/mxv
-	.byte	W06
-	.byte		        64*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        69*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        76*bgm_kachi22_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_kachi22_mvl/mxv
-	.byte	W09
-	.byte		        62*bgm_kachi22_mvl/mxv
-	.byte		N48   , Cn2 
-	.byte	W06
-	.byte		VOL   , 65*bgm_kachi22_mvl/mxv
-	.byte	W06
-	.byte		        67*bgm_kachi22_mvl/mxv
-	.byte	W06
-	.byte		        69*bgm_kachi22_mvl/mxv
-	.byte	W06
-	.byte		        73*bgm_kachi22_mvl/mxv
-	.byte	W09
-	.byte		        76*bgm_kachi22_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_kachi22_mvl/mxv
-	.byte	W09
-	.byte		N21   , Fn1 
-	.byte	W12
-	.byte		VOL   , 73*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        61*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        37*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        25*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        80*bgm_kachi22_mvl/mxv
-	.byte		N21   , Cn1 
-	.byte	W12
-	.byte		VOL   , 73*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        61*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        37*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        25*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        80*bgm_kachi22_mvl/mxv
-	.byte		N21   , Fn1 
-	.byte	W12
-	.byte		VOL   , 73*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        61*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        37*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        25*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        80*bgm_kachi22_mvl/mxv
-	.byte		N21   , Cn1 
-	.byte	W12
-	.byte		VOL   , 73*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        61*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        37*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        25*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        80*bgm_kachi22_mvl/mxv
-	.byte		N24   , As1 
-	.byte	W12
-	.byte		VOL   , 73*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        61*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        37*bgm_kachi22_mvl/mxv
-	.byte	W30
-	.byte		        80*bgm_kachi22_mvl/mxv
-	.byte		N24   , Fn1 
-	.byte	W12
-	.byte		VOL   , 73*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        61*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        37*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        25*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        80*bgm_kachi22_mvl/mxv
-	.byte		N24   , Bn0 
-	.byte	W12
-	.byte		VOL   , 73*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        61*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        37*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte		        25*bgm_kachi22_mvl/mxv
-	.byte	W03
-	.byte	GOTO
-	 .word	bgm_kachi22_3_B1
-	.byte	FINE
-
-@********************** Track  4 **********************@
-
-bgm_kachi22_4:
-	.byte	KEYSH , bgm_kachi22_key+0
-	.byte	W12
-bgm_kachi22_4_B1:
-	.byte		VOICE , 82
-	.byte		PAN   , c_v+0
-	.byte		VOL   , 80*bgm_kachi22_mvl/mxv
-	.byte	W12
-	.byte		N06   , Bn2 , v060
+	.byte		VOICE , 6
+	.byte		N15   , Ds3 , v080
+	.byte		VOL   , 127*bgm_kachi22_mvl/mxv
+	.byte	W15
+	.byte		N32   , Ds2 , v080, gtp1
+	.byte	W32
+	.byte	W01
+	.byte		N96   , En2 , v064
 	.byte	W24
-	.byte		N06   
+bgm_kachi22_3_002:
 	.byte	W24
-	.byte		N06   
-	.byte	W24
-	.byte		N06   
-	.byte	W12
-	.byte		        Cs3 
-	.byte	W96
-	.byte	W12
-	.byte		        Bn2 
-	.byte	W24
-	.byte		N06   
-	.byte	W24
-	.byte		N06   
-	.byte	W24
-	.byte		N06   
-	.byte	W12
-	.byte		        Cs3 
-	.byte	W96
-bgm_kachi22_4_000:
-	.byte	W12
-	.byte		N06   , Cn3 , v060
-	.byte	W24
-	.byte		N06   
-	.byte	W24
-	.byte		N06   
-	.byte	W24
-	.byte		N06   
-	.byte	W12
-	.byte	PEND
-	.byte		        Dn3 
-	.byte	W96
-	.byte	PATT
-	 .word	bgm_kachi22_4_000
-	.byte		N06   , Dn3 , v060
-	.byte	W96
-	.byte	GOTO
-	 .word	bgm_kachi22_4_B1
-	.byte	FINE
-
-@********************** Track  5 **********************@
-
-bgm_kachi22_5:
-	.byte	KEYSH , bgm_kachi22_key+0
-	.byte	W12
-bgm_kachi22_5_B1:
-	.byte		VOICE , 83
-	.byte		PAN   , c_v+48
-	.byte		VOL   , 80*bgm_kachi22_mvl/mxv
-	.byte		N03   , Bn5 , v032
-	.byte	W12
-	.byte		        An5 
-	.byte	W12
-	.byte		        Gs5 
-	.byte	W12
-	.byte		        An5 
-	.byte	W12
-	.byte		        Bn5 
-	.byte	W12
-	.byte		N03   
-	.byte	W12
-	.byte		N03   
-	.byte	W24
-	.byte		        Cs6 
-	.byte	W12
-	.byte		N03   
-	.byte	W12
-	.byte		N03   
-	.byte	W24
-	.byte		        Bn5 
-	.byte	W12
-	.byte		N03   
-	.byte	W12
-	.byte		N03   
-	.byte	W24
-	.byte		N03   
-	.byte	W12
-	.byte		        An5 
-	.byte	W12
-	.byte		        Gs5 
-	.byte	W12
-	.byte		        An5 
-	.byte	W12
-	.byte		        Bn5 
-	.byte	W12
-	.byte		N03   
-	.byte	W12
-	.byte		N03   
-	.byte	W24
-	.byte		        Cs6 
-	.byte	W12
-	.byte		N03   
-	.byte	W12
-	.byte		N03   
-	.byte	W24
-	.byte		        Bn5 
+@ 001	----------------------------------------
+bgm_kachi22_3_000:
 	.byte	W48
-bgm_kachi22_5_000:
-	.byte		N03   , Cn6 , v032
-	.byte	W12
-	.byte		        As5 
-	.byte	W12
-	.byte		        An5 
-	.byte	W12
-	.byte		        As5 
-	.byte	W12
-	.byte		        Cn6 
-	.byte	W12
-	.byte		N03   
-	.byte	W12
-	.byte		N03   
-	.byte	W24
-	.byte	PEND
-	.byte		        Dn6 
-	.byte	W12
-	.byte		N03   
-	.byte	W12
-	.byte		N03   
-	.byte	W24
-	.byte		        Cn6 
-	.byte	W12
-	.byte		N03   
-	.byte	W12
-	.byte		N03   
-	.byte	W24
-	.byte	PATT
-	 .word	bgm_kachi22_5_000
-	.byte		N03   , Dn6 , v032
-	.byte	W12
-	.byte		N03   
-	.byte	W12
-	.byte		N03   
-	.byte	W24
-	.byte		        Cn6 
+	.byte		N72   , Fn2 , v064
 	.byte	W48
+@ 002	----------------------------------------
+	.byte	PEND
+bgm_kachi22_3_001:
+	.byte	W24
+	.byte		N72   , En2 , v064
+	.byte	W72
+@ 003	----------------------------------------
+	.byte	PEND
+	.byte		N72   , Fn2 , v064
+	.byte	W72
+	.byte		N72   , En2 , v064
+	.byte	W24
+@ 004	----------------------------------------
+	.byte	PATT
+	 .word	bgm_kachi22_3_000
+	.byte	PATT
+	 .word	bgm_kachi22_3_001
+	.byte		N66   , Fn2 , v064
+	.byte	W72
 	.byte	GOTO
-	 .word	bgm_kachi22_5_B1
+	 .word	bgm_kachi22_3_002
+	.byte	W24
+@ 005	----------------------------------------
+	.byte	W96
+@ 006	----------------------------------------
+	.byte	W96
+@ 007	----------------------------------------
+	.byte	W96
+@ 008	----------------------------------------
+	.byte	W96
+@ 009	----------------------------------------
+	.byte	W96
+@ 010	----------------------------------------
+	.byte	W96
+@ 011	----------------------------------------
+	.byte	W96
+@ 012	----------------------------------------
+	.byte	W96
+@ 013	----------------------------------------
+	.byte	W96
+@ 014	----------------------------------------
+	.byte	W96
+@ 015	----------------------------------------
+	.byte	W96
+@ 016	----------------------------------------
+	.byte	W96
+@ 017	----------------------------------------
+	.byte	W96
+@ 018	----------------------------------------
+	.byte	W96
+@ 019	----------------------------------------
+	.byte	W96
+@ 020	----------------------------------------
+	.byte	W96
+@ 021	----------------------------------------
+	.byte	W96
+@ 022	----------------------------------------
+	.byte	W96
+@ 023	----------------------------------------
+	.byte	W96
+@ 024	----------------------------------------
+	.byte	W96
+@ 025	----------------------------------------
+	.byte	W96
+@ 026	----------------------------------------
+	.byte	W96
+@ 027	----------------------------------------
+	.byte	W96
+@ 028	----------------------------------------
+	.byte	W96
+@ 029	----------------------------------------
+	.byte	W96
+@ 030	----------------------------------------
+	.byte	W96
+@ 031	----------------------------------------
+	.byte	W96
+@ 032	----------------------------------------
+	.byte	W96
+@ 033	----------------------------------------
+	.byte	W96
+@ 034	----------------------------------------
+	.byte	W96
+@ 035	----------------------------------------
+	.byte	W96
+@ 036	----------------------------------------
+	.byte	W96
+@ 037	----------------------------------------
+	.byte	W96
+@ 038	----------------------------------------
+	.byte	W96
+@ 039	----------------------------------------
+	.byte	W96
+@ 040	----------------------------------------
+	.byte	W96
+@ 041	----------------------------------------
+	.byte	W60
+	.byte	W01
 	.byte	FINE
 
-@********************** Track  6 **********************@
-
-bgm_kachi22_6:
-	.byte	KEYSH , bgm_kachi22_key+0
-	.byte	W12
-bgm_kachi22_6_B1:
-	.byte		VOICE , 81
-	.byte		MOD   , 0
-	.byte		VOL   , 80*bgm_kachi22_mvl/mxv
-	.byte		BEND  , c_v+0
-	.byte	W96
-	.byte		N06   , An4 , v048
-	.byte	W12
-	.byte		N06   
-	.byte	W12
-	.byte		N24   
-	.byte	W12
-	.byte		MOD   , 5
-	.byte	W12
-	.byte		        0
-	.byte		N06   , Fs4 
-	.byte	W12
-	.byte		N06   
-	.byte	W12
-	.byte		N06   
-	.byte	W24
-	.byte	W96
-	.byte		        An4 
-	.byte	W12
-	.byte		N06   
-	.byte	W12
-	.byte		N24   
-	.byte	W12
-	.byte		MOD   , 5
-	.byte	W12
-	.byte		        0
-	.byte		N06   , Gs4 
-	.byte	W48
-	.byte	W96
-	.byte		        As4 
-	.byte	W12
-	.byte		N06   
-	.byte	W12
-	.byte		N24   
-	.byte	W12
-	.byte		MOD   , 5
-	.byte	W12
-	.byte		        0
-	.byte		N06   , Gn4 
-	.byte	W12
-	.byte		N06   
-	.byte	W12
-	.byte		N06   
-	.byte	W24
-	.byte	W96
-	.byte		        As4 
-	.byte	W12
-	.byte		N06   
-	.byte	W12
-	.byte		N24   
-	.byte	W12
-	.byte		MOD   , 5
-	.byte	W12
-	.byte		        0
-	.byte		N06   , An4 
-	.byte	W48
-	.byte	GOTO
-	 .word	bgm_kachi22_6_B1
-	.byte	FINE
-
-@********************** Track  7 **********************@
-
-bgm_kachi22_7:
-	.byte	KEYSH , bgm_kachi22_key+0
-	.byte	W12
-bgm_kachi22_7_B1:
-	.byte		VOICE , 0
-	.byte		VOL   , 80*bgm_kachi22_mvl/mxv
-	.byte		N06   , En1 , v076
-	.byte	W12
-	.byte		N06   
-	.byte	W06
-	.byte		        En1 , v064
-	.byte	W06
-	.byte		        En1 , v112
-	.byte		N06   , Fs2 , v064
-	.byte	W12
-	.byte		        En1 , v076
-	.byte	W06
-	.byte		        En1 , v064
-	.byte	W06
-	.byte		        En1 , v076
-	.byte	W12
-	.byte		        En1 , v084
-	.byte	W06
-	.byte		        En1 , v064
-	.byte	W06
-	.byte		        En1 , v112
-	.byte		N06   , Fs2 , v064
-	.byte	W06
-	.byte		        En1 
-	.byte	W06
-	.byte		        En1 , v076
-	.byte	W06
-	.byte		        En1 , v064
-	.byte	W06
-bgm_kachi22_7_000:
-	.byte		N06   , En1 , v112
-	.byte	W24
-	.byte		        Fs2 , v064
-	.byte	W24
-	.byte		N12   , Bn2 , v092
-	.byte	W24
-	.byte		N06   , En1 , v112
-	.byte		N03   , Fs2 , v064
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N06   , Fs2 , v040
-	.byte	W06
-	.byte		        En1 , v112
-	.byte		N06   , Fs2 , v052
-	.byte	W06
-	.byte		        En1 , v088
-	.byte		N06   , Fs2 , v060
-	.byte	W06
-	.byte	PEND
-bgm_kachi22_7_001:
-	.byte		N06   , En1 , v076
-	.byte	W12
-	.byte		N06   
-	.byte	W06
-	.byte		        En1 , v064
-	.byte	W06
-	.byte		        En1 , v112
-	.byte		N06   , Fs2 , v064
-	.byte	W12
-	.byte		        En1 , v076
-	.byte	W06
-	.byte		        En1 , v064
-	.byte	W06
-	.byte		        En1 , v076
-	.byte	W12
-	.byte		        En1 , v084
-	.byte	W06
-	.byte		        En1 , v064
-	.byte	W06
-	.byte		        En1 , v112
-	.byte		N06   , Fs2 , v064
-	.byte	W06
-	.byte		        En1 
-	.byte	W06
-	.byte		        En1 , v076
-	.byte	W06
-	.byte		        En1 , v064
-	.byte	W06
-	.byte	PEND
-	.byte	PATT
-	 .word	bgm_kachi22_7_000
-	.byte	PATT
-	 .word	bgm_kachi22_7_001
-	.byte	PATT
-	 .word	bgm_kachi22_7_000
-	.byte	PATT
-	 .word	bgm_kachi22_7_001
-	.byte	PATT
-	 .word	bgm_kachi22_7_000
-	.byte	GOTO
-	 .word	bgm_kachi22_7_B1
-	.byte	FINE
-
-@******************************************************@
+@******************************************@
 	.align	2
 
 bgm_kachi22:
-	.byte	7	@ NumTrks
+	.byte	3	@ NumTrks
 	.byte	0	@ NumBlks
 	.byte	bgm_kachi22_pri	@ Priority
 	.byte	bgm_kachi22_rev	@ Reverb.
@@ -874,9 +558,5 @@ bgm_kachi22:
 	.word	bgm_kachi22_1
 	.word	bgm_kachi22_2
 	.word	bgm_kachi22_3
-	.word	bgm_kachi22_4
-	.word	bgm_kachi22_5
-	.word	bgm_kachi22_6
-	.word	bgm_kachi22_7
 
 	.end

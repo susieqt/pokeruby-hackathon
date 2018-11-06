@@ -1,1900 +1,917 @@
 	.include "MPlayDef.s"
 
-	.equ	bgm_machi_s2_grp, voicegroup012
+	.equ	bgm_machi_s2_grp, voicegroup000
 	.equ	bgm_machi_s2_pri, 0
-	.equ	bgm_machi_s2_rev, reverb_set+50
+	.equ	bgm_machi_s2_rev, 0
 	.equ	bgm_machi_s2_mvl, 127
 	.equ	bgm_machi_s2_key, 0
 	.equ	bgm_machi_s2_tbs, 1
-	.equ	bgm_machi_s2_exg, 0
+	.equ	bgm_machi_s2_exg, 1
 	.equ	bgm_machi_s2_cmp, 1
 
 	.section .rodata
 	.global	bgm_machi_s2
 	.align	2
 
-@********************** Track  1 **********************@
+@**************** Track 1 ****************@
 
 bgm_machi_s2_1:
+@ 000	----------------------------------------
+bgm_machi_s2_1_008:
+	.byte		VOL   , 127*bgm_machi_s2_mvl/mxv
 	.byte	KEYSH , bgm_machi_s2_key+0
-	.byte	TEMPO , 126*bgm_machi_s2_tbs/2
-	.byte		VOICE , 56
-	.byte		XCMD  , xIECV , 13
-	.byte		        xIECL , 10
-	.byte		LFOS  , 40
-	.byte		VOL   , 80*bgm_machi_s2_mvl/mxv
-	.byte		PAN   , c_v+0
-	.byte		BEND  , c_v+0
-	.byte		N12   , Ds4 , v088
+	.byte	TEMPO , 128*bgm_machi_s2_tbs/2
+	.byte		VOICE , 82
+	.byte		N11   , An4 , v080
+	.byte	W12
+	.byte		N23   , An4 , v080
 	.byte	W24
-	.byte		        Fn4 
+	.byte		N11   , As4 , v080
 	.byte	W24
-	.byte		N18   , Gn4 
-	.byte	W18
-	.byte		        Gs4 
-	.byte	W18
-	.byte		N12   , As4 
-	.byte	W12
-bgm_machi_s2_1_B1:
-	.byte		VOICE , 56
-	.byte		VOL   , 80*bgm_machi_s2_mvl/mxv
-	.byte		N12   , Gs4 , v088
-	.byte	W24
-	.byte		N06   
-	.byte	W06
-	.byte		        As4 
-	.byte	W06
-	.byte		N12   , Gs4 
-	.byte	W12
-	.byte		        Gn4 
-	.byte	W24
-	.byte		N06   
-	.byte	W06
-	.byte		        Gs4 
-	.byte	W06
-	.byte		N12   , Gn4 
-	.byte	W12
-	.byte		N42   , Fn4 
-	.byte	W15
-	.byte		MOD   , 5
-	.byte	W09
-	.byte		VOL   , 70*bgm_machi_s2_mvl/mxv
-	.byte	W05
-	.byte		        55*bgm_machi_s2_mvl/mxv
-	.byte	W06
-	.byte		        30*bgm_machi_s2_mvl/mxv
-	.byte	W05
-	.byte		        6*bgm_machi_s2_mvl/mxv
-	.byte	W02
-	.byte		MOD   , 0
-	.byte	W18
-	.byte		VOL   , 80*bgm_machi_s2_mvl/mxv
-	.byte		N12   , Gs4 
-	.byte	W12
-	.byte		        Cs5 
-	.byte	W12
-	.byte		        Cn5 
-	.byte	W12
-	.byte		        As4 
-	.byte	W24
-	.byte		N06   
-	.byte	W06
-	.byte		        Cn5 
-	.byte	W06
-	.byte		N12   , Cs5 
-	.byte	W12
-	.byte		        Fn4 
-	.byte	W24
-	.byte		N06   
-	.byte	W06
-	.byte		        Gn4 
-	.byte	W06
-	.byte		N12   , Gs4 
-	.byte	W12
-	.byte		N32   , Gn4 
-	.byte	W12
-	.byte		MOD   , 5
-	.byte	W12
-	.byte		VOL   , 70*bgm_machi_s2_mvl/mxv
-	.byte	W06
-	.byte		        60*bgm_machi_s2_mvl/mxv
-	.byte	W03
-	.byte		        42*bgm_machi_s2_mvl/mxv
-	.byte		MOD   , 0
-	.byte	W03
-	.byte		VOL   , 80*bgm_machi_s2_mvl/mxv
-	.byte		N06   , Fn4 
-	.byte	W12
-	.byte		N36   , Ds4 
-	.byte	W12
-	.byte		MOD   , 5
-	.byte	W06
-	.byte		VOL   , 70*bgm_machi_s2_mvl/mxv
-	.byte	W06
-	.byte		        59*bgm_machi_s2_mvl/mxv
-	.byte	W06
-	.byte		        50*bgm_machi_s2_mvl/mxv
-	.byte	W03
-	.byte		        34*bgm_machi_s2_mvl/mxv
-	.byte	W03
-	.byte		        11*bgm_machi_s2_mvl/mxv
-	.byte		MOD   , 0
-	.byte	W12
-	.byte		VOL   , 80*bgm_machi_s2_mvl/mxv
-	.byte		N12   , Cn5 
-	.byte	W24
-	.byte		N06   
-	.byte	W06
-	.byte		        Cs5 
-	.byte	W06
-	.byte		N12   , Cn5 
-	.byte	W12
-	.byte		        As4 
-	.byte	W24
-	.byte		N06   
-	.byte	W06
-	.byte		        Cn5 
-	.byte	W06
-	.byte		N12   , As4 
-	.byte	W12
-	.byte		N42   , Gs4 
-	.byte	W15
-	.byte		MOD   , 5
-	.byte	W09
-	.byte		VOL   , 70*bgm_machi_s2_mvl/mxv
-	.byte	W05
-	.byte		        55*bgm_machi_s2_mvl/mxv
-	.byte	W06
-	.byte		        30*bgm_machi_s2_mvl/mxv
-	.byte	W05
-	.byte		        6*bgm_machi_s2_mvl/mxv
-	.byte	W02
-	.byte		MOD   , 0
-	.byte	W18
-	.byte		VOL   , 80*bgm_machi_s2_mvl/mxv
-	.byte		N12   , Fn4 
-	.byte	W12
-	.byte		        Cn5 
-	.byte	W12
-	.byte		        Ds5 
-	.byte	W12
-	.byte		        Cs5 
-	.byte	W24
-	.byte		N06   
-	.byte	W06
-	.byte		        Ds5 
-	.byte	W06
-	.byte		N12   , Cs5 
-	.byte	W12
-	.byte		        Cn5 
-	.byte	W24
-	.byte		N06   
-	.byte	W06
-	.byte		        Cs5 
-	.byte	W06
-	.byte		N12   , Cn5 
-	.byte	W12
-	.byte		N32   , As4 
-	.byte	W12
-	.byte		MOD   , 4
-	.byte	W12
-	.byte		VOL   , 70*bgm_machi_s2_mvl/mxv
-	.byte	W06
-	.byte		        60*bgm_machi_s2_mvl/mxv
-	.byte	W03
-	.byte		        42*bgm_machi_s2_mvl/mxv
-	.byte	W03
-	.byte		        80*bgm_machi_s2_mvl/mxv
-	.byte		MOD   , 0
-	.byte		N06   , Cn5 
-	.byte	W12
-	.byte		N36   , Cs5 
-	.byte	W15
-	.byte		MOD   , 4
-	.byte	W03
-	.byte		VOL   , 71*bgm_machi_s2_mvl/mxv
-	.byte	W06
-	.byte		        59*bgm_machi_s2_mvl/mxv
-	.byte	W06
-	.byte		        48*bgm_machi_s2_mvl/mxv
-	.byte	W03
-	.byte		        42*bgm_machi_s2_mvl/mxv
-	.byte	W03
-	.byte		MOD   , 0
-	.byte		VOL   , 31*bgm_machi_s2_mvl/mxv
-	.byte	W12
-	.byte		VOICE , 1
-	.byte		VOL   , 80*bgm_machi_s2_mvl/mxv
-	.byte		PAN   , c_v-7
-	.byte		N18   , Gs3 , v092
-	.byte	W18
-	.byte		PAN   , c_v+0
-	.byte		N12   , Ds2 , v100
-	.byte	W18
-	.byte		N24   , Gs2 
-	.byte	W24
-	.byte		N12   , Cn4 , v092
-	.byte	W12
-	.byte		        Cs4 
-	.byte	W12
-	.byte		        Ds4 
-	.byte	W12
-	.byte		PAN   , c_v-7
-	.byte		N18   , Cn4 
-	.byte	W18
-	.byte		PAN   , c_v+0
-	.byte		N12   , Fn2 , v100
-	.byte	W18
-	.byte		N24   , An2 
-	.byte	W24
-	.byte		N12   , An3 , v092
-	.byte	W12
-	.byte		        Cn4 
-	.byte	W12
-	.byte		        An3 
-	.byte	W12
-	.byte		PAN   , c_v-7
-	.byte		N18   , As3 
-	.byte	W18
-	.byte		PAN   , c_v+0
-	.byte		N12   , Fn2 , v100
-	.byte	W18
-	.byte		N24   , As2 
-	.byte	W24
-	.byte		PAN   , c_v-8
-	.byte		N12   , Fn3 , v092
-	.byte	W12
-	.byte		        Gn3 
-	.byte	W12
-	.byte		        Gs3 
-	.byte	W12
-	.byte		        As3 
-	.byte	W24
-	.byte		        Gs3 
-	.byte	W24
-	.byte		        Gn3 
-	.byte	W12
-	.byte		N24   , Fn3 
-	.byte	W24
-	.byte		N12   , Ds3 
-	.byte	W12
-	.byte		VOICE , 73
-	.byte		PAN   , c_v+0
-	.byte		N54   , Ds5 , v112
-	.byte	W15
-	.byte		MOD   , 4
+	.byte		N32   , As4 , v080
 	.byte	W36
-	.byte	W03
-	.byte		        0
-	.byte	W06
-	.byte		N12   
+@ 001	----------------------------------------
+	.byte		N11   , Gn4 , v080
 	.byte	W12
-	.byte		        Fn5 
-	.byte	W12
-	.byte		        Fs5 
-	.byte	W12
-	.byte		N54   , Fn5 
-	.byte	W18
-	.byte		MOD   , 4
-	.byte	W36
-	.byte		        0
-	.byte	W06
-	.byte		N12   , Cn5 
-	.byte	W12
-	.byte		        Ds5 
-	.byte	W12
-	.byte		        Fn5 
-	.byte	W12
-	.byte		N54   , Cs5 
-	.byte	W18
-	.byte		MOD   , 4
-	.byte	W36
-	.byte		        0
-	.byte	W06
-	.byte		N12   
-	.byte	W12
-	.byte		        Cn5 
-	.byte	W12
-	.byte		        Cs5 
-	.byte	W12
-	.byte		        As4 
+	.byte		N23   , Gn4 , v080
 	.byte	W24
-	.byte		        Cn5 
+	.byte		N11   , An4 , v080
 	.byte	W24
-	.byte		N18   , Cs5 
-	.byte	W18
-	.byte		        Cn5 
-	.byte	W18
-	.byte		N12   , As4 
+	.byte		N32   , An4 , v080
+	.byte	W36
+@ 002	----------------------------------------
+	.byte		N11   , Fn4 , v080
 	.byte	W12
+	.byte		N23   , Fn4 , v080
+	.byte	W24
+	.byte		N11   , Gn4 , v080
+	.byte	W24
+	.byte		N32   , Gn4 , v080
+	.byte	W36
+@ 003	----------------------------------------
+	.byte		N11   , En4 , v080
+	.byte	W12
+	.byte		N23   , En4 , v080
+	.byte	W24
+	.byte		N44   , Fn4 , v080
+	.byte	W60
+@ 004	----------------------------------------
+bgm_machi_s2_1_000:
+	.byte		N11   , An3 , v080
+	.byte	W12
+	.byte		N11   , Fn3 , v080
+	.byte	W12
+	.byte		N11   , An3 , v080
+	.byte	W12
+	.byte		N11   , As3 , v080
+	.byte	W24
+	.byte		N32   , As3 , v080
+	.byte	W36
+@ 005	----------------------------------------
+	.byte	PEND
+bgm_machi_s2_1_001:
+	.byte		N11   , Cn4 , v080
+	.byte	W12
+	.byte		N11   , Gn3 , v080
+	.byte	W12
+	.byte		N11   , As3 , v080
+	.byte	W12
+	.byte		N44   , An3 , v080
+	.byte	W60
+@ 006	----------------------------------------
+	.byte	PEND
+bgm_machi_s2_1_002:
+	.byte		N11   , As3 , v080
+	.byte	W12
+	.byte		N11   , Cn4 , v080
+	.byte	W12
+	.byte		N11   , As3 , v080
+	.byte	W12
+	.byte		N11   , An3 , v080
+	.byte	W24
+	.byte		N11   , Gn3 , v080
+	.byte	W24
+	.byte		N11   , As3 , v080
+	.byte	W12
+@ 007	----------------------------------------
+	.byte	PEND
+bgm_machi_s2_1_003:
+	.byte		N11   , An3 , v080
+	.byte	W12
+	.byte		N11   , En3 , v080
+	.byte	W12
+	.byte		N11   , Gn3 , v080
+	.byte	W12
+	.byte		N11   , Fn3 , v080
+	.byte	W60
+@ 008	----------------------------------------
+	.byte	PEND
+	.byte	PATT
+	 .word	bgm_machi_s2_1_000
+	.byte	PATT
+	 .word	bgm_machi_s2_1_001
+	.byte	PATT
+	 .word	bgm_machi_s2_1_002
+	.byte	PATT
+	 .word	bgm_machi_s2_1_003
+bgm_machi_s2_1_004:
+	.byte	W24
+	.byte		N11   , Fn3 , v080
+	.byte	W12
+	.byte		N11   , Fn3 , v080
+	.byte	W12
+	.byte		N11   , An3 , v080
+	.byte	W12
+	.byte		N11   , Cn4 , v080
+	.byte	W12
+	.byte		N11   , Cn4 , v080
+	.byte	W12
+	.byte		N11   , Cn4 , v080
+	.byte	W12
+@ 009	----------------------------------------
+	.byte	PEND
+bgm_machi_s2_1_005:
+	.byte		N23   , Fn4 , v080
+	.byte	W24
+	.byte		N23   , En4 , v080
+	.byte	W24
+	.byte		N23   , Dn4 , v080
+	.byte	W24
+	.byte		N23   , En4 , v080
+	.byte	W24
+@ 010	----------------------------------------
+	.byte	PEND
+bgm_machi_s2_1_006:
+	.byte		N11   , Dn4 , v080
+	.byte	W12
+	.byte		N05   , En4 , v080
+	.byte	W06
+	.byte		N05   , Dn4 , v080
+	.byte	W06
+	.byte		N68   , Cn4 , v080
+	.byte	W72
+@ 011	----------------------------------------
+	.byte	PEND
+bgm_machi_s2_1_007:
+	.byte		N11   , Dn5 , v080
+	.byte	W12
+	.byte		N11   , Cn5 , v080
+	.byte	W12
+	.byte		N11   , Cn5 , v080
+	.byte	W12
+	.byte		N11   , An4 , v080
+	.byte	W12
+	.byte		N11   , Dn5 , v080
+	.byte	W24
+	.byte		N11   , Cn5 , v080
+	.byte	W24
+@ 012	----------------------------------------
+	.byte	PEND
+	.byte	PATT
+	 .word	bgm_machi_s2_1_004
+	.byte	PATT
+	 .word	bgm_machi_s2_1_005
+	.byte	PATT
+	 .word	bgm_machi_s2_1_006
+	.byte	PATT
+	 .word	bgm_machi_s2_1_007
+	.byte		N23   , Dn4 , v080
+	.byte	W24
+	.byte		N23   , Fn3 , v080
+	.byte	W24
+	.byte		N23   , Gn3 , v080
+	.byte	W24
+	.byte		N11   , Cn4 , v080
+	.byte	W12
+	.byte		N11   , As3 , v080
+	.byte	W12
+@ 013	----------------------------------------
+	.byte		N23   , An3 , v080
+	.byte	W24
+	.byte		N23   , Fn3 , v080
+	.byte	W24
+	.byte		N44   , Cn3 , v080
+	.byte	W48
+@ 014	----------------------------------------
+	.byte		N11   , Dn4 , v080
+	.byte	W12
+	.byte		N11   , Cn4 , v080
+	.byte	W12
+	.byte		N11   , As3 , v080
+	.byte	W12
+	.byte		N11   , An3 , v080
+	.byte	W12
+	.byte		N23   , Gn3 , v080
+	.byte	W24
+	.byte		N11   , Fn3 , v080
+	.byte	W12
+	.byte		N11   , En3 , v080
+	.byte	W12
+@ 015	----------------------------------------
+	.byte		N96   , Fn3 , v064
+	.byte	W96
+@ 016	----------------------------------------
 	.byte	GOTO
-	 .word	bgm_machi_s2_1_B1
+	 .word	bgm_machi_s2_1_008
 	.byte	FINE
 
-@********************** Track  2 **********************@
+@**************** Track 2 ****************@
 
 bgm_machi_s2_2:
+@ 000	----------------------------------------
+bgm_machi_s2_2_006:
+	.byte		VOL   , 127*bgm_machi_s2_mvl/mxv
 	.byte	KEYSH , bgm_machi_s2_key+0
-	.byte		VOICE , 35
-	.byte		VOL   , 80*bgm_machi_s2_mvl/mxv
-	.byte		PAN   , c_v+15
-	.byte		BEND  , c_v+0
-	.byte		N18   , Gn1 , v127
-	.byte	W24
-	.byte		        Gs1 
-	.byte	W24
-	.byte		        As1 
-	.byte	W18
-	.byte		        Gs1 
-	.byte	W18
-	.byte		N12   , Gn1 
+	.byte		VOICE , 80
+	.byte		N11   , Cn4 , v080
 	.byte	W12
-bgm_machi_s2_2_B1:
+	.byte		N23   , Cn4 , v080
+	.byte	W24
+	.byte		N11   , Dn4 , v080
+	.byte	W24
+	.byte		N32   , Dn4 , v080
+	.byte	W36
+@ 001	----------------------------------------
+	.byte		N11   , As3 , v080
+	.byte	W12
+	.byte		N23   , As3 , v080
+	.byte	W24
+	.byte		N11   , Cn4 , v080
+	.byte	W24
+	.byte		N32   , Cn4 , v080
+	.byte	W36
+@ 002	----------------------------------------
+	.byte		N11   , An3 , v080
+	.byte	W12
+	.byte		N23   , An3 , v080
+	.byte	W24
+	.byte		N11   , As3 , v080
+	.byte	W24
+	.byte		N32   , As3 , v080
+	.byte	W36
+@ 003	----------------------------------------
+	.byte		N11   , Gn3 , v080
+	.byte	W12
+	.byte		N23   , Gn3 , v080
+	.byte	W24
+	.byte		N23   , An3 , v080
+	.byte	W24
+	.byte		N11   , Dn2 , v080
+	.byte	W12
+	.byte		N11   , As1 , v080
+	.byte	W12
+	.byte		N11   , Gn1 , v080
+	.byte	W12
+@ 004	----------------------------------------
 bgm_machi_s2_2_000:
-	.byte		N12   , Gs1 , v127
+	.byte	W12
+	.byte		N05   , Fn4 , v080
+	.byte	W12
+	.byte		N05   , Fn3 , v080
+	.byte	W12
+	.byte		N05   , Cn4 , v080
 	.byte	W24
-	.byte		N24   , Ds1 
-	.byte	W24
-	.byte		N12   , Gn1 
-	.byte	W24
-	.byte		N24   , Ds1 
-	.byte	W24
+	.byte		N05   , Dn4 , v080
+	.byte	W12
+	.byte		N05   , Fn3 , v080
+	.byte	W12
+	.byte		N05   , Cn4 , v080
+	.byte	W12
+@ 005	----------------------------------------
 	.byte	PEND
 bgm_machi_s2_2_001:
-	.byte		N24   , Fn1 , v127
+	.byte	W12
+	.byte		N05   , En4 , v080
+	.byte	W12
+	.byte		N05   , Gn3 , v080
+	.byte	W12
+	.byte		N05   , Cn4 , v080
 	.byte	W24
-	.byte		        Gs1 
-	.byte	W24
-	.byte		N06   , Cn2 
+	.byte		N05   , Fn4 , v080
 	.byte	W12
-	.byte		N12   
+	.byte		N05   , Fn3 , v080
 	.byte	W12
-	.byte		        Gs1 
+	.byte		N05   , Cn4 , v080
 	.byte	W12
-	.byte		        Cn2 
-	.byte	W12
+@ 006	----------------------------------------
 	.byte	PEND
-	.byte		        As1 
-	.byte	W24
-	.byte		N24   , Fn1 
-	.byte	W24
-	.byte		N12   , Cs2 
-	.byte	W24
-	.byte		N24   , Gs1 
-	.byte	W24
-	.byte		        Gn1 
-	.byte	W24
-	.byte		        As1 
-	.byte	W24
-	.byte		N06   , Ds2 
+bgm_machi_s2_2_002:
 	.byte	W12
-	.byte		N12   , Ds1 
+	.byte		N05   , Dn4 , v080
 	.byte	W12
-	.byte		        As1 
+	.byte		N05   , Fn3 , v080
 	.byte	W12
-	.byte		        Gn1 
+	.byte		N05   , Cn4 , v080
+	.byte	W24
+	.byte		N05   , Dn4 , v080
 	.byte	W12
+	.byte		N05   , Gn3 , v080
+	.byte	W24
+@ 007	----------------------------------------
+	.byte	PEND
+bgm_machi_s2_2_003:
+	.byte	W12
+	.byte		N05   , En4 , v080
+	.byte	W12
+	.byte		N05   , An3 , v080
+	.byte	W12
+	.byte		N05   , Cs4 , v080
+	.byte	W24
+	.byte		N05   , Fn4 , v080
+	.byte	W12
+	.byte		N05   , An3 , v080
+	.byte	W12
+	.byte		N05   , Dn4 , v080
+	.byte	W12
+@ 008	----------------------------------------
+	.byte	PEND
 	.byte	PATT
 	 .word	bgm_machi_s2_2_000
 	.byte	PATT
 	 .word	bgm_machi_s2_2_001
-	.byte		N12   , As1 , v127
-	.byte	W24
-	.byte		N24   , Fn1 
-	.byte	W24
-	.byte		N12   , Gs1 
-	.byte	W24
-	.byte		N24   , Fn1 
-	.byte	W24
-	.byte		N92   , Ds1 
-	.byte	W72
-	.byte	W03
-	.byte		VOL   , 73*bgm_machi_s2_mvl/mxv
-	.byte	W06
-	.byte		        66*bgm_machi_s2_mvl/mxv
-	.byte	W03
-	.byte		        56*bgm_machi_s2_mvl/mxv
-	.byte	W03
-	.byte		        47*bgm_machi_s2_mvl/mxv
-	.byte	W03
-	.byte		        27*bgm_machi_s2_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_machi_s2_mvl/mxv
-	.byte		N12   , Gs1 
-	.byte	W18
-	.byte		        Cn2 
-	.byte	W18
-	.byte		        Ds2 
+	.byte	PATT
+	 .word	bgm_machi_s2_2_002
+	.byte	PATT
+	 .word	bgm_machi_s2_2_003
+bgm_machi_s2_2_004:
+	.byte		N11   , An3 , v080
 	.byte	W12
-	.byte		N48   , Gs1 
+	.byte		N11   , Cn4 , v080
+	.byte	W12
+	.byte		N11   , Fn4 , v080
+	.byte	W12
+	.byte		N11   , An3 , v080
+	.byte	W12
+	.byte		N11   , As3 , v080
+	.byte	W12
+	.byte		N11   , Fn4 , v080
+	.byte	W12
+	.byte		N11   , As3 , v080
+	.byte	W12
+	.byte		N11   , Cn4 , v080
+	.byte	W12
+@ 009	----------------------------------------
+	.byte	PEND
+	.byte	PATT
+	 .word	bgm_machi_s2_2_004
+	.byte	PATT
+	 .word	bgm_machi_s2_2_004
+bgm_machi_s2_2_005:
+	.byte		N11   , Fn4 , v080
+	.byte	W12
+	.byte		N11   , En4 , v080
+	.byte	W12
+	.byte		N11   , En4 , v080
+	.byte	W12
+	.byte		N11   , Cn4 , v080
+	.byte	W12
+	.byte		N11   , Fn4 , v080
+	.byte	W24
+	.byte		N11   , Fn4 , v080
+	.byte	W24
+@ 010	----------------------------------------
+	.byte	PEND
+	.byte	PATT
+	 .word	bgm_machi_s2_2_004
+	.byte	PATT
+	 .word	bgm_machi_s2_2_004
+	.byte	PATT
+	 .word	bgm_machi_s2_2_004
+	.byte	PATT
+	 .word	bgm_machi_s2_2_005
+	.byte		N05   , Fn3 , v080
+	.byte	W24
+	.byte		N05   , Dn3 , v080
+	.byte	W24
+	.byte		N05   , En3 , v080
+	.byte	W24
+	.byte		N05   , En3 , v080
+	.byte	W12
+	.byte		N05   , En3 , v080
+	.byte	W12
+@ 011	----------------------------------------
+	.byte		N05   , Fn3 , v080
+	.byte	W24
+	.byte		N05   , Cn3 , v080
+	.byte	W24
+	.byte		N05   , An2 , v080
 	.byte	W48
-	.byte		N12   , Fn1 
-	.byte	W18
-	.byte		        An1 
-	.byte	W18
-	.byte		        Cn2 
+@ 012	----------------------------------------
+	.byte		N05   , Fn3 , v080
 	.byte	W12
-	.byte		N48   , Fn1 
-	.byte	W48
-	.byte		N12   , As1 
-	.byte	W18
-	.byte		        Fn1 
-	.byte	W18
-	.byte		        As1 
+	.byte		N05   , En3 , v080
 	.byte	W12
-	.byte		N48   , As0 
-	.byte	W48
-	.byte		N18   
+	.byte		N05   , Dn3 , v080
+	.byte	W12
+	.byte		N05   , Cn3 , v080
+	.byte	W12
+	.byte		N05   , En3 , v080
 	.byte	W24
-	.byte		        Cs1 
-	.byte	W24
-	.byte		N12   , Ds1 
+	.byte		N05   , Gn2 , v080
 	.byte	W12
-	.byte		N24   , Fn1 
-	.byte	W24
-	.byte		N12   , Gn1 
+	.byte		N05   , Fs2 , v080
 	.byte	W12
-	.byte		VOL   , 80*bgm_machi_s2_mvl/mxv
-	.byte		N12   , Gs1 
-	.byte	W18
-	.byte		N06   
-	.byte	W12
-	.byte		        Cn2 , v096
-	.byte	W06
-	.byte		        Gs1 , v127
-	.byte	W06
-	.byte		        Ds1 , v096
-	.byte	W06
-	.byte		N12   , Gs1 , v127
-	.byte	W12
-	.byte		        Cn1 
-	.byte	W12
-	.byte		        Ds1 
-	.byte	W12
-	.byte		        Gs1 
-	.byte	W12
-	.byte		        An1 
-	.byte	W18
-	.byte		N06   
-	.byte	W12
-	.byte		        Cn2 
-	.byte	W06
-	.byte		        An1 
-	.byte	W06
-	.byte		        Fn1 , v096
-	.byte	W06
-	.byte		N12   , An1 , v127
-	.byte	W12
-	.byte		        Fn1 
-	.byte	W12
-	.byte		        Cn2 
-	.byte	W12
-	.byte		        Fn1 
-	.byte	W12
-	.byte		        As1 
-	.byte	W18
-	.byte		N06   , Fn2 
-	.byte	W12
-	.byte		        Fn1 
-	.byte	W06
-	.byte		        Gn1 
-	.byte	W06
-	.byte		        Gs1 
-	.byte	W06
-	.byte		N12   , As1 
-	.byte	W12
-	.byte		        Cs1 
-	.byte	W12
-	.byte		        Fn1 
-	.byte	W12
-	.byte		        Cs1 
-	.byte	W12
-	.byte		N48   , Ds1 
-	.byte	W48
-	.byte		N18   
-	.byte	W18
-	.byte		        Fn1 
-	.byte	W18
-	.byte		N12   , Gn1 
-	.byte	W12
+@ 013	----------------------------------------
+	.byte		N96   , An2 , v064
+	.byte	W96
+@ 014	----------------------------------------
 	.byte	GOTO
-	 .word	bgm_machi_s2_2_B1
+	 .word	bgm_machi_s2_2_006
 	.byte	FINE
 
-@********************** Track  3 **********************@
+@**************** Track 3 ****************@
 
 bgm_machi_s2_3:
+@ 000	----------------------------------------
+bgm_machi_s2_3_008:
+	.byte		VOL   , 127*bgm_machi_s2_mvl/mxv
 	.byte	KEYSH , bgm_machi_s2_key+0
-	.byte		VOICE , 1
-	.byte		PAN   , c_v-17
-	.byte		VOL   , 80*bgm_machi_s2_mvl/mxv
+	.byte		VOICE , 81
+	.byte	W24
+	.byte		N11   , Dn2 , v080
 	.byte	W48
-	.byte		N18   , Ds2 , v084
-	.byte	W18
-	.byte		        Fn2 
-	.byte	W18
-	.byte		N12   , Gn2 , v100
-	.byte	W12
-bgm_machi_s2_3_B1:
-	.byte		N48   , Gs2 , v100
+	.byte		N11   , Dn2 , v080
+	.byte	W24
+@ 001	----------------------------------------
+bgm_machi_s2_3_000:
+	.byte	W24
+	.byte		N11   , Dn2 , v080
 	.byte	W48
-	.byte		        Gn2 
-	.byte	W48
-	.byte		N24   , Fn2 , v084
+	.byte		N11   , Dn2 , v080
 	.byte	W24
-	.byte		        Cn2 , v100
+@ 002	----------------------------------------
+	.byte	PEND
+	.byte	PATT
+	 .word	bgm_machi_s2_3_000
 	.byte	W24
-	.byte		N12   , Gs2 
-	.byte	W12
-	.byte		        Gs2 , v076
-	.byte	W12
-	.byte		        Cs3 , v100
-	.byte	W12
-	.byte		        Cn3 
-	.byte	W12
-	.byte		N48   , As2 
-	.byte	W48
-	.byte		        Gs2 
-	.byte	W48
-	.byte		N24   , Gn2 
-	.byte	W24
-	.byte		        Ds2 
-	.byte	W24
-	.byte		N12   , As2 
-	.byte	W12
-	.byte		N06   , Ds2 , v088
-	.byte	W12
-	.byte		        Fn2 
-	.byte	W12
-	.byte		        Cs2 
-	.byte	W12
-	.byte		N24   , Cn2 
-	.byte	W24
-	.byte		        Cs2 
-	.byte	W24
-	.byte		        Ds2 
-	.byte	W24
-	.byte		        Gn2 , v100
-	.byte	W24
-	.byte		        Gs2 
-	.byte	W24
-	.byte		        As2 
-	.byte	W24
-	.byte		        Cn3 
-	.byte	W24
-	.byte		        Ds3 
-	.byte	W24
-	.byte		N18   , Cs3 
-	.byte	W24
-	.byte		N06   
-	.byte	W06
-	.byte		        Ds3 
-	.byte	W06
-	.byte		N12   , Cs3 
-	.byte	W12
-	.byte		N18   , Cn3 
-	.byte	W24
-	.byte		N06   
-	.byte	W06
-	.byte		        Cs3 
-	.byte	W06
-	.byte		N12   , Cn3 
-	.byte	W12
-	.byte		N36   , As2 
+	.byte		N11   , Dn2 , v080
 	.byte	W36
-	.byte		N12   , Gs2 
+	.byte		N11   , Dn1 , v080
 	.byte	W12
-	.byte		N24   , Gn2 
-	.byte	W24
-	.byte		PAN   , c_v-8
-	.byte		N12   , Cn4 , v120
+	.byte		N11   , As0 , v080
 	.byte	W12
-	.byte		        Cs4 
+	.byte		N11   , Gn0 , v080
 	.byte	W12
-	.byte		N54   , Ds4 
-	.byte	W60
-	.byte		N12   
-	.byte	W12
-	.byte		        Fn4 
-	.byte	W12
-	.byte		        Fs4 
-	.byte	W12
-	.byte		N54   , Fn4 
-	.byte	W60
-	.byte		N12   , Cn4 
-	.byte	W12
-	.byte		        Fn4 
-	.byte	W12
-	.byte		        Cn4 
-	.byte	W12
-	.byte		N54   , Cs4 
-	.byte	W60
-	.byte		N12   , As3 
-	.byte	W12
-	.byte		        Cn4 
-	.byte	W12
-	.byte		        Cs4 
-	.byte	W12
-	.byte		        Ds4 
-	.byte	W24
-	.byte		        Cs4 
-	.byte	W24
-	.byte		        Cn4 
-	.byte	W12
-	.byte		N24   , As3 
-	.byte	W24
-	.byte		N12   , Gn3 
-	.byte	W12
-	.byte		PAN   , c_v-16
-	.byte		N12   , Ds2 , v088
+@ 003	----------------------------------------
+bgm_machi_s2_3_001:
+	.byte		N11   , Fn1 , v080
 	.byte	W18
-	.byte		N06   , Ds2 , v100
+	.byte		N05   , Fn1 , v080
+	.byte	W06
+	.byte		N11   , An1 , v080
+	.byte	W12
+	.byte		N11   , Fn1 , v080
+	.byte	W12
+	.byte		N11   , As1 , v080
 	.byte	W18
-	.byte		N36   , Cn3 
+	.byte		N05   , As1 , v080
+	.byte	W06
+	.byte		N11   , Dn2 , v080
+	.byte	W12
+	.byte		N11   , As1 , v080
+	.byte	W12
+@ 004	----------------------------------------
+	.byte	PEND
+bgm_machi_s2_3_002:
+	.byte		N11   , Cn2 , v080
+	.byte	W18
+	.byte		N05   , Cn2 , v080
+	.byte	W06
+	.byte		N11   , En2 , v080
+	.byte	W12
+	.byte		N11   , Cn2 , v080
+	.byte	W12
+	.byte		N11   , Fn1 , v080
+	.byte	W18
+	.byte		N05   , Fn1 , v080
+	.byte	W06
+	.byte		N11   , An1 , v080
+	.byte	W12
+	.byte		N11   , Fn1 , v080
+	.byte	W12
+@ 005	----------------------------------------
+	.byte	PEND
+bgm_machi_s2_3_003:
+	.byte		N11   , As1 , v080
+	.byte	W18
+	.byte		N05   , As1 , v080
+	.byte	W06
+	.byte		N11   , Fn2 , v080
+	.byte	W12
+	.byte		N11   , Fn1 , v080
+	.byte	W12
+	.byte		N11   , Gn1 , v080
+	.byte	W18
+	.byte		N05   , Gn1 , v080
+	.byte	W06
+	.byte		N11   , Dn2 , v080
+	.byte	W12
+	.byte		N11   , Gn1 , v080
+	.byte	W12
+@ 006	----------------------------------------
+	.byte	PEND
+bgm_machi_s2_3_004:
+	.byte		N11   , An1 , v080
+	.byte	W18
+	.byte		N05   , An1 , v080
+	.byte	W06
+	.byte		N11   , En1 , v080
+	.byte	W12
+	.byte		N11   , An1 , v080
+	.byte	W12
+	.byte		N11   , Dn2 , v080
+	.byte	W18
+	.byte		N05   , Dn2 , v080
+	.byte	W06
+	.byte		N11   , An1 , v080
+	.byte	W12
+	.byte		N11   , Dn2 , v080
+	.byte	W12
+@ 007	----------------------------------------
+	.byte	PEND
+	.byte	PATT
+	 .word	bgm_machi_s2_3_001
+	.byte	PATT
+	 .word	bgm_machi_s2_3_002
+	.byte	PATT
+	 .word	bgm_machi_s2_3_003
+	.byte	PATT
+	 .word	bgm_machi_s2_3_004
+bgm_machi_s2_3_005:
+	.byte		N05   , Fn1 , v080
+	.byte	W12
+	.byte		N05   , Fn1 , v080
+	.byte	W12
+	.byte		N05   , Fn1 , v080
+	.byte	W12
+	.byte		N05   , Fn1 , v080
+	.byte	W06
+	.byte		N05   , Fn1 , v080
+	.byte	W06
+	.byte		N05   , Gn1 , v080
+	.byte	W12
+	.byte		N05   , Gn1 , v080
+	.byte	W12
+	.byte		N05   , Gn1 , v080
+	.byte	W12
+	.byte		N05   , Gn1 , v080
+	.byte	W06
+	.byte		N05   , Gn1 , v080
+	.byte	W06
+@ 008	----------------------------------------
+	.byte	PEND
+bgm_machi_s2_3_006:
+	.byte		N05   , An1 , v080
+	.byte	W12
+	.byte		N05   , An1 , v080
+	.byte	W12
+	.byte		N05   , An1 , v080
+	.byte	W12
+	.byte		N05   , An1 , v080
+	.byte	W06
+	.byte		N05   , An1 , v080
+	.byte	W06
+	.byte		N05   , As1 , v080
+	.byte	W12
+	.byte		N05   , As1 , v080
+	.byte	W12
+	.byte		N05   , As1 , v080
+	.byte	W12
+	.byte		N05   , As1 , v080
+	.byte	W06
+	.byte		N05   , As1 , v080
+	.byte	W06
+@ 009	----------------------------------------
+	.byte	PEND
+	.byte	PATT
+	 .word	bgm_machi_s2_3_005
+	.byte	PATT
+	 .word	bgm_machi_s2_3_006
+	.byte	PATT
+	 .word	bgm_machi_s2_3_005
+	.byte	PATT
+	 .word	bgm_machi_s2_3_006
+bgm_machi_s2_3_007:
+	.byte		N05   , An1 , v080
+	.byte	W12
+	.byte		N05   , An1 , v080
+	.byte	W12
+	.byte		N05   , An1 , v080
+	.byte	W12
+	.byte		N05   , An1 , v080
+	.byte	W06
+	.byte		N05   , An1 , v080
+	.byte	W06
+	.byte		N05   , An1 , v080
+	.byte	W12
+	.byte		N05   , An1 , v080
+	.byte	W12
+	.byte		N05   , An1 , v080
+	.byte	W12
+	.byte		N05   , An1 , v080
+	.byte	W06
+	.byte		N05   , An1 , v080
+	.byte	W06
+@ 010	----------------------------------------
+	.byte	PEND
+	.byte	PATT
+	 .word	bgm_machi_s2_3_007
+	.byte		N11   , As1 , v080
+	.byte	W24
+	.byte		N11   , Dn2 , v080
+	.byte	W12
+	.byte		N11   , As1 , v080
+	.byte	W12
+	.byte		N11   , Cn2 , v080
+	.byte	W24
+	.byte		N11   , En1 , v080
+	.byte	W12
+	.byte		N11   , Gn1 , v080
+	.byte	W12
+@ 011	----------------------------------------
+	.byte		N11   , Fn1 , v080
 	.byte	W36
-	.byte		N24   , Ds3 
-	.byte	W24
-	.byte		N12   , Fn3 
-	.byte	W18
-	.byte		N06   
-	.byte	W18
-	.byte		N36   , Cn3 
-	.byte	W36
-	.byte		N24   , An2 
-	.byte	W24
-	.byte		N12   , As2 
-	.byte	W18
-	.byte		N06   
-	.byte	W18
-	.byte		N36   , Fn2 , v080
-	.byte	W36
-	.byte		N24   , Cs2 , v084
-	.byte	W24
-	.byte		N48   , Gs2 , v100
-	.byte	W24
-	.byte		VOL   , 77*bgm_machi_s2_mvl/mxv
-	.byte	W05
-	.byte		        69*bgm_machi_s2_mvl/mxv
-	.byte	W07
-	.byte		        63*bgm_machi_s2_mvl/mxv
-	.byte	W05
-	.byte		        56*bgm_machi_s2_mvl/mxv
-	.byte	W07
-	.byte		        80*bgm_machi_s2_mvl/mxv
-	.byte		N18   , As2 
-	.byte	W18
-	.byte		        Gs2 
-	.byte	W18
-	.byte		N12   , Gn2 
+	.byte		N11   , Fn1 , v080
 	.byte	W12
+	.byte		N11   , Fn1 , v080
+	.byte	W12
+	.byte		N11   , Fn1 , v080
+	.byte	W12
+	.byte		N11   , Gn1 , v080
+	.byte	W12
+	.byte		N11   , An1 , v080
+	.byte	W12
+@ 012	----------------------------------------
+	.byte		N11   , As1 , v080
+	.byte	W24
+	.byte		N11   , Dn2 , v080
+	.byte	W12
+	.byte		N11   , As1 , v080
+	.byte	W12
+	.byte		N11   , Cn2 , v080
+	.byte	W24
+	.byte		N11   , Gn1 , v080
+	.byte	W12
+	.byte		N11   , Fs1 , v080
+	.byte	W12
+@ 013	----------------------------------------
+	.byte		N96   , Fn1 , v080
+	.byte	W96
+@ 014	----------------------------------------
 	.byte	GOTO
-	 .word	bgm_machi_s2_3_B1
+	 .word	bgm_machi_s2_3_008
 	.byte	FINE
 
-@********************** Track  4 **********************@
+@**************** Track 4 ****************@
 
 bgm_machi_s2_4:
-	.byte	KEYSH , bgm_machi_s2_key+0
-	.byte		LFOS  , 40
-	.byte		XCMD  , xIECV , 8
-	.byte		        xIECL , 8
-	.byte		VOL   , 68*bgm_machi_s2_mvl/mxv
-	.byte	W48
-	.byte		VOICE , 25
-	.byte		PAN   , c_v+0
-	.byte		BEND  , c_v+0
-	.byte		N06   , Gn2 , v060
-	.byte	W06
-	.byte		N09   , As2 
-	.byte	W09
-	.byte		BEND  , c_v+22
-	.byte	W03
-	.byte		        c_v+0
-	.byte		N06   , Ds3 
-	.byte	W06
-	.byte		N03   , Gn2 
-	.byte	W06
-	.byte		BEND  , c_v+5
-	.byte	W06
-	.byte		        c_v+0
-	.byte		N03   , As2 
-	.byte	W06
-	.byte		N06   , Ds3 
-	.byte	W06
-bgm_machi_s2_4_B1:
-	.byte		VOICE , 27
-	.byte		N42   , Ds2 , v060
-	.byte	W42
-	.byte		VOICE , 25
-	.byte		N03   , Ds3 
-	.byte	W06
-	.byte		VOICE , 27
-	.byte		N42   , Ds2 
-	.byte	W42
-	.byte		VOICE , 25
-	.byte		N03   , Ds3 
-	.byte	W06
-bgm_machi_s2_4_000:
-	.byte		VOICE , 27
-	.byte		N24   , Fn2 , v060
-	.byte	W24
-	.byte		VOICE , 25
-	.byte		N06   , Gs3 , v076
-	.byte	W24
-	.byte		N06   
-	.byte	W12
-	.byte		VOICE , 27
-	.byte		N12   , Cn3 , v060
-	.byte	W12
-	.byte		        Gs2 
-	.byte	W12
-	.byte		        Fn2 
-	.byte	W12
-	.byte	PEND
-	.byte		N42   
-	.byte	W42
-	.byte		VOICE , 25
-	.byte		N03   , Fn3 
-	.byte	W06
-	.byte		VOICE , 27
-	.byte		N42   , Fn2 
-	.byte	W42
-	.byte		VOICE , 25
-	.byte		N03   , Fn3 
-	.byte	W06
-	.byte		VOICE , 27
-	.byte		N24   , Gn2 
-	.byte	W24
-	.byte		VOICE , 25
-	.byte		N06   , As3 
-	.byte	W24
-	.byte		N06   
-	.byte	W12
-	.byte		VOICE , 27
-	.byte		N12   , Gn3 
-	.byte	W12
-	.byte		        Ds3 
-	.byte	W12
-	.byte		        Gn2 
-	.byte	W12
-	.byte		N36   , Ds2 
-	.byte	W42
-	.byte		VOICE , 25
-	.byte		N03   , Ds3 
-	.byte	W06
-	.byte		VOICE , 27
-	.byte		N42   , Ds2 
-	.byte	W42
-	.byte		VOICE , 25
-	.byte		N03   , Ds3 
-	.byte	W06
-	.byte	PATT
-	 .word	bgm_machi_s2_4_000
-	.byte		N42   , Fn2 , v060
-	.byte	W42
-	.byte		VOICE , 25
-	.byte		N03   , Fn3 
-	.byte	W18
-	.byte		VOICE , 27
-	.byte		N12   
-	.byte	W24
-	.byte		        Cn3 
-	.byte	W12
-	.byte		N48   , Ds3 
-	.byte	W48
-	.byte		N24   , As2 
-	.byte	W24
-	.byte		        Gn2 
-	.byte	W24
-	.byte		VOICE , 25
-	.byte		N18   , Gs2 , v064
-	.byte	W18
-	.byte		N03   , Gs2 , v076
-	.byte	W18
-	.byte		N06   , Gs2 , v064
-	.byte	W12
-	.byte		N09   
-	.byte	W12
-	.byte		N06   , Gs2 , v076
-	.byte	W12
-	.byte		N12   , Ds2 
-	.byte	W09
-	.byte		BEND  , c_v+16
-	.byte	W03
-	.byte		        c_v+0
-	.byte		N06   , Gs2 , v060
-	.byte	W12
-	.byte		N18   , An2 , v064
-	.byte	W18
-	.byte		N03   , An2 , v076
-	.byte	W18
-	.byte		N06   , An2 , v064
-	.byte	W12
-	.byte		N09   
-	.byte	W12
-	.byte		N06   , An2 , v076
-	.byte	W12
-	.byte		N12   , Fn2 
-	.byte	W09
-	.byte		BEND  , c_v+16
-	.byte	W03
-	.byte		        c_v+0
-	.byte		N06   , An2 , v064
-	.byte	W12
-	.byte		N18   , As2 
-	.byte	W18
-	.byte		N03   , As2 , v076
-	.byte	W18
-	.byte		N06   , Cs3 , v064
-	.byte	W12
-	.byte		N09   , As2 
-	.byte	W12
-	.byte		N06   , As2 , v076
-	.byte	W12
-	.byte		N12   , Cn3 , v064
-	.byte	W09
-	.byte		BEND  , c_v+16
-	.byte	W03
-	.byte		        c_v+0
-	.byte		N06   , Cs3 
-	.byte	W12
-	.byte		N18   , Ds3 
-	.byte	W18
-	.byte		N03   , Ds3 , v076
-	.byte	W18
-	.byte		N06   , Ds3 , v064
-	.byte	W12
-	.byte		VOICE , 27
-	.byte		N12   , As2 
-	.byte	W12
-	.byte		N24   , Gn2 
-	.byte	W24
-	.byte		N12   , Ds2 
-	.byte	W12
-	.byte		VOICE , 25
-	.byte		N06   , Cn3 
-	.byte	W06
-	.byte		N03   , Cn3 , v076
-	.byte	W12
-	.byte		N03   
-	.byte	W18
-	.byte		N06   , Cn3 , v064
-	.byte	W12
-	.byte		N03   
-	.byte	W06
-	.byte		        Cn3 , v076
-	.byte	W06
-	.byte		        Ds3 
-	.byte	W12
-	.byte		VOICE , 27
-	.byte		N18   , Ds2 , v064
-	.byte	W18
-	.byte		VOICE , 25
-	.byte		N06   , Cn3 
-	.byte	W06
-	.byte		VOICE , 25
-	.byte		N06   , Cn3 , v068
-	.byte	W06
-	.byte		N03   , Cn3 , v076
-	.byte	W12
-	.byte		N03   
-	.byte	W18
-	.byte		N06   , Cn3 , v064
-	.byte	W12
-	.byte		N03   , An2 
-	.byte	W06
-	.byte		        An2 , v076
-	.byte	W06
-	.byte		        Cn3 
-	.byte	W12
-	.byte		VOICE , 27
-	.byte		N18   , Fn2 , v064
-	.byte	W18
-	.byte		VOICE , 25
-	.byte		N06   , An2 
-	.byte	W06
-	.byte		VOICE , 27
-	.byte		N30   , Fn2 
-	.byte	W30
-	.byte		VOICE , 25
-	.byte		N06   , Fn3 , v076
-	.byte	W12
-	.byte		        Cs3 , v064
-	.byte	W06
-	.byte		        As2 
-	.byte	W12
-	.byte		        Fn3 , v076
-	.byte	W12
-	.byte		VOICE , 27
-	.byte		N12   , Fn2 , v064
-	.byte	W12
-	.byte		        Cs3 , v076
-	.byte	W12
-	.byte		N48   , Ds3 , v064
-	.byte	W48
-	.byte		N18   , Gn3 
-	.byte	W18
-	.byte		        Fn3 
-	.byte	W18
-	.byte		N12   , Ds3 
-	.byte	W12
-	.byte	GOTO
-	 .word	bgm_machi_s2_4_B1
-	.byte	FINE
-
-@********************** Track  5 **********************@
-
-bgm_machi_s2_5:
-	.byte	KEYSH , bgm_machi_s2_key+0
-	.byte		XCMD  , xIECV , 8
-	.byte		        xIECL , 8
-	.byte	W48
-	.byte		VOICE , 24
-	.byte		VOL   , 72*bgm_machi_s2_mvl/mxv
-	.byte		PAN   , c_v+48
-	.byte		BEND  , c_v+0
-	.byte		N06   , As2 , v048
-	.byte	W06
-	.byte		N09   , Ds3 , v060
-	.byte	W09
-	.byte		BEND  , c_v+22
-	.byte	W03
-	.byte		        c_v+0
-	.byte		N06   , Gn3 , v048
-	.byte	W06
-	.byte		N03   , As2 , v060
-	.byte	W06
-	.byte		BEND  , c_v+5
-	.byte	W06
-	.byte		        c_v+0
-	.byte		N03   , Ds3 
-	.byte	W06
-	.byte		N06   , Gn3 
-	.byte	W06
-bgm_machi_s2_5_B1:
-	.byte		VOICE , 26
-	.byte		N12   , Gs2 , v064
-	.byte	W09
-	.byte		BEND  , c_v+24
-	.byte	W03
-	.byte		VOICE , 24
-	.byte		BEND  , c_v+0
-	.byte		N06   , Gs3 
-	.byte	W12
-	.byte		        Ds3 
-	.byte	W06
-	.byte		VOICE , 26
-	.byte		BEND  , c_v-26
-	.byte		N12   , Gs3 , v052
-	.byte	W03
-	.byte		BEND  , c_v+0
-	.byte	W09
-	.byte		VOICE , 24
-	.byte		N03   , Gs3 , v064
-	.byte	W06
-	.byte		N06   , Ds3 
-	.byte	W12
-	.byte		        Gn3 
-	.byte	W12
-	.byte		        Ds3 
-	.byte	W06
-	.byte		VOICE , 26
-	.byte		BEND  , c_v-24
-	.byte		N12   , Gn3 , v052
-	.byte	W03
-	.byte		BEND  , c_v+0
-	.byte	W09
-	.byte		VOICE , 24
-	.byte		N03   , Gn3 , v064
-	.byte	W06
-	.byte		N06   , Gs2 , v076
-	.byte	W12
-	.byte		VOICE , 26
-	.byte		BEND  , c_v-24
-	.byte		N12   , Fn3 , v060
-	.byte	W03
-	.byte		BEND  , c_v+0
-	.byte	W09
-	.byte		VOICE , 24
-	.byte		N06   , Cn4 , v076
-	.byte	W06
-	.byte		        Gs3 , v060
-	.byte	W12
-	.byte		        Fn3 
-	.byte	W06
-	.byte		        Cn4 , v076
-	.byte	W12
-	.byte		VOICE , 26
-	.byte		N12   , Fn3 , v064
-	.byte	W12
-	.byte		        Cn3 
-	.byte	W12
-	.byte		        Gs2 
-	.byte	W12
-	.byte		VOICE , 26
-	.byte		N12   , As2 
-	.byte	W09
-	.byte		BEND  , c_v+24
-	.byte	W03
-	.byte		VOICE , 24
-	.byte		BEND  , c_v+0
-	.byte		N06   , As3 
-	.byte	W12
-	.byte		        Fn3 
-	.byte	W06
-	.byte		VOICE , 26
-	.byte		BEND  , c_v-23
-	.byte		N12   , As3 , v052
-	.byte	W03
-	.byte		BEND  , c_v+0
-	.byte	W09
-	.byte		VOICE , 24
-	.byte		N03   , As3 , v064
-	.byte	W06
-	.byte		N06   , Fn3 
-	.byte	W12
-	.byte		        Gs3 
-	.byte	W12
-	.byte		        Fn3 
-	.byte	W06
-	.byte		VOICE , 26
-	.byte		BEND  , c_v-23
-	.byte		N12   , Gs3 , v052
-	.byte	W03
-	.byte		BEND  , c_v+0
-	.byte	W09
-	.byte		VOICE , 24
-	.byte		N03   , Gs3 , v064
-	.byte	W06
-	.byte		N06   , As2 , v080
-	.byte	W12
-	.byte		VOICE , 26
-	.byte		BEND  , c_v-21
-	.byte		N12   , Ds3 , v064
-	.byte	W03
-	.byte		BEND  , c_v+0
-	.byte	W09
-	.byte		VOICE , 24
-	.byte		N06   , Ds4 , v080
-	.byte	W06
-	.byte		        As3 , v064
-	.byte	W12
-	.byte		        Gn3 
-	.byte	W06
-	.byte		        Ds4 , v080
-	.byte	W12
-	.byte		VOICE , 26
-	.byte		N12   , As3 , v064
-	.byte	W12
-	.byte		        Gn3 
-	.byte	W12
-	.byte		        As2 
-	.byte	W12
-	.byte		VOICE , 26
-	.byte		N06   , Gs2 , v048
-	.byte	W06
-	.byte		        Ds3 , v060
-	.byte	W06
-	.byte		VOICE , 24
-	.byte		N06   , Gs3 , v068
-	.byte	W12
-	.byte		        Ds3 , v076
-	.byte	W06
-	.byte		VOICE , 26
-	.byte		BEND  , c_v-23
-	.byte		N12   , Gs3 , v052
-	.byte	W03
-	.byte		BEND  , c_v+0
-	.byte	W09
-	.byte		VOICE , 24
-	.byte		N03   , Gs3 , v068
-	.byte	W06
-	.byte		N06   , Ds3 , v044
-	.byte	W12
-	.byte		        Gn3 , v064
-	.byte	W12
-	.byte		        Ds3 , v076
-	.byte	W06
-	.byte		VOICE , 26
-	.byte		BEND  , c_v-21
-	.byte		N12   , Gn3 , v052
-	.byte	W03
-	.byte		BEND  , c_v+0
-	.byte	W09
-	.byte		VOICE , 24
-	.byte		N03   , Gn3 , v068
-	.byte	W06
-	.byte		N06   , Gs2 , v076
-	.byte	W12
-	.byte		VOICE , 26
-	.byte		N12   , Fn3 , v060
-	.byte	W03
-	.byte		BEND  , c_v+0
-	.byte	W09
-	.byte		VOICE , 24
-	.byte		N06   , Cn4 , v076
-	.byte	W06
-	.byte		        Gs3 , v060
-	.byte	W12
-	.byte		        Fn3 
-	.byte	W06
-	.byte		        Cn4 , v076
-	.byte	W12
-	.byte		VOICE , 26
-	.byte		N12   , Fn3 , v064
-	.byte	W12
-	.byte		        Cn3 
-	.byte	W12
-	.byte		        Gs2 
-	.byte	W12
-	.byte		VOICE , 24
-	.byte		N06   , As2 , v048
-	.byte	W06
-	.byte		        Fn3 , v060
-	.byte	W06
-	.byte		        As3 , v068
-	.byte	W12
-	.byte		        Fn3 , v076
-	.byte	W06
-	.byte		VOICE , 26
-	.byte		BEND  , c_v-23
-	.byte		N12   , As3 , v052
-	.byte	W03
-	.byte		BEND  , c_v+0
-	.byte	W09
-	.byte		VOICE , 24
-	.byte		N03   , As3 , v068
-	.byte	W06
-	.byte		N06   , Fn3 , v052
-	.byte	W12
-	.byte		VOICE , 26
-	.byte		BEND  , c_v-23
-	.byte		N12   , Gs3 , v064
-	.byte	W03
-	.byte		BEND  , c_v+0
-	.byte	W09
-	.byte		VOICE , 24
-	.byte		N06   , Cn3 , v052
-	.byte	W12
-	.byte		VOICE , 26
-	.byte		N12   , Fn3 , v060
-	.byte	W09
-	.byte		BEND  , c_v-20
-	.byte	W03
-	.byte		        c_v+0
-	.byte	W03
-	.byte		N44   , As3 , v052
-	.byte	W03
-	.byte		BEND  , c_v-17
-	.byte	W03
-	.byte		        c_v+0
-	.byte	W36
-	.byte	W03
-	.byte		N24   , Ds3 , v048
-	.byte	W24
-	.byte		        As2 
-	.byte	W24
-	.byte		VOICE , 26
-	.byte		N18   , Ds3 , v064
-	.byte	W18
-	.byte		VOICE , 24
-	.byte		N03   , Ds3 , v076
-	.byte	W18
-	.byte		N06   , Ds3 , v064
-	.byte	W12
-	.byte		N09   
-	.byte	W12
-	.byte		N06   , Ds3 , v076
-	.byte	W12
-	.byte		VOICE , 26
-	.byte		N12   , Gs2 
-	.byte	W09
-	.byte		BEND  , c_v+16
-	.byte	W03
-	.byte		VOICE , 24
-	.byte		BEND  , c_v+0
-	.byte		N06   , Ds3 , v060
-	.byte	W12
-	.byte		VOICE , 26
-	.byte		N18   , Fn3 , v064
-	.byte	W18
-	.byte		VOICE , 24
-	.byte		N03   , Fn3 , v076
-	.byte	W18
-	.byte		N06   , Fn3 , v064
-	.byte	W12
-	.byte		N09   
-	.byte	W12
-	.byte		N06   , Fn3 , v076
-	.byte	W12
-	.byte		VOICE , 26
-	.byte		N12   , Cn3 
-	.byte	W09
-	.byte		BEND  , c_v+16
-	.byte	W03
-	.byte		VOICE , 24
-	.byte		BEND  , c_v+0
-	.byte		N06   , Fn3 , v064
-	.byte	W12
-	.byte		VOICE , 26
-	.byte		N18   , Cs3 
-	.byte	W18
-	.byte		VOICE , 24
-	.byte		N03   , Cs3 , v076
-	.byte	W18
-	.byte		N06   , Fn3 , v064
-	.byte	W12
-	.byte		N09   , Cs3 
-	.byte	W12
-	.byte		N06   , Cs3 , v076
-	.byte	W12
-	.byte		VOICE , 26
-	.byte		N12   , Ds3 , v064
-	.byte	W09
-	.byte		BEND  , c_v+16
-	.byte	W03
-	.byte		VOICE , 24
-	.byte		BEND  , c_v+0
-	.byte		N06   , Fn3 
-	.byte	W12
-	.byte		VOICE , 26
-	.byte		N18   , Gs3 
-	.byte	W18
-	.byte		VOICE , 24
-	.byte		N03   , Gs3 , v076
-	.byte	W18
-	.byte		N06   , Gs3 , v064
-	.byte	W12
-	.byte		VOICE , 26
-	.byte		N12   , Ds3 
-	.byte	W12
-	.byte		N24   , Cs3 
-	.byte	W24
-	.byte		N12   , As2 
-	.byte	W12
-	.byte		VOICE , 24
-	.byte		N06   , Ds3 
-	.byte	W06
-	.byte		N03   , Ds3 , v076
-	.byte	W12
-	.byte		N03   
-	.byte	W18
-	.byte		N06   , Ds3 , v064
-	.byte	W12
-	.byte		N03   
-	.byte	W06
-	.byte		        Ds3 , v076
-	.byte	W06
-	.byte		        Gs3 
-	.byte	W12
-	.byte		N06   , Gs2 , v064
-	.byte	W06
-	.byte		        Ds3 , v076
-	.byte	W06
-	.byte		        Gs3 
-	.byte	W06
-	.byte		        Ds3 , v064
-	.byte	W06
-	.byte		        Fn3 , v068
-	.byte	W06
-	.byte		N03   , Fn3 , v076
-	.byte	W12
-	.byte		N03   
-	.byte	W18
-	.byte		N06   , Fn3 , v064
-	.byte	W12
-	.byte		N03   , Cn3 
-	.byte	W06
-	.byte		        Cn3 , v076
-	.byte	W06
-	.byte		        Fn3 
-	.byte	W12
-	.byte		N06   , An2 
-	.byte	W06
-	.byte		        Cn3 , v064
-	.byte	W06
-	.byte		        Fn3 , v076
-	.byte	W06
-	.byte		        Cn3 , v064
-	.byte	W06
-	.byte		VOICE , 26
-	.byte		N12   , Cs3 
-	.byte	W09
-	.byte		BEND  , c_v+14
-	.byte	W03
-	.byte		VOICE , 24
-	.byte		BEND  , c_v+0
-	.byte		N06   , Fn3 
-	.byte	W06
-	.byte		N03   , Cs3 , v080
-	.byte	W06
-	.byte		N06   , Fn3 , v064
-	.byte	W06
-	.byte		        As3 , v076
-	.byte	W12
-	.byte		        Fn3 , v064
-	.byte	W06
-	.byte		        Cs3 
-	.byte	W12
-	.byte		        As3 , v076
-	.byte	W12
-	.byte		VOICE , 26
-	.byte		N12   , As2 , v064
-	.byte	W09
-	.byte		BEND  , c_v+23
-	.byte	W03
-	.byte		        c_v+0
-	.byte		N12   , Fn3 , v076
-	.byte	W09
-	.byte		BEND  , c_v-16
-	.byte	W03
-	.byte		        c_v+0
-	.byte	W03
-	.byte		N44   , Gs3 , v064
-	.byte	W44
-	.byte	W01
-	.byte		N18   , As3 
-	.byte	W18
-	.byte		        Gs3 
-	.byte	W18
-	.byte		N12   , Gn3 
-	.byte	W12
-	.byte	GOTO
-	 .word	bgm_machi_s2_5_B1
-	.byte	FINE
-
-@********************** Track  6 **********************@
-
-bgm_machi_s2_6:
-	.byte	KEYSH , bgm_machi_s2_key+0
-	.byte		LFOS  , 40
-	.byte		PAN   , c_v+0
-	.byte	W96
-bgm_machi_s2_6_B1:
-	.byte		VOL   , 80*bgm_machi_s2_mvl/mxv
-	.byte	W96
-	.byte	W96
-	.byte	W96
-	.byte	W96
-	.byte		VOICE , 74
-	.byte		N42   , Gs4 , v040
-	.byte	W12
-	.byte		MOD   , 4
-	.byte	W32
-	.byte	W01
-	.byte		        0
-	.byte		N03   , Dn5 
-	.byte	W03
-	.byte		N42   , Ds5 
-	.byte	W15
-	.byte		MOD   , 4
-	.byte	W30
-	.byte		N03   , As4 
-	.byte	W03
-	.byte		MOD   , 0
-	.byte		N12   , Cn5 
-	.byte	W24
-	.byte		N06   
-	.byte	W06
-	.byte		        As4 
-	.byte	W12
-	.byte		        Cn5 
-	.byte	W06
-	.byte		N12   , Gs4 
-	.byte	W12
-	.byte		        Cn4 
-	.byte	W12
-	.byte		        Gs4 
-	.byte	W12
-	.byte		        Cn5 
-	.byte	W12
-	.byte		        As4 
-	.byte	W24
-	.byte		N06   
-	.byte	W06
-	.byte		        Cn5 
-	.byte	W06
-	.byte		N12   , As4 
-	.byte	W12
-	.byte		        Fn4 
-	.byte	W24
-	.byte		N06   , Gs4 
-	.byte	W06
-	.byte		        As4 
-	.byte	W06
-	.byte		N12   , Gs4 
-	.byte	W12
-	.byte		N32   
-	.byte	W12
-	.byte		MOD   , 4
-	.byte	W21
-	.byte		        0
-	.byte	W03
-	.byte		N06   
-	.byte	W12
-	.byte		N36   , Gn4 
-	.byte	W18
-	.byte		VOL   , 71*bgm_machi_s2_mvl/mxv
-	.byte	W06
-	.byte		        59*bgm_machi_s2_mvl/mxv
-	.byte	W06
-	.byte		        48*bgm_machi_s2_mvl/mxv
-	.byte	W03
-	.byte		        42*bgm_machi_s2_mvl/mxv
-	.byte	W03
-	.byte		        31*bgm_machi_s2_mvl/mxv
-	.byte	W12
-	.byte		        80*bgm_machi_s2_mvl/mxv
-	.byte	W96
-	.byte	W96
-	.byte	W96
-	.byte		VOICE , 81
-	.byte		N36   , Ds2 , v064
-	.byte	W48
-	.byte		        Gn2 
-	.byte	W48
-	.byte		N32   , Gs2 
-	.byte	W36
-	.byte		VOICE , 74
-	.byte		N54   , Cn5 , v040
-	.byte	W24
-	.byte		MOD   , 4
-	.byte	W30
-	.byte		        0
-	.byte	W06
-	.byte		N12   
-	.byte	W12
-	.byte		        Cs5 
-	.byte	W12
-	.byte		        Ds5 
-	.byte	W12
-	.byte		N24   , Cn5 
-	.byte	W09
-	.byte		MOD   , 4
-	.byte	W15
-	.byte		        0
-	.byte		N12   , An4 
-	.byte	W12
-	.byte		        As4 
-	.byte	W12
-	.byte		        Cn5 
-	.byte	W12
-	.byte		N54   , As4 
-	.byte	W18
-	.byte		MOD   , 4
-	.byte	W36
-	.byte		        0
-	.byte	W06
-	.byte		N12   , Fn4 
-	.byte	W12
-	.byte		        Ds4 
-	.byte	W12
-	.byte		        Fn4 
-	.byte	W12
-	.byte		        Ds4 
-	.byte	W24
-	.byte		        Fn4 
-	.byte	W24
-	.byte		N18   , Gn4 
-	.byte	W18
-	.byte		        Fn4 
-	.byte	W18
-	.byte		N12   , Ds4 
-	.byte	W12
-	.byte	GOTO
-	 .word	bgm_machi_s2_6_B1
-	.byte	FINE
-
-@********************** Track  7 **********************@
-
-bgm_machi_s2_7:
-	.byte	KEYSH , bgm_machi_s2_key+0
-	.byte		PAN   , c_v-48
-	.byte	W96
-bgm_machi_s2_7_B1:
-	.byte		VOICE , 127
-	.byte		VOL   , 75*bgm_machi_s2_mvl/mxv
-	.byte		N06   , Gs4 , v040
-	.byte	W12
-	.byte		N06   
-	.byte	W12
-	.byte		N09   , Gs4 , v052
-	.byte	W12
-	.byte		N06   , Gs4 , v040
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		N06   
-	.byte	W12
-	.byte		N06   
-	.byte	W12
-	.byte		N09   , Gs4 , v052
-	.byte	W12
-	.byte		N06   , Gs4 , v040
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-bgm_machi_s2_7_000:
-	.byte		N06   , Gs4 , v040
-	.byte	W12
-	.byte		N06   
-	.byte	W12
-	.byte		N09   , Gs4 , v052
-	.byte	W12
-	.byte		N06   , Gs4 , v040
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		N06   
-	.byte	W12
-	.byte		N06   
-	.byte	W12
-	.byte		N09   , Gs4 , v052
-	.byte	W12
-	.byte		N06   , Gs4 , v040
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte	PEND
-	.byte	PATT
-	 .word	bgm_machi_s2_7_000
-	.byte	PATT
-	 .word	bgm_machi_s2_7_000
-	.byte	PATT
-	 .word	bgm_machi_s2_7_000
-	.byte	PATT
-	 .word	bgm_machi_s2_7_000
-	.byte	PATT
-	 .word	bgm_machi_s2_7_000
-bgm_machi_s2_7_001:
-	.byte		VOICE , 126
-	.byte		N06   , Gn4 , v052
-	.byte	W96
-	.byte	PEND
-	.byte		VOICE , 127
-	.byte		N06   , Gs4 , v040
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		        Gs4 , v052
-	.byte	W06
-	.byte		        Gs4 , v040
-	.byte	W06
-	.byte		        Gs4 , v052
-	.byte	W06
-	.byte		        Gs4 , v040
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		        Gs4 , v052
-	.byte	W06
-	.byte		        Gs4 , v040
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-bgm_machi_s2_7_002:
-	.byte		N06   , Gs4 , v040
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		        Gs4 , v052
-	.byte	W06
-	.byte		        Gs4 , v040
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		        Gs4 , v052
-	.byte	W06
-	.byte		        Gs4 , v040
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte	PEND
-bgm_machi_s2_7_003:
-	.byte		N06   , Gs4 , v040
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		        Gs4 , v052
-	.byte	W06
-	.byte		        Gs4 , v040
-	.byte	W06
-	.byte		        Gs4 , v052
-	.byte	W06
-	.byte		        Gs4 , v040
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		        Gs4 , v052
-	.byte	W06
-	.byte		        Gs4 , v040
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte	PEND
-	.byte	PATT
-	 .word	bgm_machi_s2_7_002
-	.byte	PATT
-	 .word	bgm_machi_s2_7_003
-	.byte	PATT
-	 .word	bgm_machi_s2_7_002
-	.byte	PATT
-	 .word	bgm_machi_s2_7_003
-	.byte	PATT
-	 .word	bgm_machi_s2_7_001
-	.byte	GOTO
-	 .word	bgm_machi_s2_7_B1
-	.byte	FINE
-
-@********************** Track  8 **********************@
-
-bgm_machi_s2_8:
+@ 000	----------------------------------------
+bgm_machi_s2_4_004:
 	.byte	KEYSH , bgm_machi_s2_key+0
 	.byte		VOICE , 0
-	.byte		VOL   , 80*bgm_machi_s2_mvl/mxv
+	.byte		VOL   , 127*bgm_machi_s2_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		N06   , Cn1 , v112
-	.byte	W24
-	.byte		        Dn1 , v116
-	.byte	W12
-	.byte		        Cn1 , v112
-	.byte	W12
-	.byte		        Dn1 , v116
-	.byte	W12
-	.byte		        Cn1 , v112
-	.byte	W12
-	.byte		        Dn1 , v116
-	.byte	W12
-	.byte		        Dn1 , v092
+	.byte		N05   , Fs1 , v112
 	.byte	W06
-	.byte		        Dn1 , v116
+	.byte		N05   , Fs1 , v112
 	.byte	W06
-bgm_machi_s2_8_B1:
-bgm_machi_s2_8_000:
-	.byte		N06   , Cn1 , v112
-	.byte	W12
-	.byte		        Dn3 , v056
-	.byte	W12
-	.byte		        Dn1 , v116
-	.byte	W12
-	.byte		        Dn3 , v056
+	.byte		N05   , Gs1 , v112
 	.byte	W06
-	.byte		N06   
+	.byte		N05   , Fs1 , v112
 	.byte	W06
-	.byte		        Cn1 , v112
-	.byte	W12
-	.byte		        Dn3 , v056
-	.byte	W12
-	.byte		        Dn1 , v116
-	.byte	W12
-	.byte		        Dn3 , v056
+	.byte		N05   , Fs1 , v112
 	.byte	W06
-	.byte		        En3 
+	.byte		N05   , Fs1 , v112
 	.byte	W06
-	.byte	PEND
-bgm_machi_s2_8_001:
-	.byte		N06   , Cn1 , v112
-	.byte	W12
-	.byte		        Dn3 , v056
-	.byte	W12
-	.byte		        Dn1 , v116
+	.byte		N05   , Gs1 , v112
 	.byte	W06
-	.byte		        Dn3 , v056
+	.byte		N05   , Fs1 , v112
 	.byte	W06
-	.byte		        Cn1 , v112
+	.byte		N05   , Fs1 , v112
 	.byte	W06
-	.byte		        Dn3 , v056
+	.byte		N05   , Fs1 , v112
 	.byte	W06
-	.byte		        Cn1 , v112
-	.byte	W12
-	.byte		        Dn3 , v056
-	.byte	W12
-	.byte		        Dn1 , v116
-	.byte	W12
-	.byte		        Dn3 , v056
+	.byte		N05   , Gs1 , v112
 	.byte	W06
-	.byte		        En3 
+	.byte		N05   , Fs1 , v112
 	.byte	W06
-	.byte	PEND
-	.byte	PATT
-	 .word	bgm_machi_s2_8_000
-	.byte	PATT
-	 .word	bgm_machi_s2_8_001
-	.byte	PATT
-	 .word	bgm_machi_s2_8_000
-	.byte	PATT
-	 .word	bgm_machi_s2_8_001
-	.byte		N06   , Cn1 , v112
-	.byte	W12
-	.byte		        Dn3 , v056
-	.byte	W12
-	.byte		        Dn1 , v116
-	.byte	W12
-	.byte		        Dn3 , v056
+	.byte		N05   , Fs1 , v112
 	.byte	W06
-	.byte		        En3 
+	.byte		N05   , Fs1 , v112
 	.byte	W06
-	.byte		        Cn1 , v112
-	.byte	W12
-	.byte		        Dn3 , v056
-	.byte	W12
-	.byte		        Dn1 , v116
-	.byte	W12
-	.byte		        Cn1 , v112
-	.byte	W12
-	.byte		N06   
-	.byte	W84
-	.byte		N06   
+	.byte		N05   , Gs1 , v112
 	.byte	W06
-	.byte		N06   
+	.byte		N05   , Fs1 , v112
 	.byte	W06
-	.byte		N06   
-	.byte	W18
-	.byte		N06   
-	.byte	W18
-	.byte		N06   
-	.byte	W12
-	.byte		N06   
-	.byte	W24
-	.byte		        Fs2 , v072
-	.byte	W24
-	.byte		        Cn1 , v112
-	.byte	W18
-	.byte		N06   
-	.byte	W18
-	.byte		N06   
-	.byte	W12
-	.byte		N06   
-	.byte	W12
-	.byte		        Fs2 , v072
-	.byte	W12
-	.byte		N06   
-	.byte	W24
-	.byte		        Cn1 , v112
-	.byte	W18
-	.byte		N06   
-	.byte	W18
-	.byte		N06   
-	.byte	W12
-	.byte		N06   
-	.byte	W12
-	.byte		        Fs2 , v072
+@ 001	----------------------------------------
+bgm_machi_s2_4_000:
+	.byte		N05   , Fs1 , v112
 	.byte	W06
-	.byte		N06   
+	.byte		N05   , Fs1 , v112
 	.byte	W06
-	.byte		N06   
-	.byte	W24
-	.byte		        Cn1 , v112
-	.byte	W18
-	.byte		N06   
-	.byte	W18
-	.byte		N06   
-	.byte	W12
-	.byte		N06   
-	.byte	W12
-	.byte		        Dn1 , v116
-	.byte	W12
-	.byte		N06   
-	.byte	W12
-	.byte		N06   
+	.byte		N05   , Gs1 , v112
 	.byte	W06
-	.byte		N06   
+	.byte		N05   , Fs1 , v112
 	.byte	W06
-bgm_machi_s2_8_002:
-	.byte		N06   , Cn1 , v112
-	.byte	W12
-	.byte		        Dn3 , v056
+	.byte		N05   , Fs1 , v112
 	.byte	W06
-	.byte		        Cn1 , v112
+	.byte		N05   , Fs1 , v112
 	.byte	W06
-	.byte		        Dn1 , v116
+	.byte		N05   , Gs1 , v112
 	.byte	W06
-	.byte		        Dn3 , v056
+	.byte		N05   , Fs1 , v112
 	.byte	W06
-	.byte		        Cn1 , v112
+	.byte		N05   , Fs1 , v112
 	.byte	W06
-	.byte		        Dn3 , v056
+	.byte		N05   , Fs1 , v112
 	.byte	W06
-	.byte		        Cn1 , v112
-	.byte	W12
-	.byte		        Dn3 , v056
-	.byte	W12
-	.byte		        Dn1 , v116
-	.byte	W12
-	.byte		        Dn3 , v056
+	.byte		N05   , Gs1 , v112
 	.byte	W06
-	.byte		        En3 
+	.byte		N05   , Fs1 , v112
 	.byte	W06
+	.byte		N05   , Fs1 , v112
+	.byte	W06
+	.byte		N05   , Fs1 , v112
+	.byte	W06
+	.byte		N05   , Gs1 , v112
+	.byte	W06
+	.byte		N05   , Fs1 , v112
+	.byte	W06
+@ 002	----------------------------------------
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_machi_s2_8_002
-	.byte		N06   , Cn1 , v112
+	 .word	bgm_machi_s2_4_000
+	.byte		N05   , Fs1 , v112
+	.byte	W06
+	.byte		N05   , Fs1 , v112
+	.byte	W06
+	.byte		N05   , Gs1 , v112
+	.byte	W06
+	.byte		N05   , Fs1 , v112
+	.byte	W06
+	.byte		N05   , Fs1 , v112
+	.byte	W06
+	.byte		N05   , Fs1 , v112
+	.byte	W06
+	.byte		N05   , Gs1 , v112
+	.byte	W06
+	.byte		N05   , Fs1 , v112
+	.byte	W18
+	.byte		N11   , Dn1 , v112
 	.byte	W12
-	.byte		        Dn3 , v056
+	.byte		N05   , Dn1 , v112
 	.byte	W06
-	.byte		        Cn1 , v112
+	.byte		N05   , Dn1 , v112
 	.byte	W06
-	.byte		        Dn1 , v116
-	.byte	W06
-	.byte		        Dn3 , v056
-	.byte	W06
-	.byte		        Cn1 , v112
-	.byte	W06
-	.byte		        Dn3 , v056
-	.byte	W06
-	.byte		        Cn1 , v112
+	.byte		N11   , Cn1 , v112
 	.byte	W12
-	.byte		        Dn3 , v056
+@ 003	----------------------------------------
+bgm_machi_s2_4_001:
+	.byte		N11   , Cn1 , v112
+	.byte		N11   , Fs1 , v112
 	.byte	W12
-	.byte		        Dn1 , v116
+	.byte		N05   , Fs1 , v112
 	.byte	W06
-	.byte		        Dn3 , v056
+	.byte		N05   , Cn1 , v112
 	.byte	W06
-	.byte		        Cn1 , v112
-	.byte	W06
-	.byte		        En3 , v056
-	.byte	W06
-	.byte		        Cn1 , v112
-	.byte	W48
-	.byte		        Dn1 , v116
+	.byte		N11   , Dn1 , v112
+	.byte		N11   , Fs1 , v112
 	.byte	W12
-	.byte		        Cn1 , v112
+	.byte		N11   , Cn1 , v112
+	.byte		N11   , Fs1 , v112
 	.byte	W12
-	.byte		        Dn1 , v116
+	.byte		N11   , Cn1 , v112
+	.byte		N11   , Fs1 , v112
 	.byte	W12
-	.byte		        Dn1 , v092
+	.byte		N05   , Fs1 , v112
 	.byte	W06
-	.byte		        Dn1 , v116
+	.byte		N05   , Cn1 , v112
 	.byte	W06
+	.byte		N11   , Dn1 , v112
+	.byte		N11   , Fs1 , v112
+	.byte	W12
+	.byte		N05   , Fs1 , v112
+	.byte	W06
+	.byte		N05   , Fs1 , v112
+	.byte	W06
+@ 004	----------------------------------------
+	.byte	PEND
+	.byte	PATT
+	 .word	bgm_machi_s2_4_001
+	.byte	PATT
+	 .word	bgm_machi_s2_4_001
+	.byte	PATT
+	 .word	bgm_machi_s2_4_001
+	.byte	PATT
+	 .word	bgm_machi_s2_4_001
+	.byte	PATT
+	 .word	bgm_machi_s2_4_001
+	.byte	PATT
+	 .word	bgm_machi_s2_4_001
+	.byte	PATT
+	 .word	bgm_machi_s2_4_001
+bgm_machi_s2_4_002:
+	.byte		N11   , Cn1 , v112
+	.byte		N11   , Fs1 , v112
+	.byte	W12
+	.byte		N05   , Fs1 , v112
+	.byte	W06
+	.byte		N05   , Fs1 , v112
+	.byte	W06
+	.byte		N11   , Dn1 , v112
+	.byte		N11   , Fs1 , v112
+	.byte	W12
+	.byte		N05   , Cn1 , v112
+	.byte		N05   , Fs1 , v112
+	.byte	W06
+	.byte		N05   , Fs1 , v112
+	.byte	W06
+	.byte		N11   , Fs1 , v112
+	.byte	W12
+	.byte		N05   , Cn1 , v112
+	.byte		N05   , Fs1 , v112
+	.byte	W06
+	.byte		N05   , Fs1 , v112
+	.byte	W06
+	.byte		N11   , Dn1 , v112
+	.byte		N11   , Fs1 , v112
+	.byte	W12
+	.byte		N05   , Fs1 , v112
+	.byte	W06
+	.byte		N05   , Fs1 , v112
+	.byte	W06
+@ 005	----------------------------------------
+	.byte	PEND
+	.byte	PATT
+	 .word	bgm_machi_s2_4_002
+	.byte	PATT
+	 .word	bgm_machi_s2_4_002
+	.byte	PATT
+	 .word	bgm_machi_s2_4_002
+	.byte	PATT
+	 .word	bgm_machi_s2_4_002
+	.byte	PATT
+	 .word	bgm_machi_s2_4_002
+	.byte	PATT
+	 .word	bgm_machi_s2_4_002
+	.byte	PATT
+	 .word	bgm_machi_s2_4_002
+bgm_machi_s2_4_003:
+	.byte		N11   , Cn1 , v112
+	.byte		N11   , Fs1 , v112
+	.byte	W12
+	.byte		N11   , Fs1 , v112
+	.byte	W12
+	.byte		N11   , Dn1 , v112
+	.byte		N11   , Fs1 , v112
+	.byte	W12
+	.byte		N11   , Cn1 , v112
+	.byte		N11   , Fs1 , v112
+	.byte	W12
+	.byte		N11   , Cn1 , v112
+	.byte		N11   , Fs1 , v112
+	.byte	W12
+	.byte		N11   , Fs1 , v112
+	.byte	W12
+	.byte		N11   , Dn1 , v112
+	.byte		N11   , Fs1 , v112
+	.byte	W12
+	.byte		N11   , Fs1 , v112
+	.byte	W12
+@ 006	----------------------------------------
+	.byte	PEND
+	.byte	PATT
+	 .word	bgm_machi_s2_4_003
+	.byte	PATT
+	 .word	bgm_machi_s2_4_003
+	.byte		N11   , Cn1 , v112
+	.byte		N11   , Fs1 , v112
+	.byte	W12
+	.byte		N11   , Fs1 , v112
+	.byte	W12
+	.byte		N11   , Dn1 , v112
+	.byte		N11   , Fs1 , v112
+	.byte	W12
+	.byte		N11   , Fs1 , v112
+	.byte	W12
+	.byte		N05   , Dn1 , v112
+	.byte	W06
+	.byte		N11   , Dn1 , v112
+	.byte	W12
+	.byte		N05   , Cn1 , v112
+	.byte	W06
+	.byte		N24   , Dn1 , v112
+	.byte	W24
+@ 007	----------------------------------------
 	.byte	GOTO
-	 .word	bgm_machi_s2_8_B1
+	 .word	bgm_machi_s2_4_004
 	.byte	FINE
 
-@******************************************************@
+@******************************************@
 	.align	2
 
 bgm_machi_s2:
-	.byte	8	@ NumTrks
+	.byte	4	@ NumTrks
 	.byte	0	@ NumBlks
 	.byte	bgm_machi_s2_pri	@ Priority
 	.byte	bgm_machi_s2_rev	@ Reverb.
@@ -1905,9 +922,5 @@ bgm_machi_s2:
 	.word	bgm_machi_s2_2
 	.word	bgm_machi_s2_3
 	.word	bgm_machi_s2_4
-	.word	bgm_machi_s2_5
-	.word	bgm_machi_s2_6
-	.word	bgm_machi_s2_7
-	.word	bgm_machi_s2_8
 
 	.end

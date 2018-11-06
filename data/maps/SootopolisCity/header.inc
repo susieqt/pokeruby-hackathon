@@ -1,9 +1,9 @@
-SootopolisCity:: @ 830550C
+SootopolisCity::
 	.4byte SootopolisCity_Layout
 	.4byte SootopolisCity_MapEvents
 	.4byte SootopolisCity_MapScripts
-	.4byte 0x0
-	.2byte MUS_RUNECITY
+	.4byte SootopolisCity_MapConnections
+	.2byte MUS_MACHI_S2
 	.2byte 8
 	.byte MAPSEC_SOOTOPOLIS_CITY
 	.byte 0

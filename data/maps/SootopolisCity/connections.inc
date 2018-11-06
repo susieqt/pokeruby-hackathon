@@ -1,6 +1,6 @@
-SootopolisCity_MapConnectionsList:: @ 8308800
-	@ empty
+SootopolisCity_MapConnectionsList::
+	connection left, 10, MAP_ROUTE102
 
-SootopolisCity_MapConnections:: @ 8308800
-	.4byte 0
+SootopolisCity_MapConnections::
+	.4byte 1
 	.4byte SootopolisCity_MapConnectionsList

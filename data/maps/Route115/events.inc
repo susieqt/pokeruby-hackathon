@@ -1,4 +1,4 @@
-Route115_EventObjects:: @ 8382F2C
+Route115_EventObjects::
 	object_event 1, EVENT_OBJ_GFX_WOMAN_3, 0, 18, 68, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, Route115_EventScript_15092E, 0
 	object_event 2, EVENT_OBJ_GFX_OLD_MAN_1, 0, 5, 15, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 1, 6, Route115_EventScript_150949, 0
 	object_event 3, EVENT_OBJ_GFX_BLACK_BELT, 0, 27, 53, 3, MOVEMENT_TYPE_FACE_UP_AND_LEFT, 1, 1, 1, 4, Route115_EventScript_15099E, 0
@@ -16,10 +16,10 @@ Route115_EventObjects:: @ 8382F2C
 	object_event 15, EVENT_OBJ_GFX_BREAKABLE_ROCK, 0, 29, 50, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, S_BreakableRock, FLAG_TEMP_11
 	object_event 16, EVENT_OBJ_GFX_ITEM_BALL, 0, 31, 56, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, Route115_EventScript_1B1557, FLAG_ITEM_ROUTE115_4
 
-Route115_MapWarps:: @ 83830AC
+Route115_MapWarps::
 	warp_def 27, 37, 0, 1, MAP_METEOR_FALLS_1F_1R
 
-Route115_MapBGEvents:: @ 83830B4
+Route115_MapBGEvents::
 	bg_secret_base_event 32, 6, 0, SECRET_BASE_BROWN_CAVE4_2
 	bg_secret_base_event 21, 18, 0, SECRET_BASE_BROWN_CAVE3_2
 	bg_event 16, 64, 0, BG_EVENT_PLAYER_FACING_ANY, Route115_EventScript_150937
@@ -35,5 +35,5 @@ Route115_MapBGEvents:: @ 83830B4
 	bg_secret_base_event 20, 53, 0, SECRET_BASE_RED_CAVE3_1
 	bg_hidden_item_event 15, 49, 3, ITEM_HEART_SCALE, FLAG_HIDDEN_ITEM_61
 
-Route115_MapEvents:: @ 838315C
+Route115_MapEvents::
 	map_events Route115_EventObjects, Route115_MapWarps, 0x0, Route115_MapBGEvents

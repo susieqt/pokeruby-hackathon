@@ -1,1872 +1,1266 @@
 	.include "MPlayDef.s"
 
-	.equ	bgm_gim_grp, voicegroup010
+	.equ	bgm_gim_grp, voicegroup000
 	.equ	bgm_gim_pri, 0
-	.equ	bgm_gim_rev, reverb_set+50
+	.equ	bgm_gim_rev, 0
 	.equ	bgm_gim_mvl, 127
 	.equ	bgm_gim_key, 0
 	.equ	bgm_gim_tbs, 1
-	.equ	bgm_gim_exg, 0
+	.equ	bgm_gim_exg, 1
 	.equ	bgm_gim_cmp, 1
 
 	.section .rodata
 	.global	bgm_gim
 	.align	2
 
-@********************** Track  1 **********************@
+@**************** Track 1 ****************@
 
 bgm_gim_1:
+@ 000	----------------------------------------
+bgm_gim_1_001:
 	.byte	KEYSH , bgm_gim_key+0
-bgm_gim_1_B1:
-	.byte	TEMPO , 128*bgm_gim_tbs/2
-	.byte		VOICE , 56
-	.byte		PAN   , c_v+10
-	.byte		VOL   , 80*bgm_gim_mvl/mxv
+	.byte	TEMPO , 96*bgm_gim_tbs/2
+	.byte		VOICE , 0
+	.byte		VOL   , 127*bgm_gim_mvl/mxv
+	.byte		PAN   , c_v+0
+	.byte		PAN   , c_v+0
+	.byte		VOL   , 127*bgm_gim_mvl/mxv
 	.byte		BEND  , c_v+0
-	.byte		N30   , En4 , v108
-	.byte	W15
-	.byte		MOD   , 6
-	.byte	W03
-	.byte		VOL   , 70*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        59*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        46*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        26*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		MOD   , 0
-	.byte		VOL   , 0*bgm_gim_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_gim_mvl/mxv
-	.byte		N06   , Bn3 
-	.byte	W06
-	.byte		        En4 
-	.byte	W06
-	.byte		N30   , Dn4 
-	.byte	W15
-	.byte		MOD   , 6
-	.byte	W03
-	.byte		VOL   , 70*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        59*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        46*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        26*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		MOD   , 0
-	.byte		VOL   , 0*bgm_gim_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_gim_mvl/mxv
-	.byte		N06   , Bn3 
-	.byte	W06
-	.byte		        Dn4 
-	.byte	W06
-	.byte		N66   , Cs4 
+	.byte		N05   , Cn1 , v112
 	.byte	W24
-	.byte	W03
-	.byte		MOD   , 6
+	.byte		VOL   , 127*bgm_gim_mvl/mxv
+	.byte		PAN   , c_v+0
+	.byte		BEND  , c_v+0
+	.byte		N05   , Cn1 , v112
 	.byte	W24
-	.byte	W03
-	.byte		VOL   , 70*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        59*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        46*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        26*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        0*bgm_gim_mvl/mxv
-	.byte	W06
-	.byte		MOD   , 0
-	.byte		VOL   , 80*bgm_gim_mvl/mxv
-	.byte		N24   , Ds4 
+	.byte		N05   , Cn1 , v112
 	.byte	W24
-	.byte		N66   , En4 
+	.byte		N20   , As1 , v127
+	.byte	W06
+	.byte		VOL   , 120*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 113*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 105*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 90*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 84*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 79*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 74*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 69*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 63*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 55*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 48*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 39*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 27*bgm_gim_mvl/mxv
+	.byte	W05
+@ 001	----------------------------------------
+bgm_gim_1_000:
+	.byte		VOL   , 127*bgm_gim_mvl/mxv
+	.byte		N05   , Cn1 , v112
 	.byte	W24
-	.byte		MOD   , 6
-	.byte	W30
-	.byte		VOL   , 70*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        59*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        46*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        26*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		MOD   , 0
-	.byte		VOL   , 0*bgm_gim_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_gim_mvl/mxv
-	.byte		N06   , Bn3 
-	.byte	W06
-	.byte		N18   , En4 
-	.byte	W18
-	.byte		N06   , Fs4 
-	.byte	W18
-	.byte		        Dn4 
-	.byte	W06
-	.byte		N66   
-	.byte	W18
-	.byte		MOD   , 6
-	.byte	W36
-	.byte		VOL   , 70*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        59*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        46*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        26*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		MOD   , 0
-	.byte		VOL   , 0*bgm_gim_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_gim_mvl/mxv
-	.byte		N66   , En4 
-	.byte	W30
-	.byte		MOD   , 6
+	.byte		N05   , Cn1 , v112
+	.byte		N03   , Fs1 , v096
 	.byte	W24
-	.byte		VOL   , 70*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        59*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        46*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        26*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		MOD   , 0
-	.byte		VOL   , 0*bgm_gim_mvl/mxv
+	.byte		N05   , Cn1 , v112
+	.byte	W24
+	.byte		N20   , As1 , v127
 	.byte	W06
-	.byte		        80*bgm_gim_mvl/mxv
-	.byte		N06   , Bn3 
-	.byte	W06
-	.byte		N18   , En4 
-	.byte	W18
-	.byte		N06   , Dn4 
+	.byte		VOL   , 120*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 113*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 105*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 90*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 84*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 79*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 74*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 69*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 63*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 55*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 48*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 39*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 27*bgm_gim_mvl/mxv
+	.byte	W05
+@ 002	----------------------------------------
+	.byte	PEND
+	.byte	PATT
+	 .word	bgm_gim_1_000
+	.byte	PATT
+	 .word	bgm_gim_1_000
+	.byte	PATT
+	 .word	bgm_gim_1_000
+	.byte	PATT
+	 .word	bgm_gim_1_000
+	.byte	PATT
+	 .word	bgm_gim_1_000
+	.byte	PATT
+	 .word	bgm_gim_1_000
+	.byte	PATT
+	 .word	bgm_gim_1_000
+	.byte	PATT
+	 .word	bgm_gim_1_000
+	.byte	PATT
+	 .word	bgm_gim_1_000
+	.byte	PATT
+	 .word	bgm_gim_1_000
+	.byte	PATT
+	 .word	bgm_gim_1_000
+	.byte	PATT
+	 .word	bgm_gim_1_000
+	.byte	PATT
+	 .word	bgm_gim_1_000
+	.byte	PATT
+	 .word	bgm_gim_1_000
+	.byte	PATT
+	 .word	bgm_gim_1_000
+	.byte	PATT
+	 .word	bgm_gim_1_000
+	.byte	PATT
+	 .word	bgm_gim_1_000
+	.byte	PATT
+	 .word	bgm_gim_1_000
+	.byte	PATT
+	 .word	bgm_gim_1_000
+	.byte		VOL   , 127*bgm_gim_mvl/mxv
+	.byte		N05   , Cn1 , v112
+	.byte		N03   , Fs1 , v096
 	.byte	W12
-	.byte		N06   
-	.byte	W06
-	.byte		        En4 
-	.byte	W06
-	.byte		N66   , Fs4 
-	.byte	W24
-	.byte	W03
-	.byte		MOD   , 6
-	.byte	W24
-	.byte	W03
-	.byte		VOL   , 70*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        59*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        46*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        26*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		MOD   , 0
-	.byte		VOL   , 0*bgm_gim_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_gim_mvl/mxv
-	.byte		N66   , Gs4 
-	.byte	W30
-	.byte		MOD   , 6
-	.byte	W24
-	.byte		VOL   , 70*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        59*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        46*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        26*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		MOD   , 0
-	.byte		VOL   , 0*bgm_gim_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_gim_mvl/mxv
-	.byte		N06   , Fs4 
-	.byte	W06
-	.byte		N18   , Gs4 
-	.byte	W18
-	.byte		N12   , An4 
-	.byte	W18
-	.byte		N06   , Fs4 
-	.byte	W06
-	.byte		N24   
+	.byte		N05   , Cn1 , v112
+	.byte		N03   , Fs1 , v096
 	.byte	W12
-	.byte		MOD   , 6
+	.byte		N05   , Cn1 , v112
+	.byte		N03   , Fs1 , v096
 	.byte	W12
-	.byte		        0
-	.byte		N12   , Dn5 
-	.byte	W18
-	.byte		N06   , An4 
-	.byte	W06
-	.byte		N24   
-	.byte	W15
-	.byte		MOD   , 6
-	.byte	W09
-	.byte		        0
-	.byte		N66   , Gs4 
-	.byte	W24
-	.byte		MOD   , 6
-	.byte	W30
-	.byte		VOL   , 70*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        59*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        46*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        26*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		MOD   , 0
-	.byte		VOL   , 0*bgm_gim_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_gim_mvl/mxv
-	.byte		N06   , Fs4 
-	.byte	W06
-	.byte		N18   , Gs4 
-	.byte	W18
-	.byte		N12   , An4 
+	.byte		N05   , Cn1 , v112
+	.byte		N03   , Fs1 , v096
 	.byte	W12
-	.byte		N06   , Fs4 
-	.byte	W06
-	.byte		        An4 
-	.byte	W06
-	.byte		N48   , Dn5 
-	.byte	W24
-	.byte		MOD   , 6
-	.byte	W24
-	.byte		        0
-	.byte		N24   , Cs5 , v112
-	.byte	W15
-	.byte		MOD   , 6
-	.byte	W09
-	.byte		VOICE , 60
-	.byte		MOD   , 0
-	.byte		N36   , Bn2 , v108
-	.byte	W36
-	.byte		        En3 
-	.byte	W36
-	.byte		N24   , Bn2 
-	.byte	W24
-	.byte		        Dn3 
-	.byte	W24
-	.byte		        Cs3 
-	.byte	W24
-	.byte		        Bn2 
-	.byte	W24
-	.byte		        An2 
-	.byte	W24
-	.byte		N06   , Gs2 
+	.byte		N05   , Cn1 , v112
+	.byte		N03   , Fs1 , v096
 	.byte	W12
-	.byte		N06   
-	.byte	W06
-	.byte		        An2 
-	.byte	W06
-	.byte		N30   , Bn2 
-	.byte	W36
-	.byte		N12   
+	.byte		N05   , Cn1 , v112
+	.byte		N03   , Fs1 , v096
 	.byte	W12
-	.byte		N06   , En3 
-	.byte	W06
-	.byte		N18   , Bn2 
-	.byte	W18
-	.byte		N24   , Dn3 
-	.byte	W24
-	.byte		        Cn3 
-	.byte	W24
-	.byte		        Bn2 
-	.byte	W24
-	.byte		        An2 
-	.byte	W24
-	.byte		VOICE , 48
-	.byte		N36   , Bn4 , v096
-	.byte	W36
-	.byte		        En5 
-	.byte	W36
-	.byte		N24   , Bn4 
-	.byte	W24
-	.byte		        Dn5 
-	.byte	W24
-	.byte		        Cs5 
-	.byte	W24
-	.byte		        Bn4 
-	.byte	W24
-	.byte		        An4 
-	.byte	W24
-	.byte		N06   , Gs4 
+	.byte		N05   , Cn1 , v112
+	.byte		N03   , Fs1 , v096
 	.byte	W12
-	.byte		N06   
-	.byte	W06
-	.byte		        An4 
-	.byte	W06
-	.byte		N24   , Bn4 
-	.byte	W24
-	.byte		N06   
+	.byte		N12   , Cn1 , v064
+	.byte		N06   , Fs1 , v064
 	.byte	W12
-	.byte		N06   
-	.byte	W06
-	.byte		        Cs5 
-	.byte	W06
-	.byte		N24   , Dn5 
-	.byte	W24
-	.byte		N06   , En5 
-	.byte	W12
-	.byte		N06   
-	.byte	W06
-	.byte		        Fs5 
-	.byte	W06
-	.byte		N48   , Gs5 
-	.byte	W48
-	.byte		N24   , Fs5 
-	.byte	W24
+@ 003	----------------------------------------
 	.byte	GOTO
-	 .word	bgm_gim_1_B1
+	 .word	bgm_gim_1_001
 	.byte	FINE
 
-@********************** Track  2 **********************@
+@**************** Track 2 ****************@
 
 bgm_gim_2:
-	.byte		VOL   , 80*bgm_gim_mvl/mxv
-	.byte	KEYSH , bgm_gim_key+0
-bgm_gim_2_B1:
-	.byte		VOICE , 87
-	.byte		N12   , En2 , v080
-	.byte	W12
-	.byte		N03   , En1 
-	.byte	W06
-	.byte		N03   
-	.byte	W06
-	.byte		N12   
-	.byte	W12
-	.byte		N06   , Bn1 
-	.byte	W06
-	.byte		        En2 
-	.byte	W06
-	.byte		N12   , Dn2 
-	.byte	W12
-	.byte		N03   , Dn1 
-	.byte	W06
-	.byte		N03   
-	.byte	W06
-	.byte		N12   
-	.byte	W12
-	.byte		N06   , Bn1 
-	.byte	W06
-	.byte		        Dn2 
-	.byte	W06
-	.byte		N12   , Cs2 
-	.byte	W12
-	.byte		N03   , Cs1 
-	.byte	W06
-	.byte		N03   
-	.byte	W06
-	.byte		N12   
-	.byte	W12
-	.byte		N06   , An1 
-	.byte	W06
-	.byte		        Cs2 
-	.byte	W06
-	.byte		N09   , Bn1 
-	.byte	W12
-	.byte		N03   
-	.byte	W06
-	.byte		N03   
-	.byte	W06
-	.byte		N21   
-	.byte	W24
-bgm_gim_2_000:
-	.byte		N06   , En1 , v080
-	.byte	W18
-	.byte		N06   
-	.byte	W18
-	.byte		N06   
-	.byte	W24
-	.byte		N06   
-	.byte	W12
-	.byte		N03   
-	.byte	W06
-	.byte		N18   
-	.byte	W18
-	.byte	PEND
+@ 000	----------------------------------------
 bgm_gim_2_001:
-	.byte		N06   , Dn1 , v080
-	.byte	W18
-	.byte		N06   
-	.byte	W18
-	.byte		N06   
-	.byte	W24
-	.byte		N06   
-	.byte	W12
-	.byte		N03   
-	.byte	W06
-	.byte		N18   
-	.byte	W18
+	.byte	KEYSH , bgm_gim_key+0
+	.byte		VOICE , 81
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		PAN   , c_v+0
+	.byte		PAN   , c_v+0
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		BEND  , c_v+0
+	.byte		N18   , En1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W22
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N18   , En1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W22
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N18   , En1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W22
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N12   , En1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W10
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N12   , Fn1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W10
+@ 001	----------------------------------------
+bgm_gim_2_000:
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N18   , En1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W22
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N18   , En1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W22
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N18   , En1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W22
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N12   , En1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W10
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N12   , Fn1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W10
+@ 002	----------------------------------------
 	.byte	PEND
 	.byte	PATT
 	 .word	bgm_gim_2_000
-	.byte		N06   , Dn1 , v080
-	.byte	W18
-	.byte		N06   
-	.byte	W18
-	.byte		N06   
-	.byte	W24
-	.byte		        An1 
-	.byte	W12
-	.byte		        Dn1 
-	.byte	W06
-	.byte		N18   , Fs1 
-	.byte	W18
 	.byte	PATT
 	 .word	bgm_gim_2_000
 	.byte	PATT
-	 .word	bgm_gim_2_001
-	.byte	PATT
 	 .word	bgm_gim_2_000
-	.byte		N06   , Dn1 , v080
-	.byte	W18
-	.byte		N06   
-	.byte	W18
-	.byte		N06   
-	.byte	W24
-	.byte		        Fs1 
-	.byte	W12
-	.byte		        En1 
-	.byte	W06
-	.byte		N18   , An1 
-	.byte	W18
 	.byte	PATT
 	 .word	bgm_gim_2_000
 	.byte	PATT
-	 .word	bgm_gim_2_001
-	.byte		N06   , Cs1 , v080
-	.byte	W18
-	.byte		N06   
-	.byte	W18
-	.byte		N06   
-	.byte	W24
-	.byte		N06   
-	.byte	W12
-	.byte		        En1 
-	.byte	W06
-	.byte		N18   , Cs1 
-	.byte	W18
-	.byte		N48   , Cn1 
-	.byte	W48
-	.byte		        Dn1 
-	.byte	W48
-	.byte		N06   , En1 
-	.byte	W12
-	.byte		N06   
-	.byte	W24
-	.byte		N03   
-	.byte	W06
-	.byte		N03   
-	.byte	W06
-	.byte		N09   
-	.byte	W24
-	.byte		N24   
-	.byte	W24
-	.byte		N06   , Dn1 
-	.byte	W12
-	.byte		N06   
-	.byte	W24
-	.byte		N03   
-	.byte	W06
-	.byte		N03   
-	.byte	W06
-	.byte		N09   
-	.byte	W24
-	.byte		N06   , Fs1 
-	.byte	W06
-	.byte		N18   , An1 
-	.byte	W18
-	.byte		N06   , Gs1 
-	.byte	W12
-	.byte		N03   
-	.byte	W06
-	.byte		N03   
-	.byte	W06
-	.byte		N21   
-	.byte	W24
-	.byte		N06   , Fs1 
-	.byte	W12
-	.byte		N03   
-	.byte	W06
-	.byte		N03   
-	.byte	W06
-	.byte		N21   
-	.byte	W24
-	.byte		N06   , En1 
-	.byte	W12
-	.byte		N03   
-	.byte	W06
-	.byte		N03   
-	.byte	W06
-	.byte		N21   
-	.byte	W24
-	.byte		        Ds1 
-	.byte	W24
-	.byte		N06   , Fs1 
-	.byte	W06
-	.byte		        Gs1 
-	.byte	W06
-	.byte		        Bn1 
-	.byte	W06
-	.byte		        Ds2 
-	.byte	W06
+	 .word	bgm_gim_2_000
+	.byte	PATT
+	 .word	bgm_gim_2_000
+	.byte	PATT
+	 .word	bgm_gim_2_000
+	.byte	PATT
+	 .word	bgm_gim_2_000
+	.byte	PATT
+	 .word	bgm_gim_2_000
+	.byte	PATT
+	 .word	bgm_gim_2_000
+	.byte	PATT
+	 .word	bgm_gim_2_000
+	.byte	PATT
+	 .word	bgm_gim_2_000
+	.byte	PATT
+	 .word	bgm_gim_2_000
+	.byte	PATT
+	 .word	bgm_gim_2_000
+	.byte	PATT
+	 .word	bgm_gim_2_000
+	.byte	PATT
+	 .word	bgm_gim_2_000
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N18   , Gn1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W22
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N18   , Gn1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W22
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N18   , Gn1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W22
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N18   , Gn1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W22
+@ 003	----------------------------------------
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N18   , Dn1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W22
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N18   , Dn1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W22
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N18   , Dn1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W22
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N18   , Dn1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W22
+@ 004	----------------------------------------
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N18   , En1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W22
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N18   , En1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W22
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N18   , En1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W22
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N18   , En1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W22
+@ 005	----------------------------------------
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N12   , Gn1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W10
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N12   , Gn1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W10
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N12   , Gn1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W10
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N12   , Gn1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W10
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N12   , Gn1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W10
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N12   , Gn1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W10
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N12   , Gn1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W10
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N12   , Gn1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W10
+@ 006	----------------------------------------
 	.byte	GOTO
-	 .word	bgm_gim_2_B1
+	 .word	bgm_gim_2_001
 	.byte	FINE
 
-@********************** Track  3 **********************@
+@**************** Track 3 ****************@
 
 bgm_gim_3:
+@ 000	----------------------------------------
+bgm_gim_3_002:
 	.byte	KEYSH , bgm_gim_key+0
-bgm_gim_3_B1:
-	.byte		VOICE , 85
-	.byte		XCMD  , xIECV , 8
-	.byte		        xIECL , 8
-	.byte		PAN   , c_v+48
-	.byte		VOL   , 80*bgm_gim_mvl/mxv
+	.byte		VOICE , 80
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		PAN   , c_v+0
+	.byte		PAN   , c_v+0
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
 	.byte		BEND  , c_v+0
-	.byte		N12   , Gs3 , v064
-	.byte	W12
-	.byte		N03   , Gs2 
-	.byte	W06
-	.byte		N03   
-	.byte	W06
-	.byte		N12   
-	.byte	W24
-	.byte		        Fs3 
-	.byte	W12
-	.byte		N03   , Fs2 
-	.byte	W06
-	.byte		N03   
-	.byte	W06
-	.byte		N12   
-	.byte	W24
-	.byte		        En3 
-	.byte	W12
-	.byte		N03   , En2 
-	.byte	W06
-	.byte		N03   
-	.byte	W06
-	.byte		N12   
-	.byte	W24
-	.byte		VOICE , 81
-	.byte		VOL   , 49*bgm_gim_mvl/mxv
-	.byte		N12   , Fs3 
-	.byte	W06
-	.byte		VOL   , 52*bgm_gim_mvl/mxv
+	.byte		N18   , Bn1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 97*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 96*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 95*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
 	.byte	W03
-	.byte		        54*bgm_gim_mvl/mxv
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 92*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 91*bgm_gim_mvl/mxv
+	.byte	W09
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N18   , Bn1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 97*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 96*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 95*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
 	.byte	W03
-	.byte		VOICE , 88
-	.byte		VOL   , 58*bgm_gim_mvl/mxv
-	.byte		N12   
-	.byte	W06
-	.byte		VOL   , 62*bgm_gim_mvl/mxv
-	.byte	W06
-	.byte		        66*bgm_gim_mvl/mxv
-	.byte		N12   
-	.byte	W06
-	.byte		VOL   , 71*bgm_gim_mvl/mxv
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 92*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 91*bgm_gim_mvl/mxv
+	.byte	W09
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N18   , Bn1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 97*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 96*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 95*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
 	.byte	W03
-	.byte		        76*bgm_gim_mvl/mxv
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 92*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 91*bgm_gim_mvl/mxv
+	.byte	W09
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N12   , Bn1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 97*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 96*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 95*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
 	.byte	W03
-	.byte		        80*bgm_gim_mvl/mxv
-	.byte		N12   
-	.byte	W12
-	.byte		VOICE , 81
-	.byte		N12   , En3 , v052
-	.byte	W12
-	.byte		VOICE , 88
-	.byte		N12   
-	.byte	W12
-	.byte		MOD   , 3
-	.byte		N12   
-	.byte	W12
-	.byte		N12   
-	.byte	W12
-	.byte		VOICE , 81
-	.byte		MOD   , 0
-	.byte		N06   , Gs2 
-	.byte	W12
-	.byte		        En2 
-	.byte	W12
-	.byte		N03   , Gs2 
-	.byte	W06
-	.byte		N18   , Bn2 
-	.byte	W18
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N12   , Cn2 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 97*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 96*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 95*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W03
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W01
+@ 001	----------------------------------------
 bgm_gim_3_000:
-	.byte		N12   , Dn3 , v052
-	.byte	W12
-	.byte		VOICE , 88
-	.byte		N12   
-	.byte	W12
-	.byte		MOD   , 3
-	.byte		N12   
-	.byte	W12
-	.byte		N12   
-	.byte	W12
-	.byte		VOICE , 81
-	.byte		MOD   , 0
-	.byte		N06   , Fs3 
-	.byte	W12
-	.byte		N12   , An2 
-	.byte	W12
-	.byte		N06   , Dn3 
-	.byte	W06
-	.byte		N18   , Fs3 
-	.byte	W18
-	.byte	PEND
-bgm_gim_3_001:
-	.byte		N12   , En3 , v052
-	.byte	W12
-	.byte		VOICE , 88
-	.byte		N12   
-	.byte	W12
-	.byte		MOD   , 3
-	.byte		N12   
-	.byte	W12
-	.byte		N12   
-	.byte	W12
-	.byte		VOICE , 81
-	.byte		MOD   , 0
-	.byte		N06   , Gs2 
-	.byte	W12
-	.byte		        En2 
-	.byte	W12
-	.byte		N03   , Gs2 
-	.byte	W06
-	.byte		N18   , Bn2 
-	.byte	W18
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N18   , Bn1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 97*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 96*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 95*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W03
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 92*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 91*bgm_gim_mvl/mxv
+	.byte	W09
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N18   , Bn1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 97*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 96*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 95*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W03
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 92*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 91*bgm_gim_mvl/mxv
+	.byte	W09
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N18   , Bn1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 97*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 96*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 95*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W03
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 92*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 91*bgm_gim_mvl/mxv
+	.byte	W09
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N12   , Bn1 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 97*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 96*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 95*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W03
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N12   , Cn2 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 97*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 96*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 95*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W03
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W01
+@ 002	----------------------------------------
 	.byte	PEND
 	.byte	PATT
 	 .word	bgm_gim_3_000
 	.byte	PATT
-	 .word	bgm_gim_3_001
-	.byte		N12   , Dn3 , v052
-	.byte	W12
-	.byte		VOICE , 88
-	.byte		N12   
-	.byte	W12
-	.byte		MOD   , 3
-	.byte		N12   
-	.byte	W12
-	.byte		N12   
-	.byte	W12
-	.byte		VOICE , 81
-	.byte		MOD   , 0
-	.byte		N12   , Fs3 
-	.byte	W18
-	.byte		N06   , Dn3 
-	.byte	W06
-	.byte		N24   
-	.byte	W24
+	 .word	bgm_gim_3_000
+	.byte	PATT
+	 .word	bgm_gim_3_000
+	.byte	PATT
+	 .word	bgm_gim_3_000
+	.byte	PATT
+	 .word	bgm_gim_3_000
+	.byte	PATT
+	 .word	bgm_gim_3_000
+	.byte	PATT
+	 .word	bgm_gim_3_000
+	.byte	PATT
+	 .word	bgm_gim_3_000
+	.byte	PATT
+	 .word	bgm_gim_3_000
+	.byte	PATT
+	 .word	bgm_gim_3_000
+	.byte	PATT
+	 .word	bgm_gim_3_000
+	.byte	PATT
+	 .word	bgm_gim_3_000
+	.byte	PATT
+	 .word	bgm_gim_3_000
+	.byte	PATT
+	 .word	bgm_gim_3_000
+	.byte	PATT
+	 .word	bgm_gim_3_000
+	.byte	PATT
+	 .word	bgm_gim_3_000
+bgm_gim_3_001:
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N90   , Dn2 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 97*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 96*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 95*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W03
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 92*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 91*bgm_gim_mvl/mxv
+	.byte	W80
+	.byte	W01
+@ 003	----------------------------------------
+	.byte	PEND
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N18   , En2 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 97*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 96*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 95*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W03
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 92*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 91*bgm_gim_mvl/mxv
+	.byte	W09
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N18   , Cs2 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 97*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 96*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 95*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W03
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 92*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 91*bgm_gim_mvl/mxv
+	.byte	W09
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N18   , As2 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 97*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 96*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 95*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W03
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 92*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 91*bgm_gim_mvl/mxv
+	.byte	W09
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N18   , En2 , v127
+	.byte	W02
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 97*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 96*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 95*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W03
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 92*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 91*bgm_gim_mvl/mxv
+	.byte	W09
+@ 004	----------------------------------------
 	.byte	PATT
 	 .word	bgm_gim_3_001
-	.byte		N12   , Dn3 , v052
-	.byte	W12
-	.byte		VOICE , 88
-	.byte		N12   
-	.byte	W12
-	.byte		MOD   , 3
-	.byte		N12   
-	.byte	W12
-	.byte		N12   
-	.byte	W12
-	.byte		VOICE , 81
-	.byte		MOD   , 0
-	.byte		N24   , Fs3 
-	.byte	W24
-	.byte		        An2 
-	.byte	W24
-	.byte		BEND  , c_v-4
-	.byte	W96
-	.byte	W96
-	.byte	W60
-	.byte		        c_v+0
-	.byte	W12
-	.byte		VOICE , 85
-	.byte		PAN   , c_v+0
-	.byte		N06   , Gs3 , v064
-	.byte	W06
-	.byte		N18   , En3 
-	.byte	W18
-	.byte		N12   
-	.byte	W03
-	.byte		VOL   , 70*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        49*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        52*bgm_gim_mvl/mxv
-	.byte	W01
-	.byte		VOICE , 89
-	.byte		N12   
-	.byte	W04
-	.byte		VOL   , 56*bgm_gim_mvl/mxv
+	.byte		VOL   , 99*bgm_gim_mvl/mxv
+	.byte		N96   , En2 , v127
 	.byte	W02
-	.byte		MOD   , 6
-	.byte	W03
-	.byte		VOL   , 59*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		N12   
+	.byte		VOL   , 98*bgm_gim_mvl/mxv
 	.byte	W02
-	.byte		VOL   , 62*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        66*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        69*bgm_gim_mvl/mxv
-	.byte		N12   
-	.byte	W05
-	.byte		VOL   , 73*bgm_gim_mvl/mxv
-	.byte	W07
-	.byte		VOICE , 85
-	.byte		VOL   , 80*bgm_gim_mvl/mxv
-	.byte		MOD   , 0
-	.byte		N12   , Fs3 
-	.byte	W03
-	.byte		VOL   , 70*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        49*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        52*bgm_gim_mvl/mxv
+	.byte		VOL   , 97*bgm_gim_mvl/mxv
 	.byte	W01
-	.byte		VOICE , 89
-	.byte		N12   
-	.byte	W03
-	.byte		MOD   , 6
-	.byte	W01
-	.byte		VOL   , 56*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        59*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		N12   
+	.byte		VOL   , 96*bgm_gim_mvl/mxv
 	.byte	W02
-	.byte		VOL   , 62*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        66*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        69*bgm_gim_mvl/mxv
-	.byte		N12   
-	.byte	W05
-	.byte		VOL   , 73*bgm_gim_mvl/mxv
-	.byte	W07
-	.byte		VOICE , 85
-	.byte		VOL   , 79*bgm_gim_mvl/mxv
-	.byte		MOD   , 0
-	.byte		PAN   , c_v+47
-	.byte		N12   , Bn3 , v060
-	.byte	W12
-	.byte		N03   , Bn2 
-	.byte	W06
-	.byte		N03   
-	.byte	W06
-	.byte		N12   
-	.byte	W12
-	.byte		N06   , En3 
-	.byte	W06
-	.byte		        An3 
-	.byte	W06
-	.byte		        Bn3 
-	.byte	W12
-	.byte		N06   
-	.byte	W12
-	.byte		        En3 
-	.byte	W06
-	.byte		N18   , Gs3 
-	.byte	W18
-	.byte		N12   , An3 
-	.byte	W12
-	.byte		N03   , An2 
-	.byte	W06
-	.byte		N03   
-	.byte	W06
-	.byte		N12   
-	.byte	W12
-	.byte		N06   , Dn3 
-	.byte	W06
-	.byte		        Fs3 
-	.byte	W06
-	.byte		        An3 
-	.byte	W12
-	.byte		N06   
-	.byte	W12
-	.byte		        Fs3 
-	.byte	W06
-	.byte		N18   , An3 
-	.byte	W18
-	.byte		VOICE , 81
-	.byte		PAN   , c_v+0
-	.byte		BEND  , c_v+5
-	.byte		N06   , Gs2 , v088
-	.byte	W12
-	.byte		N03   
-	.byte	W06
-	.byte		N03   
-	.byte	W12
-	.byte		PAN   , c_v+48
-	.byte		BEND  , c_v-2
-	.byte		N06   , En5 , v052
-	.byte	W06
-	.byte		        Bn4 
-	.byte	W06
-	.byte		        Gs4 
-	.byte	W06
-	.byte		PAN   , c_v+0
-	.byte		BEND  , c_v+5
-	.byte		N06   , Fs2 , v088
-	.byte	W12
-	.byte		N03   
-	.byte	W06
-	.byte		N03   
-	.byte	W12
-	.byte		PAN   , c_v-47
-	.byte		BEND  , c_v-2
-	.byte		N06   , Dn5 , v052
-	.byte	W06
-	.byte		        Bn4 
-	.byte	W06
-	.byte		        Fs4 
-	.byte	W06
-	.byte		PAN   , c_v+0
-	.byte		BEND  , c_v+5
-	.byte		N06   , En2 , v088
-	.byte	W12
-	.byte		N03   
-	.byte	W06
-	.byte		N03   
-	.byte	W12
-	.byte		PAN   , c_v+48
-	.byte		BEND  , c_v-2
-	.byte		N06   , Bn4 , v052
-	.byte	W06
-	.byte		        Gs4 
-	.byte	W06
-	.byte		        En4 
-	.byte	W06
-	.byte		PAN   , c_v+0
-	.byte		BEND  , c_v+5
-	.byte		N12   , Ds2 , v088
-	.byte	W30
-	.byte		PAN   , c_v-47
-	.byte		BEND  , c_v-2
-	.byte		N06   , Bn3 , v052
-	.byte	W06
-	.byte		        Fs4 
-	.byte	W06
-	.byte		        Bn4 
-	.byte	W06
+	.byte		VOL   , 95*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W03
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 92*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 91*bgm_gim_mvl/mxv
+	.byte	W80
+	.byte	W01
+@ 005	----------------------------------------
 	.byte	GOTO
-	 .word	bgm_gim_3_B1
+	 .word	bgm_gim_3_002
 	.byte	FINE
 
-@********************** Track  4 **********************@
+@**************** Track 4 ****************@
 
 bgm_gim_4:
+@ 000	----------------------------------------
+bgm_gim_4_005:
 	.byte	KEYSH , bgm_gim_key+0
-bgm_gim_4_B1:
-	.byte		VOICE , 84
-	.byte		XCMD  , xIECV , 8
-	.byte		        xIECL , 8
-	.byte		PAN   , c_v-48
+	.byte		VOICE , 82
+	.byte		VOL   , 74*bgm_gim_mvl/mxv
+	.byte		PAN   , c_v+0
+	.byte		PAN   , c_v+0
+	.byte		VOL   , 74*bgm_gim_mvl/mxv
+	.byte		BEND  , c_v+0
+	.byte		N24   , En2 , v127
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W16
+	.byte		VOL   , 87*bgm_gim_mvl/mxv
+	.byte	W01
 	.byte		VOL   , 80*bgm_gim_mvl/mxv
-	.byte		N12   , Bn3 , v064
-	.byte	W12
-	.byte		N03   , Bn2 
-	.byte	W06
-	.byte		N03   
-	.byte	W06
-	.byte		N12   
-	.byte	W24
-	.byte		        An3 
-	.byte	W12
-	.byte		N03   , An2 
-	.byte	W06
-	.byte		N03   
-	.byte	W06
-	.byte		N12   
-	.byte	W24
-	.byte		        An3 
-	.byte	W12
-	.byte		N03   , An2 
-	.byte	W06
-	.byte		N03   
-	.byte	W06
-	.byte		N12   
-	.byte	W24
-	.byte		VOICE , 80
-	.byte		VOL   , 49*bgm_gim_mvl/mxv
-	.byte		N48   , An3 
-	.byte	W06
-	.byte		VOL   , 52*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		MOD   , 6
+	.byte	W01
+	.byte		VOL   , 73*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 65*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 58*bgm_gim_mvl/mxv
+	.byte	W01
 	.byte		VOL   , 54*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        58*bgm_gim_mvl/mxv
-	.byte	W06
-	.byte		        62*bgm_gim_mvl/mxv
-	.byte	W06
-	.byte		MOD   , 0
-	.byte		VOL   , 66*bgm_gim_mvl/mxv
-	.byte	W06
-	.byte		        71*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        76*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		MOD   , 6
+	.byte	W01
+	.byte		VOL   , 74*bgm_gim_mvl/mxv
+	.byte		N24   , En2 , v127
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W16
+	.byte		VOL   , 87*bgm_gim_mvl/mxv
+	.byte	W01
 	.byte		VOL   , 80*bgm_gim_mvl/mxv
-	.byte	W12
+	.byte	W01
+	.byte		VOL   , 73*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 65*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 58*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 54*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 74*bgm_gim_mvl/mxv
+	.byte		N24   , En2 , v127
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W16
+	.byte		VOL   , 87*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 80*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 73*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 65*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 58*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 54*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 74*bgm_gim_mvl/mxv
+	.byte		N12   , En2 , v127
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W10
+	.byte		VOL   , 74*bgm_gim_mvl/mxv
+	.byte		N12   , Fn2 , v127
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W10
+@ 001	----------------------------------------
 bgm_gim_4_000:
-	.byte		N48   , Gs3 , v052
-	.byte	W24
-	.byte		MOD   , 3
-	.byte	W24
-	.byte		        0
-	.byte		N06   , Bn2 
-	.byte	W12
-	.byte		        Gs2 
-	.byte	W12
-	.byte		N03   , Bn2 
-	.byte	W06
-	.byte		N18   , En3 
-	.byte	W18
-	.byte	PEND
-bgm_gim_4_001:
-	.byte		N48   , Fs3 , v052
-	.byte	W24
-	.byte		MOD   , 3
-	.byte	W24
-	.byte		        0
-	.byte		N06   , An3 
-	.byte	W12
-	.byte		N12   , Dn3 
-	.byte	W12
-	.byte		N06   , Fs3 
-	.byte	W06
-	.byte		N18   , An3 
-	.byte	W18
+	.byte		VOL   , 74*bgm_gim_mvl/mxv
+	.byte		N24   , En2 , v127
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W16
+	.byte		VOL   , 87*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 80*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 73*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 65*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 58*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 54*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 74*bgm_gim_mvl/mxv
+	.byte		N24   , En2 , v127
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W16
+	.byte		VOL   , 87*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 80*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 73*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 65*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 58*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 54*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 74*bgm_gim_mvl/mxv
+	.byte		N24   , En2 , v127
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W16
+	.byte		VOL   , 87*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 80*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 73*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 65*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 58*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 54*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 74*bgm_gim_mvl/mxv
+	.byte		N12   , En2 , v127
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W10
+	.byte		VOL   , 74*bgm_gim_mvl/mxv
+	.byte		N12   , Fn2 , v127
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W10
+@ 002	----------------------------------------
 	.byte	PEND
 	.byte	PATT
 	 .word	bgm_gim_4_000
+	.byte	PATT
+	 .word	bgm_gim_4_000
+	.byte		VOL   , 74*bgm_gim_mvl/mxv
+	.byte		N48   , En2 , v127
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W44
+	.byte	W02
+	.byte		VOL   , 74*bgm_gim_mvl/mxv
+	.byte		N24   , An2 , v127
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W22
+	.byte		VOL   , 74*bgm_gim_mvl/mxv
+	.byte		N24   , Bn2 , v127
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W22
+@ 003	----------------------------------------
+bgm_gim_4_001:
+	.byte		VOL   , 74*bgm_gim_mvl/mxv
+	.byte		TIE   , Gs2 , v127
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W92
+	.byte	W02
+@ 004	----------------------------------------
+	.byte	PEND
+bgm_gim_4_002:
+	.byte		VOL   , 87*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 80*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 73*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 65*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 58*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 54*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 50*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 45*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 41*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 37*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 35*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 31*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 29*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 26*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 23*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 20*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 17*bgm_gim_mvl/mxv
+	.byte	W15
+	.byte		VOL   , 12*bgm_gim_mvl/mxv
+	.byte	W16
+	.byte	PEND
+	.byte		EOT   , -1
+	.byte	W48
+@ 005	----------------------------------------
+	.byte		VOL   , 69*bgm_gim_mvl/mxv
+	.byte		N12   , Fn5 , v127
+	.byte	W01
+	.byte		VOL   , 87*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 86*bgm_gim_mvl/mxv
+	.byte	W10
+	.byte		VOL   , 69*bgm_gim_mvl/mxv
+	.byte		N12   , Fs5 , v127
+	.byte	W01
+	.byte		VOL   , 87*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 86*bgm_gim_mvl/mxv
+	.byte	W10
+	.byte		VOL   , 69*bgm_gim_mvl/mxv
+	.byte		N12   , Fn5 , v127
+	.byte	W01
+	.byte		VOL   , 87*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 86*bgm_gim_mvl/mxv
+	.byte	W10
+	.byte		VOL   , 69*bgm_gim_mvl/mxv
+	.byte		N12   , Fs5 , v127
+	.byte	W01
+	.byte		VOL   , 87*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 86*bgm_gim_mvl/mxv
+	.byte	W10
+	.byte		VOL   , 69*bgm_gim_mvl/mxv
+	.byte		N12   , Fn5 , v127
+	.byte	W01
+	.byte		VOL   , 87*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 86*bgm_gim_mvl/mxv
+	.byte	W10
+	.byte		VOL   , 69*bgm_gim_mvl/mxv
+	.byte		N12   , Fs5 , v127
+	.byte	W01
+	.byte		VOL   , 87*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 86*bgm_gim_mvl/mxv
+	.byte	W10
+	.byte		VOL   , 69*bgm_gim_mvl/mxv
+	.byte		N12   , Fn5 , v127
+	.byte	W01
+	.byte		VOL   , 87*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 86*bgm_gim_mvl/mxv
+	.byte	W10
+	.byte		VOL   , 69*bgm_gim_mvl/mxv
+	.byte		N60   , Fs5 , v127
+	.byte	W01
+	.byte		VOL   , 87*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 86*bgm_gim_mvl/mxv
+	.byte	W10
+@ 006	----------------------------------------
+	.byte		VOL   , 81*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 75*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 68*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 61*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 53*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 50*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 46*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 42*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 38*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 34*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 33*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 29*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 27*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 24*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 22*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 19*bgm_gim_mvl/mxv
+	.byte	W02
+	.byte		VOL   , 15*bgm_gim_mvl/mxv
+	.byte	W15
+	.byte		VOL   , 11*bgm_gim_mvl/mxv
+	.byte	W64
+@ 007	----------------------------------------
+	.byte		VOL   , 74*bgm_gim_mvl/mxv
+	.byte		N48   , Dn3 , v127
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W44
+	.byte	W02
+	.byte		VOL   , 74*bgm_gim_mvl/mxv
+	.byte		N24   , Cs3 , v127
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W22
+	.byte		VOL   , 74*bgm_gim_mvl/mxv
+	.byte		N24   , An2 , v127
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W22
+@ 008	----------------------------------------
 	.byte	PATT
 	 .word	bgm_gim_4_001
 	.byte	PATT
-	 .word	bgm_gim_4_000
-	.byte		N48   , Fs3 , v052
-	.byte	W24
-	.byte		MOD   , 3
-	.byte	W24
-	.byte		        0
-	.byte		N12   , An3 
-	.byte	W18
-	.byte		N06   , Fs3 
-	.byte	W06
-	.byte		N24   
-	.byte	W24
-	.byte	PATT
-	 .word	bgm_gim_4_000
-	.byte		N48   , Fs3 , v052
-	.byte	W24
-	.byte		MOD   , 3
-	.byte	W24
-	.byte		        0
-	.byte		N24   , An3 
-	.byte	W24
-	.byte		        En3 
-	.byte	W24
-	.byte	W96
-	.byte	W96
-	.byte	W72
-	.byte		VOICE , 84
-	.byte		PAN   , c_v+0
-	.byte		N06   , Bn3 , v064
-	.byte	W06
-	.byte		N18   , Gs3 
-	.byte	W18
-	.byte		N48   , Gn3 
-	.byte	W03
-	.byte		VOL   , 70*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        49*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        52*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        56*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        59*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        62*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        66*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        69*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        73*bgm_gim_mvl/mxv
-	.byte	W07
-	.byte		        80*bgm_gim_mvl/mxv
-	.byte		N48   , An3 
-	.byte	W03
-	.byte		VOL   , 70*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        49*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        52*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        56*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        59*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        62*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        66*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        69*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        73*bgm_gim_mvl/mxv
-	.byte	W07
-	.byte		VOICE , 84
-	.byte		PAN   , c_v+0
-	.byte		VOL   , 79*bgm_gim_mvl/mxv
-	.byte		N12   , En4 , v060
-	.byte	W12
-	.byte		N03   , En3 
-	.byte	W06
-	.byte		N03   
-	.byte	W06
-	.byte		N12   
-	.byte	W12
-	.byte		N06   , Bn3 
-	.byte	W06
-	.byte		        Ds4 
-	.byte	W06
-	.byte		        En4 
-	.byte	W06
-	.byte		PAN   , c_v-49
-	.byte	W06
-	.byte		        c_v+0
-	.byte		N06   
-	.byte	W06
-	.byte		PAN   , c_v-49
-	.byte	W06
-	.byte		        c_v+0
-	.byte		N06   , Bn3 
-	.byte	W06
-	.byte		N18   , En4 
-	.byte	W18
-	.byte		N12   , Dn4 
-	.byte	W12
-	.byte		N03   , Dn3 
-	.byte	W06
-	.byte		N03   
-	.byte	W06
-	.byte		N12   
-	.byte	W12
-	.byte		N06   , An3 
-	.byte	W06
-	.byte		        Cs4 
-	.byte	W06
-	.byte		        Dn4 
-	.byte	W06
-	.byte		PAN   , c_v-48
-	.byte	W06
-	.byte		        c_v+0
-	.byte		N06   
-	.byte	W06
-	.byte		PAN   , c_v-49
-	.byte	W06
-	.byte		        c_v-1
-	.byte		N06   , An3 
-	.byte	W06
-	.byte		N18   , Dn4 
-	.byte	W18
-	.byte		VOICE , 80
-	.byte		N06   , En3 , v072
-	.byte	W06
-	.byte		        Gs3 
-	.byte	W06
-	.byte		        Bn3 
-	.byte	W06
-	.byte		        En4 
-	.byte	W06
-	.byte		PAN   , c_v-48
-	.byte		N06   , En5 
-	.byte	W06
-	.byte		        Bn4 
-	.byte	W06
-	.byte		        Gs4 
-	.byte	W06
-	.byte		        En4 
-	.byte	W06
-	.byte		PAN   , c_v+1
-	.byte		N06   , Dn3 
-	.byte	W06
-	.byte		        Fs3 
-	.byte	W06
-	.byte		        Bn3 
-	.byte	W06
-	.byte		        Dn4 
-	.byte	W06
-	.byte		PAN   , c_v+48
-	.byte		N06   , Dn5 
-	.byte	W06
-	.byte		        Bn4 
-	.byte	W06
-	.byte		        Fs4 
-	.byte	W06
-	.byte		        Dn4 
-	.byte	W06
-	.byte		PAN   , c_v+0
-	.byte		N06   , Bn2 
-	.byte	W06
-	.byte		        En3 
-	.byte	W06
-	.byte		        Gs3 
-	.byte	W06
-	.byte		        Bn3 
-	.byte	W06
-	.byte		PAN   , c_v-47
-	.byte		N06   , Bn4 
-	.byte	W06
-	.byte		        Gs4 
-	.byte	W06
-	.byte		        En4 
-	.byte	W06
-	.byte		        Bn3 
-	.byte	W06
-	.byte		PAN   , c_v+0
-	.byte		N06   , Bn2 
-	.byte	W06
-	.byte		        Ds3 
-	.byte	W06
-	.byte		        Fs3 
-	.byte	W06
-	.byte		        Gs3 
-	.byte	W06
-	.byte		PAN   , c_v+48
-	.byte		N06   , Bn3 
-	.byte	W06
-	.byte		        Fs4 
-	.byte	W06
-	.byte		        Bn4 
-	.byte	W06
-	.byte		        Ds5 
-	.byte	W06
-	.byte	GOTO
-	 .word	bgm_gim_4_B1
-	.byte	FINE
-
-@********************** Track  5 **********************@
-
-bgm_gim_5:
-	.byte		VOL   , 80*bgm_gim_mvl/mxv
-	.byte	KEYSH , bgm_gim_key+0
-bgm_gim_5_B1:
-	.byte		PAN   , c_v+15
-	.byte	W96
-	.byte	W96
-	.byte		VOICE , 56
-	.byte	W96
-	.byte	W96
-	.byte	W96
-	.byte	W42
-	.byte		N03   , Bn3 , v092
-	.byte	W03
-	.byte		        Cs4 
-	.byte	W03
-	.byte		N09   , Dn4 
-	.byte	W12
-	.byte		N06   , An3 
-	.byte	W12
-	.byte		        Dn4 
-	.byte	W06
-	.byte		N18   , Cs4 
-	.byte	W18
-	.byte		N48   , Bn3 
-	.byte	W30
-	.byte		MOD   , 6
-	.byte	W18
-	.byte		        0
-	.byte		N06   , En4 
-	.byte	W12
-	.byte		        Cs4 
-	.byte	W12
-	.byte		        Ds4 
-	.byte	W06
-	.byte		N18   , En4 
-	.byte	W18
-	.byte		N12   , Dn4 
-	.byte	W18
-	.byte		N06   , An3 
-	.byte	W06
-	.byte		N24   
-	.byte	W12
-	.byte		MOD   , 6
-	.byte	W12
-	.byte		        0
-	.byte		N12   , An4 
-	.byte	W18
-	.byte		N06   , Dn4 
-	.byte	W06
-	.byte		N24   
-	.byte	W15
-	.byte		MOD   , 6
-	.byte	W09
-	.byte		        0
-	.byte		N06   , Bn3 
-	.byte	W12
-	.byte		        Gs3 
-	.byte	W12
-	.byte		        As3 
-	.byte	W06
-	.byte		N18   , Bn3 
-	.byte	W09
-	.byte		MOD   , 6
-	.byte	W09
-	.byte		        0
-	.byte		N06   , En4 
-	.byte	W12
-	.byte		        Cs4 
-	.byte	W12
-	.byte		        Ds4 
-	.byte	W06
-	.byte		N18   , En4 
-	.byte	W09
-	.byte		MOD   , 6
-	.byte	W09
-	.byte		        0
-	.byte		N12   , Fs4 
-	.byte	W12
-	.byte		N06   , Dn4 
-	.byte	W06
-	.byte		        Fs4 
-	.byte	W06
-	.byte		N48   , An4 
-	.byte	W24
-	.byte		MOD   , 6
-	.byte	W24
-	.byte		        0
-	.byte		N24   
-	.byte	W15
-	.byte		MOD   , 6
-	.byte	W09
-	.byte		VOICE , 48
-	.byte		MOD   , 0
-	.byte		N06   , Bn3 , v044
-	.byte	W12
-	.byte		        Gs4 
-	.byte	W06
-	.byte		        Fs4 
-	.byte	W06
-	.byte		        Gs4 
-	.byte	W12
-	.byte		        En4 
-	.byte	W06
-	.byte		        Fs4 
-	.byte	W06
-	.byte		        Gs4 
-	.byte	W06
-	.byte		        Fs4 
-	.byte	W06
-	.byte		        Gs4 
-	.byte	W12
-	.byte		        Bn3 
-	.byte	W06
-	.byte		N12   , En4 
-	.byte	W12
-	.byte		N06   , Bn3 
-	.byte	W06
-	.byte		        An3 
-	.byte	W12
-	.byte		        Fs4 
-	.byte	W06
-	.byte		        En4 
-	.byte	W06
-	.byte		        Fs4 
-	.byte	W12
-	.byte		        Dn4 
-	.byte	W06
-	.byte		        En4 
-	.byte	W06
-	.byte		        Fs4 
-	.byte	W06
-	.byte		        En4 
-	.byte	W06
-	.byte		        Fs4 
-	.byte	W12
-	.byte		        An3 
-	.byte	W06
-	.byte		N12   , Dn4 
-	.byte	W12
-	.byte		N06   , An3 
-	.byte	W06
-	.byte		        Gs3 
-	.byte	W12
-	.byte		        En4 , v048
-	.byte	W06
-	.byte		        Ds4 
-	.byte	W06
-	.byte		        En4 
-	.byte	W06
-	.byte		        Fs4 
-	.byte	W06
-	.byte		        Gs4 
-	.byte	W06
-	.byte		        An4 
-	.byte	W06
-	.byte		        Bn4 
-	.byte	W12
-	.byte		N12   , En4 , v076
-	.byte	W12
-	.byte		N06   , Gs4 
-	.byte	W06
-	.byte		N18   , Bn4 
-	.byte	W18
-	.byte		N48   , Cn5 , v112
-	.byte	W03
-	.byte		VOL   , 70*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        49*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        52*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        56*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        59*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        62*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        66*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        69*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        73*bgm_gim_mvl/mxv
-	.byte	W07
-	.byte		        80*bgm_gim_mvl/mxv
-	.byte		N48   , Dn5 
-	.byte	W03
-	.byte		VOL   , 70*bgm_gim_mvl/mxv
-	.byte	W03
-	.byte		        49*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        52*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        56*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        59*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        62*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        66*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        69*bgm_gim_mvl/mxv
-	.byte	W05
-	.byte		        73*bgm_gim_mvl/mxv
-	.byte	W07
-	.byte		        79*bgm_gim_mvl/mxv
-	.byte	W96
-	.byte	W96
-	.byte	W96
-	.byte	W96
-	.byte	GOTO
-	 .word	bgm_gim_5_B1
-	.byte	FINE
-
-@********************** Track  6 **********************@
-
-bgm_gim_6:
-	.byte		VOL   , 80*bgm_gim_mvl/mxv
-	.byte	KEYSH , bgm_gim_key+0
-bgm_gim_6_B1:
-	.byte		VOICE , 47
-	.byte		PAN   , c_v-17
-	.byte		BEND  , c_v+0
-	.byte		N12   , En2 , v116
-	.byte	W18
-	.byte		N06   , Bn1 
-	.byte	W06
-	.byte		N12   , En2 , v127
-	.byte	W24
-	.byte		        Dn2 , v116
-	.byte	W18
-	.byte		N06   , An1 
-	.byte	W06
-	.byte		N12   , Dn2 , v127
-	.byte	W24
-	.byte		        Cs2 , v116
-	.byte	W18
-	.byte		N06   , An1 
-	.byte	W06
-	.byte		N12   , Cs2 , v127
-	.byte	W24
-	.byte		        Cs2 , v116
-	.byte	W24
-	.byte		N06   , Ds2 , v127
-	.byte	W06
-	.byte		N18   
-	.byte	W18
-	.byte		N12   , En2 
-	.byte	W72
-	.byte		N06   , En2 , v088
-	.byte	W06
-	.byte		N12   , Bn1 
-	.byte	W18
-bgm_gim_6_000:
-	.byte		N12   , Dn2 , v100
+	 .word	bgm_gim_4_002
+	.byte		EOT   , -1
 	.byte	W48
-	.byte		N12   
-	.byte	W24
-	.byte		N06   , Dn2 , v088
-	.byte	W06
-	.byte		N12   , An1 
-	.byte	W18
+bgm_gim_4_003:
+	.byte		VOL   , 69*bgm_gim_mvl/mxv
+	.byte		N12   , Fn5 , v127
+	.byte	W01
+	.byte		VOL   , 87*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 86*bgm_gim_mvl/mxv
+	.byte	W10
+	.byte		VOL   , 69*bgm_gim_mvl/mxv
+	.byte		N12   , Fs5 , v127
+	.byte	W01
+	.byte		VOL   , 87*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 86*bgm_gim_mvl/mxv
+	.byte	W10
+	.byte		VOL   , 69*bgm_gim_mvl/mxv
+	.byte		N12   , Fn5 , v127
+	.byte	W01
+	.byte		VOL   , 87*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 86*bgm_gim_mvl/mxv
+	.byte	W10
+	.byte		VOL   , 69*bgm_gim_mvl/mxv
+	.byte		N12   , Fs5 , v127
+	.byte	W01
+	.byte		VOL   , 87*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 86*bgm_gim_mvl/mxv
+	.byte	W10
+@ 009	----------------------------------------
+	.byte		VOL   , 69*bgm_gim_mvl/mxv
+	.byte		N12   , Fn5 , v127
+	.byte	W01
+	.byte		VOL   , 87*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 86*bgm_gim_mvl/mxv
+	.byte	W10
+	.byte		VOL   , 69*bgm_gim_mvl/mxv
+	.byte		N12   , Fs5 , v127
+	.byte	W01
+	.byte		VOL   , 87*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 86*bgm_gim_mvl/mxv
+	.byte	W10
+	.byte		VOL   , 69*bgm_gim_mvl/mxv
+	.byte		N12   , Fn5 , v127
+	.byte	W01
+	.byte		VOL   , 87*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 86*bgm_gim_mvl/mxv
+	.byte	W10
+	.byte		VOL   , 69*bgm_gim_mvl/mxv
+	.byte		N12   , Fs5 , v127
+	.byte	W01
+	.byte		VOL   , 87*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 86*bgm_gim_mvl/mxv
+	.byte	W10
 	.byte	PEND
-bgm_gim_6_001:
-	.byte		N12   , En2 , v100
-	.byte	W72
-	.byte		N06   , En2 , v088
-	.byte	W06
-	.byte		N12   , Bn1 
-	.byte	W18
+	.byte	PATT
+	 .word	bgm_gim_4_003
+	.byte		VOL   , 74*bgm_gim_mvl/mxv
+	.byte		N96   , Gn2 , v127
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W92
+	.byte	W02
+bgm_gim_4_004:
+	.byte		VOL   , 74*bgm_gim_mvl/mxv
+	.byte		N96   , Gs2 , v127
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W92
+	.byte	W02
 	.byte	PEND
+	.byte		VOL   , 74*bgm_gim_mvl/mxv
+	.byte		N96   , An2 , v127
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W92
+	.byte	W02
 	.byte	PATT
-	 .word	bgm_gim_6_000
-	.byte	PATT
-	 .word	bgm_gim_6_001
-	.byte	PATT
-	 .word	bgm_gim_6_000
-	.byte	PATT
-	 .word	bgm_gim_6_001
-	.byte		N12   , Dn2 , v100
-	.byte	W48
-	.byte		        Dn2 , v088
-	.byte	W24
-	.byte		N06   
-	.byte	W06
-	.byte		N12   , Cs2 
-	.byte	W18
-	.byte		        En2 , v127
-	.byte	W96
-	.byte	W96
-	.byte	W72
-	.byte		N06   , En2 , v112
-	.byte	W06
-	.byte		N12   , Bn1 
-	.byte	W18
-	.byte		        Cn2 , v127
-	.byte	W36
-	.byte		N06   , Cn2 , v112
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		N12   , Dn2 
-	.byte	W24
-	.byte		N06   , Dn2 , v127
-	.byte	W06
-	.byte		N18   
-	.byte	W18
-	.byte		N12   , En2 
-	.byte	W72
-	.byte		N06   , Bn1 , v076
-	.byte	W06
-	.byte		N12   , En2 , v100
-	.byte	W18
-	.byte		        Dn2 
-	.byte	W72
-	.byte		N06   , An1 , v076
-	.byte	W06
-	.byte		N12   , Dn2 , v100
-	.byte	W18
-	.byte		        En2 
-	.byte	W18
-	.byte		N06   , Bn1 
-	.byte	W06
-	.byte		N12   , En2 , v112
-	.byte	W24
-	.byte		        Dn2 , v100
-	.byte	W18
-	.byte		N06   , Bn1 
-	.byte	W06
-	.byte		N12   , Dn2 , v112
-	.byte	W24
-	.byte		        Bn1 , v100
-	.byte	W18
-	.byte		N06   
-	.byte	W06
-	.byte		N12   , Bn1 , v112
-	.byte	W24
-	.byte		N06   , Dn2 
-	.byte	W06
-	.byte		        Bn1 , v064
-	.byte	W06
-	.byte		        Dn2 , v072
-	.byte	W06
-	.byte		        Bn1 , v080
-	.byte	W06
-	.byte		        Dn2 , v092
-	.byte	W06
-	.byte		        Bn1 , v100
-	.byte	W06
-	.byte		        Dn2 , v108
-	.byte	W06
-	.byte		        Bn1 , v116
-	.byte	W06
-	.byte	GOTO
-	 .word	bgm_gim_6_B1
-	.byte	FINE
-
-@********************** Track  7 **********************@
-
-bgm_gim_7:
-	.byte	KEYSH , bgm_gim_key+0
-bgm_gim_7_B1:
-	.byte		VOICE , 0
+	 .word	bgm_gim_4_004
+	.byte		VOL   , 74*bgm_gim_mvl/mxv
+	.byte		N72   , Bn2 , v127
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W68
+	.byte	W02
+	.byte		VOL   , 74*bgm_gim_mvl/mxv
+	.byte		N24   , Dn2 , v127
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W22
+	.byte		VOL   , 74*bgm_gim_mvl/mxv
+	.byte		N24   , An2 , v127
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W22
+	.byte		VOL   , 74*bgm_gim_mvl/mxv
+	.byte		N24   , En2 , v127
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W22
+@ 014	----------------------------------------
+	.byte		VOL   , 74*bgm_gim_mvl/mxv
+	.byte		N48   , Cs3 , v127
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W44
+	.byte	W02
+	.byte		VOL   , 74*bgm_gim_mvl/mxv
+	.byte		N96   , Gn2 , v127
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W88
+	.byte		VOL   , 87*bgm_gim_mvl/mxv
+	.byte	W01
 	.byte		VOL   , 80*bgm_gim_mvl/mxv
-	.byte		N06   , En1 , v112
-	.byte		N48   , Bn2 , v092
-	.byte	W12
-	.byte		N06   , En1 , v080
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		        En1 , v112
-	.byte	W12
-	.byte		        En1 , v084
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		        En1 , v112
-	.byte		N48   , Bn2 , v092
-	.byte	W12
-	.byte		N06   , En1 , v080
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		        En1 , v112
-	.byte	W12
-	.byte		N03   , En1 , v068
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N06   , En1 , v112
-	.byte		N48   , Bn2 , v092
-	.byte	W06
-	.byte		N06   , En1 , v080
-	.byte	W06
-	.byte		        En1 , v100
-	.byte	W06
-	.byte		        En1 , v080
-	.byte	W06
-	.byte		        En1 , v112
-	.byte	W12
-	.byte		        En1 , v080
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		        En1 , v112
-	.byte	W06
-	.byte		        En1 , v080
-	.byte	W06
-	.byte		        En1 , v092
-	.byte	W06
-	.byte		        En1 , v080
-	.byte	W06
-	.byte		N03   , En1 , v112
-	.byte	W03
-	.byte		        En1 , v084
-	.byte	W03
-	.byte		        En1 , v068
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N06   , En1 , v112
-	.byte		N48   , Bn2 , v092
-	.byte	W18
-	.byte		N06   , En1 , v080
-	.byte	W06
-	.byte		        En1 , v112
-	.byte	W12
-	.byte		        En1 , v084
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		        En1 , v080
-	.byte	W12
-	.byte		        En1 , v088
-	.byte	W12
-	.byte		        En1 , v112
-	.byte	W12
-	.byte		N03   , En1 , v068
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-bgm_gim_7_000:
-	.byte		N06   , En1 , v112
-	.byte	W18
-	.byte		        En1 , v080
-	.byte	W06
-	.byte		        En1 , v112
-	.byte	W12
-	.byte		        En1 , v084
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		        En1 , v080
-	.byte	W12
-	.byte		        En1 , v088
-	.byte	W12
-	.byte		N03   , En1 , v112
-	.byte	W03
-	.byte		        En1 , v084
-	.byte	W03
-	.byte		        En1 , v068
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte	PEND
-bgm_gim_7_001:
-	.byte		N06   , En1 , v112
-	.byte	W18
-	.byte		        En1 , v080
-	.byte	W06
-	.byte		        En1 , v112
-	.byte	W12
-	.byte		        En1 , v084
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		        En1 , v080
-	.byte	W12
-	.byte		        En1 , v088
-	.byte	W12
-	.byte		        En1 , v112
-	.byte	W12
-	.byte		N03   , En1 , v068
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte	PEND
-	.byte	PATT
-	 .word	bgm_gim_7_000
-	.byte	PATT
-	 .word	bgm_gim_7_001
-	.byte	PATT
-	 .word	bgm_gim_7_000
-	.byte	PATT
-	 .word	bgm_gim_7_001
-	.byte	PATT
-	 .word	bgm_gim_7_000
-	.byte		N48   , Bn2 , v092
-	.byte	W96
-	.byte	W96
-	.byte	W96
-	.byte	W48
-	.byte		N03   , En1 , v076
-	.byte	W03
-	.byte		        En1 , v064
-	.byte	W03
-	.byte		        En1 , v048
-	.byte	W03
-	.byte		        En1 , v052
-	.byte	W03
-	.byte		        En1 , v056
-	.byte	W03
-	.byte		        En1 , v060
-	.byte	W03
-	.byte		        En1 , v064
-	.byte	W03
-	.byte		        En1 , v068
-	.byte	W03
-	.byte		        En1 , v072
-	.byte	W03
-	.byte		        En1 , v080
-	.byte	W03
-	.byte		        En1 , v084
-	.byte	W03
-	.byte		        En1 , v088
-	.byte	W03
-	.byte		        En1 , v092
-	.byte	W03
-	.byte		        En1 , v096
-	.byte	W03
-	.byte		        En1 , v100
-	.byte	W03
-	.byte		        En1 , v104
-	.byte	W03
-	.byte		N06   , En1 , v112
-	.byte		N48   , Bn2 , v092
-	.byte	W12
-	.byte		N06   , En1 , v112
-	.byte	W24
-	.byte		        En1 , v088
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		        En1 , v112
-	.byte	W24
-	.byte		N03   
-	.byte	W03
-	.byte		        En1 , v084
-	.byte	W03
-	.byte		        En1 , v068
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N06   , En1 , v112
-	.byte	W12
-	.byte		N06   
-	.byte	W24
-	.byte		        En1 , v088
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		        En1 , v112
-	.byte	W12
-	.byte		N06   
-	.byte	W12
-	.byte		N03   
-	.byte	W03
-	.byte		        En1 , v084
-	.byte	W03
-	.byte		        En1 , v068
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N06   , En1 , v112
-	.byte	W12
-	.byte		        En1 , v096
-	.byte	W12
-	.byte		        En1 , v112
-	.byte		N48   , Bn2 , v092
-	.byte	W12
-	.byte		N06   , En1 , v088
-	.byte	W06
-	.byte		N06   
-	.byte	W06
-	.byte		        En1 , v112
-	.byte	W12
-	.byte		N06   
-	.byte	W12
-	.byte		N03   
-	.byte		N48   , Bn2 , v092
-	.byte	W03
-	.byte		N03   , En1 , v084
-	.byte	W03
-	.byte		        En1 , v068
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N06   , En1 , v112
-	.byte	W06
-	.byte		        En1 , v080
-	.byte	W06
-	.byte		        En1 , v096
-	.byte	W06
-	.byte		        En1 , v080
-	.byte	W06
-	.byte		        En1 , v112
-	.byte		N48   , Bn2 , v092
-	.byte	W12
-	.byte		N06   , En1 , v108
-	.byte	W06
-	.byte		        En1 , v080
-	.byte	W06
-	.byte		N03   , En1 , v112
-	.byte	W03
-	.byte		        En1 , v084
-	.byte	W03
-	.byte		        En1 , v048
-	.byte	W03
-	.byte		        En1 , v052
-	.byte	W03
-	.byte		        En1 , v056
-	.byte	W03
-	.byte		        En1 , v060
-	.byte	W03
-	.byte		        En1 , v064
-	.byte	W03
-	.byte		        En1 , v068
-	.byte	W03
-	.byte		        En1 , v072
-	.byte		N24   , Bn2 , v092
-	.byte	W03
-	.byte		N03   , En1 , v080
-	.byte	W03
-	.byte		        En1 , v084
-	.byte	W03
-	.byte		        En1 , v088
-	.byte	W03
-	.byte		        En1 , v092
-	.byte	W03
-	.byte		        En1 , v096
-	.byte	W03
-	.byte		        En1 , v100
-	.byte	W03
-	.byte		        En1 , v104
-	.byte	W03
+	.byte	W01
+	.byte		VOL   , 73*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 65*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 58*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 54*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 74*bgm_gim_mvl/mxv
+	.byte		N96   , An2 , v127
+	.byte	W01
+	.byte		VOL   , 94*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 93*bgm_gim_mvl/mxv
+	.byte	W88
+	.byte		VOL   , 87*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 80*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 73*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 65*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 58*bgm_gim_mvl/mxv
+	.byte	W01
+	.byte		VOL   , 54*bgm_gim_mvl/mxv
+	.byte	W01
 	.byte	GOTO
-	 .word	bgm_gim_7_B1
+	 .word	bgm_gim_4_005
 	.byte	FINE
 
-@******************************************************@
+@******************************************@
 	.align	2
 
 bgm_gim:
-	.byte	7	@ NumTrks
+	.byte	4	@ NumTrks
 	.byte	0	@ NumBlks
 	.byte	bgm_gim_pri	@ Priority
 	.byte	bgm_gim_rev	@ Reverb.
@@ -1877,8 +1271,5 @@ bgm_gim:
 	.word	bgm_gim_2
 	.word	bgm_gim_3
 	.word	bgm_gim_4
-	.word	bgm_gim_5
-	.word	bgm_gim_6
-	.word	bgm_gim_7
 
 	.end

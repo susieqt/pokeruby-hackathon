@@ -1,5 +1,5 @@
 LittlerootTown_MapConnectionsList::
-	connection right, 0, MAP_ROUTE101
+	connection right, 0, MAP_ROUTE102
 
 LittlerootTown_MapConnections::
 	.4byte 1

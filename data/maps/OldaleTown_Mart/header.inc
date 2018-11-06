@@ -1,4 +1,4 @@
-OldaleTown_Mart:: @ 8305B2C
+OldaleTown_Mart::
 	.4byte PokeMart_Layout
 	.4byte OldaleTown_Mart_MapEvents
 	.4byte OldaleTown_Mart_MapScripts

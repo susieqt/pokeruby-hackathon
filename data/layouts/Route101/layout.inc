@@ -11,5 +11,5 @@ Route101_Layout::
 	.4byte Route101_MapBorder
 	.4byte Route101_MapBlockdata
 	.4byte gTileset_General
-	.4byte gTileset_Petalburg
+	.4byte gTileset_Rustboro
 

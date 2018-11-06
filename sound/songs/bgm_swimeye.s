@@ -1,912 +1,754 @@
 	.include "MPlayDef.s"
 
-	.equ	bgm_swimeye_grp, voicegroup033
+	.equ	bgm_swimeye_grp, voicegroup000
 	.equ	bgm_swimeye_pri, 0
-	.equ	bgm_swimeye_rev, reverb_set+50
+	.equ	bgm_swimeye_rev, 0
 	.equ	bgm_swimeye_mvl, 127
 	.equ	bgm_swimeye_key, 0
 	.equ	bgm_swimeye_tbs, 1
-	.equ	bgm_swimeye_exg, 0
+	.equ	bgm_swimeye_exg, 1
 	.equ	bgm_swimeye_cmp, 1
 
 	.section .rodata
 	.global	bgm_swimeye
 	.align	2
 
-@********************** Track  1 **********************@
+@**************** Track 1 ****************@
 
 bgm_swimeye_1:
+@ 000	----------------------------------------
+bgm_swimeye_1_006:
+	.byte		VOL   , 127*bgm_swimeye_mvl/mxv
 	.byte	KEYSH , bgm_swimeye_key+0
-	.byte	TEMPO , 142*bgm_swimeye_tbs/2
-	.byte		VOICE , 46
-	.byte		VOL   , 80*bgm_swimeye_mvl/mxv
-	.byte		PAN   , c_v-9
-	.byte	W03
-	.byte		N06   , Dn5 , v092
-	.byte	W06
-	.byte		N24   , Ds5 
+	.byte	TEMPO , 180*bgm_swimeye_tbs/2
+	.byte		VOICE , 6
+	.byte		N23   , As3 , v080
 	.byte	W24
-	.byte	W03
-	.byte		VOICE , 45
-	.byte		N06   , Fs3 , v068
-	.byte	W06
-	.byte		        An3 , v076
-	.byte	W06
-	.byte		        Bn3 , v084
-	.byte	W06
-	.byte		        Ds4 , v092
-	.byte	W06
-	.byte		        Fs4 , v100
-	.byte	W06
-	.byte		        An4 , v108
-	.byte	W06
-	.byte		N12   , Bn4 
-	.byte	W12
-	.byte		        Bn3 
-	.byte	W12
-	.byte		        Cs4 
-	.byte	W12
-	.byte		        Fs4 
-	.byte	W12
-	.byte		        Bn4 
-	.byte	W12
-	.byte		        Cs5 
-	.byte	W12
-bgm_swimeye_1_B1:
-	.byte		VOICE , 60
-	.byte		VOL   , 80*bgm_swimeye_mvl/mxv
-	.byte		PAN   , c_v+4
-	.byte		N30   , Ds4 , v112
-	.byte	W36
-	.byte		N12   , Cs4 
-	.byte	W12
-	.byte		        Bn3 
-	.byte	W12
-	.byte		        An3 
-	.byte	W12
-	.byte		        Gs3 
-	.byte	W12
-	.byte		        Fs3 
-	.byte	W12
-	.byte		        Gs3 
-	.byte	W12
-	.byte		        An3 
-	.byte	W12
-	.byte		        Bn3 
-	.byte	W12
-	.byte		        Gs3 
-	.byte	W12
-	.byte		        Fs3 
+	.byte		N23   , Bn3 , v080
 	.byte	W24
-	.byte		        An3 
+	.byte		N23   , Cn4 , v080
 	.byte	W24
-	.byte		        Cs4 
+	.byte		N44   , Cs4 , v080
 	.byte	W24
+@ 001	----------------------------------------
 bgm_swimeye_1_000:
-	.byte		N68   , Bn3 , v112
-	.byte	W32
-	.byte	W01
-	.byte		VOL   , 75*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		        70*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		        62*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		        53*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		        42*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		        27*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        9*bgm_swimeye_mvl/mxv
-	.byte	W06
+	.byte	W48
+	.byte		N11   , Fs4 , v080
+	.byte	W24
+	.byte		N11   , Ds4 , v080
+	.byte	W24
+@ 002	----------------------------------------
 	.byte	PEND
-	.byte		        80*bgm_swimeye_mvl/mxv
-	.byte		N30   , Ds4 
-	.byte	W36
-	.byte		N12   , En4 
-	.byte	W12
-	.byte		        Ds4 
-	.byte	W12
-	.byte		        Cs4 
-	.byte	W12
-	.byte		        Bn3 
-	.byte	W12
-	.byte		        An3 
-	.byte	W12
-	.byte		        Gs3 
-	.byte	W12
-	.byte		        Fs3 
-	.byte	W12
-	.byte		        Gs3 
-	.byte	W12
-	.byte		        Bn3 
-	.byte	W12
-	.byte		        Cs4 
+	.byte		N11   , Cs4 , v080
+	.byte	W48
+	.byte		N23   , As3 , v080
 	.byte	W24
-	.byte		        Ds4 
+	.byte		N44   , Cs4 , v080
 	.byte	W24
-	.byte		        Cs4 
-	.byte	W24
+@ 003	----------------------------------------
 	.byte	PATT
 	 .word	bgm_swimeye_1_000
+	.byte		N11   , Cs4 , v080
+	.byte	W48
+	.byte		N23   , As3 , v080
+	.byte	W48
+@ 004	----------------------------------------
+	.byte		N11   , Fs5 , v080
+	.byte	W12
+	.byte		N11   , Ds5 , v080
+	.byte	W12
+	.byte		N11   , Cs5 , v080
+	.byte	W12
+	.byte		N11   , As4 , v080
+	.byte	W12
+	.byte		N11   , Gs4 , v080
+	.byte	W12
+	.byte		N11   , Fs4 , v080
+	.byte	W12
+	.byte		N11   , Ds4 , v080
+	.byte	W12
+	.byte		N11   , Cs4 , v080
+	.byte	W12
+@ 005	----------------------------------------
+	.byte		N11   , As3 , v080
+	.byte	W12
+	.byte		N11   , An3 , v080
+	.byte	W12
+	.byte		N11   , Gs3 , v080
+	.byte	W12
+	.byte		N11   , Fs3 , v080
+	.byte	W12
+	.byte		N11   , Ds3 , v080
+	.byte	W12
+	.byte		N11   , Cs3 , v080
+	.byte	W12
+	.byte		N05   , Cs4 , v080
+	.byte	W06
+	.byte		N05   , Fn3 , v080
+	.byte	W06
+	.byte		N05   , Cs4 , v080
+	.byte	W06
+	.byte		N05   , Fn3 , v080
+	.byte	W06
+@ 006	----------------------------------------
+	.byte		N05   , Cs4 , v080
+	.byte	W06
+	.byte		N05   , Fn3 , v080
+	.byte	W06
+	.byte		N05   , Cs4 , v080
+	.byte	W06
+	.byte		N05   , Fn3 , v080
+	.byte	W06
+	.byte		N05   , Cs4 , v080
+	.byte	W06
+	.byte		N05   , Fn3 , v080
+	.byte	W06
+	.byte		N05   , Cs4 , v080
+	.byte	W06
+	.byte		N05   , Fn3 , v080
+	.byte	W06
+	.byte		N05   , Cs4 , v080
+	.byte	W06
+	.byte		N05   , Fn3 , v080
+	.byte	W06
+	.byte		N05   , Cs4 , v080
+	.byte	W06
+	.byte		N05   , Fn3 , v080
+	.byte	W30
+@ 007	----------------------------------------
+	.byte		N23   , Fn3 , v080
+	.byte	W24
+	.byte		N23   , Fs3 , v080
+	.byte	W24
+	.byte		N23   , Gn3 , v080
+	.byte	W24
+	.byte		N11   , En3 , v080
+	.byte	W12
+	.byte		N11   , Fn3 , v080
+	.byte	W12
+@ 008	----------------------------------------
+bgm_swimeye_1_001:
+	.byte		N11   , Cs4 , v080
+	.byte	W12
+	.byte		N11   , En3 , v080
+	.byte	W12
+	.byte		N11   , Fn3 , v080
+	.byte	W12
+	.byte		N11   , Cs4 , v080
+	.byte	W12
+	.byte		N11   , En3 , v080
+	.byte	W12
+	.byte		N11   , Fn3 , v080
+	.byte	W12
+	.byte		N11   , Bn3 , v080
+	.byte	W12
+	.byte		N11   , En3 , v080
+	.byte	W12
+@ 009	----------------------------------------
+	.byte	PEND
+	.byte		N11   , Fn3 , v080
+	.byte	W12
+	.byte		N11   , Bn3 , v080
+	.byte	W12
+	.byte		N11   , As3 , v080
+	.byte	W12
+	.byte		N11   , Gs3 , v080
+	.byte	W12
+	.byte		N11   , Fn3 , v080
+	.byte	W12
+	.byte		N11   , Cs3 , v080
+	.byte	W12
+	.byte		N11   , En3 , v080
+	.byte	W12
+	.byte		N11   , Fn3 , v080
+	.byte	W12
+@ 010	----------------------------------------
+	.byte	PATT
+	 .word	bgm_swimeye_1_001
+	.byte		N11   , Fn3 , v080
+	.byte	W12
+	.byte		N11   , Bn3 , v080
+	.byte	W12
+	.byte		N11   , As3 , v080
+	.byte	W12
+	.byte		N11   , Gs3 , v080
+	.byte	W12
+	.byte		N11   , Fn3 , v080
+	.byte	W12
+	.byte		N11   , Cs3 , v080
+	.byte	W36
+@ 011	----------------------------------------
+	.byte		N05   , Fn4 , v080
+	.byte	W06
+	.byte		N05   , Gs3 , v080
+	.byte	W06
+	.byte		N05   , Fn4 , v080
+	.byte	W06
+	.byte		N05   , Gs3 , v080
+	.byte	W06
+	.byte		N05   , Fn4 , v080
+	.byte	W06
+	.byte		N05   , Gs3 , v080
+	.byte	W06
+	.byte		N05   , Fn4 , v080
+	.byte	W06
+	.byte		N05   , Gs3 , v080
+	.byte	W06
+	.byte		N23   , Fn4 , v080
+	.byte	W24
+	.byte		N05   , Fn4 , v080
+	.byte	W24
+@ 012	----------------------------------------
+	.byte		N05   , Ds4 , v080
+	.byte	W24
+	.byte		N05   , Cs4 , v080
+	.byte	W24
+	.byte		N05   , Bn3 , v080
+	.byte	W24
+	.byte		N92   , As3 , v080
+	.byte	W24
+@ 013	----------------------------------------
+	.byte	W96
+@ 014	----------------------------------------
+	.byte		N23   , As3 , v080
+	.byte	W24
+	.byte		N23   , Bn3 , v080
+	.byte	W24
+	.byte		N23   , Cn4 , v080
+	.byte	W48
+@ 015	----------------------------------------
+bgm_swimeye_1_002:
+	.byte		N11   , As4 , v080
+	.byte	W12
+	.byte		N11   , As4 , v080
+	.byte	W12
+	.byte		N11   , As4 , v080
+	.byte	W24
+	.byte		N11   , Gs4 , v080
+	.byte	W12
+	.byte		N11   , Gs4 , v080
+	.byte	W12
+	.byte		N11   , Gs4 , v080
+	.byte	W24
+@ 016	----------------------------------------
+	.byte	PEND
+bgm_swimeye_1_003:
+	.byte		N11   , Fs4 , v080
+	.byte	W12
+	.byte		N11   , Fs4 , v080
+	.byte	W12
+	.byte		N11   , Fs4 , v080
+	.byte	W24
+	.byte		N11   , Fn4 , v080
+	.byte	W48
+@ 017	----------------------------------------
+	.byte	PEND
+	.byte	PATT
+	 .word	bgm_swimeye_1_002
+	.byte	PATT
+	 .word	bgm_swimeye_1_003
+	.byte	PATT
+	 .word	bgm_swimeye_1_002
+	.byte		N11   , Fs4 , v080
+	.byte	W12
+	.byte		N11   , Fs4 , v080
+	.byte	W12
+	.byte		N11   , Fs4 , v080
+	.byte	W24
+	.byte		N11   , Fn4 , v080
+	.byte	W24
+	.byte		N68   , Cs4 , v080
+	.byte	W24
+@ 018	----------------------------------------
+	.byte	W48
+	.byte		N23   , Bn3 , v080
+	.byte	W24
+	.byte		N92   , Gs3 , v080
+	.byte	W24
+@ 019	----------------------------------------
+	.byte	W96
+@ 020	----------------------------------------
+bgm_swimeye_1_004:
+	.byte		N11   , Fn4 , v080
+	.byte	W12
+	.byte		N11   , Fn4 , v080
+	.byte	W12
+	.byte		N11   , Fn4 , v080
+	.byte	W24
+	.byte		N11   , Ds4 , v080
+	.byte	W12
+	.byte		N11   , Ds4 , v080
+	.byte	W12
+	.byte		N11   , Ds4 , v080
+	.byte	W24
+@ 021	----------------------------------------
+	.byte	PEND
+bgm_swimeye_1_005:
+	.byte		N11   , Cs4 , v080
+	.byte	W12
+	.byte		N11   , Cs4 , v080
+	.byte	W12
+	.byte		N11   , Cs4 , v080
+	.byte	W24
+	.byte		N11   , Bn3 , v080
+	.byte	W48
+@ 022	----------------------------------------
+	.byte	PEND
+	.byte	PATT
+	 .word	bgm_swimeye_1_004
+	.byte	PATT
+	 .word	bgm_swimeye_1_005
+	.byte		N44   , Gs3 , v080
+	.byte	W48
+	.byte		N23   , As3 , v080
+	.byte	W24
+	.byte		N23   , Bn3 , v080
+	.byte	W24
+@ 023	----------------------------------------
+	.byte		N23   , Fn4 , v080
+	.byte	W24
+	.byte		N23   , Ds4 , v080
+	.byte	W24
+	.byte		N23   , Fn4 , v080
+	.byte	W24
+	.byte		N23   , Fs4 , v080
+	.byte	W24
+@ 024	----------------------------------------
+	.byte		N23   , Fs4 , v080
+	.byte	W24
+	.byte		N11   , Ds4 , v080
+	.byte	W12
+	.byte		N11   , Cs4 , v080
+	.byte	W12
+	.byte		N23   , As3 , v080
+	.byte	W24
+	.byte		N23   , Fs3 , v080
+	.byte	W23
 	.byte	GOTO
-	 .word	bgm_swimeye_1_B1
+	 .word	bgm_swimeye_1_006
 	.byte	FINE
 
-@********************** Track  2 **********************@
+@**************** Track 2 ****************@
 
 bgm_swimeye_2:
-	.byte		VOL   , 80*bgm_swimeye_mvl/mxv
+@ 000	----------------------------------------
+bgm_swimeye_2_005:
+	.byte		VOL   , 127*bgm_swimeye_mvl/mxv
 	.byte	KEYSH , bgm_swimeye_key+0
-	.byte		VOICE , 33
-	.byte		N72   , Bn0 , v120
-	.byte	W72
-	.byte		VOL   , 80*bgm_swimeye_mvl/mxv
-	.byte		N24   , Fs1 
+	.byte		VOICE , 81
+	.byte		N23   , Fs3 , v080
 	.byte	W24
-	.byte		        En1 
+	.byte		N23   , Gs3 , v080
 	.byte	W24
-	.byte		        Ds1 
+	.byte		N23   , An3 , v080
 	.byte	W24
-bgm_swimeye_2_B1:
-	.byte		VOL   , 80*bgm_swimeye_mvl/mxv
-	.byte		N48   , En1 , v120
-	.byte	W48
-	.byte		N12   , Bn0 
-	.byte	W24
+	.byte		N05   , Cs4 , v080
+	.byte	W06
+	.byte		N05   , As3 , v080
+	.byte	W06
+	.byte		N05   , Cs4 , v080
+	.byte	W06
+	.byte		N05   , As3 , v080
+	.byte	W06
+@ 001	----------------------------------------
 bgm_swimeye_2_000:
-	.byte		N48   , En1 , v120
-	.byte	W48
-	.byte		N12   , Bn0 
+	.byte		N05   , Cs4 , v080
+	.byte	W06
+	.byte		N05   , As3 , v080
+	.byte	W06
+	.byte		N05   , Cs4 , v080
+	.byte	W06
+	.byte		N05   , As3 , v080
+	.byte	W06
+	.byte		N05   , Cs4 , v080
+	.byte	W06
+	.byte		N05   , As3 , v080
+	.byte	W06
+	.byte		N05   , Cs4 , v080
+	.byte	W06
+	.byte		N05   , As3 , v080
+	.byte	W06
+	.byte		N11   , Cs4 , v080
 	.byte	W24
+	.byte		N11   , Bn3 , v080
+	.byte	W24
+@ 002	----------------------------------------
 	.byte	PEND
+	.byte		N11   , As3 , v080
+	.byte	W72
+	.byte		N05   , Cs4 , v080
+	.byte	W06
+	.byte		N05   , As3 , v080
+	.byte	W06
+	.byte		N05   , Cs4 , v080
+	.byte	W06
+	.byte		N05   , As3 , v080
+	.byte	W06
+@ 003	----------------------------------------
+	.byte	PATT
+	 .word	bgm_swimeye_2_000
+	.byte		N11   , As3 , v080
+	.byte	W96
+@ 004	----------------------------------------
+	.byte	W96
+@ 005	----------------------------------------
+	.byte	W72
+	.byte		N92   , Gs3 , v080
+	.byte	W24
+@ 006	----------------------------------------
+	.byte	W96
+@ 007	----------------------------------------
+	.byte		N23   , Cs3 , v080
+	.byte	W24
+	.byte		N23   , Ds3 , v080
+	.byte	W24
+	.byte		N23   , En3 , v080
+	.byte	W48
+@ 008	----------------------------------------
+	.byte	W96
+@ 009	----------------------------------------
+	.byte	W96
+@ 010	----------------------------------------
+	.byte	W96
+@ 011	----------------------------------------
+	.byte	W96
+@ 012	----------------------------------------
+	.byte		N44   , Gs3 , v080
+	.byte	W48
+	.byte		N11   , Gs3 , v080
+	.byte	W24
+	.byte		N05   , Gs3 , v080
+	.byte	W24
+@ 013	----------------------------------------
+	.byte		N05   , Fs3 , v080
+	.byte	W24
+	.byte		N05   , Fn3 , v080
+	.byte	W24
+	.byte		N05   , Ds3 , v080
+	.byte	W24
+	.byte		N05   , As3 , v080
+	.byte	W06
+	.byte		N05   , Cs3 , v080
+	.byte	W06
+	.byte		N05   , As3 , v080
+	.byte	W06
+	.byte		N05   , Cs3 , v080
+	.byte	W06
+@ 014	----------------------------------------
+	.byte		N05   , As3 , v080
+	.byte	W06
+	.byte		N05   , Cs3 , v080
+	.byte	W06
+	.byte		N05   , As3 , v080
+	.byte	W06
+	.byte		N05   , Cs3 , v080
+	.byte	W06
+	.byte		N05   , As3 , v080
+	.byte	W06
+	.byte		N05   , Cs3 , v080
+	.byte	W06
+	.byte		N05   , As3 , v080
+	.byte	W06
+	.byte		N05   , Cs3 , v080
+	.byte	W06
+	.byte		N05   , As3 , v080
+	.byte	W06
+	.byte		N05   , Cs3 , v080
+	.byte	W06
+	.byte		N05   , As3 , v080
+	.byte	W06
+	.byte		N05   , Cs3 , v080
+	.byte	W30
+@ 015	----------------------------------------
+	.byte		N23   , Fs3 , v080
+	.byte	W24
+	.byte		N23   , Gs3 , v080
+	.byte	W24
+	.byte		N23   , An3 , v080
+	.byte	W48
+@ 016	----------------------------------------
 bgm_swimeye_2_001:
-	.byte		N12   , Fs1 , v120
+	.byte		N11   , Fs4 , v080
+	.byte	W12
+	.byte		N11   , Fs4 , v080
+	.byte	W12
+	.byte		N11   , Fs4 , v080
 	.byte	W24
-	.byte		N12   
+	.byte		N11   , Fn4 , v080
+	.byte	W12
+	.byte		N11   , Fn4 , v080
+	.byte	W12
+	.byte		N11   , Fn4 , v080
 	.byte	W24
-	.byte		N24   , Cs1 
-	.byte	W24
+@ 017	----------------------------------------
 	.byte	PEND
 bgm_swimeye_2_002:
-	.byte		N12   , Bn0 , v120
+	.byte		N11   , Ds4 , v080
+	.byte	W12
+	.byte		N11   , Ds4 , v080
+	.byte	W12
+	.byte		N11   , Ds4 , v080
 	.byte	W24
-	.byte		        Ds1 
-	.byte	W24
-	.byte		N24   , Fs1 
-	.byte	W24
+	.byte		N11   , Cs4 , v080
+	.byte	W48
+@ 018	----------------------------------------
 	.byte	PEND
-	.byte	PATT
-	 .word	bgm_swimeye_2_000
-	.byte	PATT
-	 .word	bgm_swimeye_2_000
 	.byte	PATT
 	 .word	bgm_swimeye_2_001
 	.byte	PATT
 	 .word	bgm_swimeye_2_002
+	.byte	PATT
+	 .word	bgm_swimeye_2_001
+	.byte		N11   , Ds4 , v080
+	.byte	W12
+	.byte		N11   , Ds4 , v080
+	.byte	W12
+	.byte		N11   , Ds4 , v080
+	.byte	W24
+	.byte		N11   , Cs4 , v080
+	.byte	W24
+	.byte		N68   , Fn3 , v080
+	.byte	W24
+@ 019	----------------------------------------
+	.byte	W48
+	.byte		N23   , Ds3 , v080
+	.byte	W24
+	.byte		N05   , Gs3 , v080
+	.byte	W06
+	.byte		N05   , Fn3 , v080
+	.byte	W06
+	.byte		N05   , Gs3 , v080
+	.byte	W06
+	.byte		N05   , Fn3 , v080
+	.byte	W06
+@ 020	----------------------------------------
+	.byte		N05   , Gs3 , v080
+	.byte	W06
+	.byte		N05   , Fn3 , v080
+	.byte	W06
+	.byte		N05   , Gs3 , v080
+	.byte	W06
+	.byte		N05   , Fn3 , v080
+	.byte	W06
+	.byte		N05   , Gs3 , v080
+	.byte	W06
+	.byte		N05   , Fn3 , v080
+	.byte	W06
+	.byte		N05   , Gs3 , v080
+	.byte	W06
+	.byte		N05   , Fn3 , v080
+	.byte	W06
+	.byte		N05   , Gs3 , v080
+	.byte	W06
+	.byte		N05   , Fn3 , v080
+	.byte	W06
+	.byte		N05   , Gs3 , v080
+	.byte	W06
+	.byte		N05   , Fn3 , v080
+	.byte	W30
+@ 021	----------------------------------------
+bgm_swimeye_2_003:
+	.byte		N11   , Gs3 , v080
+	.byte	W12
+	.byte		N11   , Gs3 , v080
+	.byte	W12
+	.byte		N11   , Gs3 , v080
+	.byte	W24
+	.byte		N11   , Fs3 , v080
+	.byte	W12
+	.byte		N11   , Fs3 , v080
+	.byte	W12
+	.byte		N11   , Fs3 , v080
+	.byte	W24
+@ 022	----------------------------------------
+	.byte	PEND
+bgm_swimeye_2_004:
+	.byte		N11   , Fn3 , v080
+	.byte	W12
+	.byte		N11   , Fn3 , v080
+	.byte	W12
+	.byte		N11   , Fn3 , v080
+	.byte	W24
+	.byte		N11   , Ds3 , v080
+	.byte	W48
+@ 023	----------------------------------------
+	.byte	PEND
+	.byte	PATT
+	 .word	bgm_swimeye_2_003
+	.byte	PATT
+	 .word	bgm_swimeye_2_004
+	.byte		N44   , Fn3 , v080
+	.byte	W48
+	.byte		N23   , Fs3 , v080
+	.byte	W24
+	.byte		N23   , Gs3 , v080
+	.byte	W24
+@ 024	----------------------------------------
+	.byte		N23   , Cs4 , v080
+	.byte	W24
+	.byte		N23   , Bn3 , v080
+	.byte	W24
+	.byte		N23   , Cs4 , v080
+	.byte	W24
+	.byte		N23   , Cs4 , v080
+	.byte	W24
+@ 025	----------------------------------------
+	.byte		N23   , Cs4 , v080
+	.byte	W72
+	.byte		N24   , As2 , v080
+	.byte	W24
+@ 026	----------------------------------------
 	.byte	GOTO
-	 .word	bgm_swimeye_2_B1
+	 .word	bgm_swimeye_2_005
 	.byte	FINE
 
-@********************** Track  3 **********************@
+@**************** Track 3 ****************@
 
 bgm_swimeye_3:
-	.byte		VOL   , 80*bgm_swimeye_mvl/mxv
+@ 000	----------------------------------------
+bgm_swimeye_3_005:
+	.byte		VOL   , 127*bgm_swimeye_mvl/mxv
 	.byte	KEYSH , bgm_swimeye_key+0
-	.byte		VOICE , 46
-	.byte		PAN   , c_v+9
-	.byte		N06   , Cs5 , v092
-	.byte	W06
-	.byte		N42   , Bn4 
-	.byte	W18
-	.byte		BEND  , c_v+0
-	.byte	W48
-	.byte		VOICE , 48
-	.byte		VOL   , 80*bgm_swimeye_mvl/mxv
-	.byte		PAN   , c_v-8
-	.byte		N24   , Fs2 , v072
+	.byte		VOICE , 25
+	.byte	W72
+	.byte		N17   , Fs1 , v080
 	.byte	W24
-	.byte		        Gs2 
-	.byte	W24
-	.byte		        An2 
-	.byte	W24
-bgm_swimeye_3_B1:
-	.byte		VOICE , 48
-	.byte		VOL   , 80*bgm_swimeye_mvl/mxv
-	.byte		N30   , Bn2 , v072
-	.byte	W36
-	.byte		N12   , Gs2 
-	.byte	W12
-	.byte		        Bn2 
-	.byte	W12
-	.byte		        Cs3 
-	.byte	W12
-	.byte		        Ds3 
-	.byte	W12
-	.byte		        Cs3 
-	.byte	W12
-	.byte		        Ds3 
-	.byte	W12
-	.byte		        En3 
-	.byte	W12
-	.byte		        Fs3 
-	.byte	W12
-	.byte		        Ds3 
-	.byte	W12
-	.byte		        Cs3 
-	.byte	W24
-	.byte		        Fs3 
-	.byte	W24
-	.byte		        An3 
-	.byte	W12
-	.byte		        Fs3 
-	.byte	W12
-	.byte		        An3 
-	.byte	W12
-	.byte		        Gs3 
-	.byte	W12
-	.byte		        An3 
-	.byte	W12
-	.byte		        Fs4 
-	.byte	W12
-	.byte		        En4 
-	.byte	W12
-	.byte		        Ds4 
-	.byte	W12
+@ 001	----------------------------------------
 bgm_swimeye_3_000:
-	.byte		VOICE , 60
-	.byte		N21   , Bn2 , v072
 	.byte	W12
-	.byte		VOL   , 75*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        62*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        47*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        29*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		VOICE , 48
-	.byte		VOL   , 80*bgm_swimeye_mvl/mxv
-	.byte		N06   , Bn2 , v092
+	.byte		N17   , As1 , v080
+	.byte	W36
+	.byte		N17   , Cs1 , v080
 	.byte	W24
-	.byte		        Ds3 
+	.byte		N17   , Fs1 , v080
 	.byte	W24
+@ 002	----------------------------------------
 	.byte	PEND
 	.byte	PATT
 	 .word	bgm_swimeye_3_000
-	.byte		VOICE , 60
-	.byte		N21   , An2 , v072
-	.byte	W12
-	.byte		VOL   , 75*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        62*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        47*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        29*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		VOICE , 48
-	.byte		VOL   , 80*bgm_swimeye_mvl/mxv
-	.byte		N06   , An2 , v092
-	.byte	W24
-	.byte		        Fs3 
-	.byte	W24
-	.byte		VOICE , 48
-	.byte		N12   , Bn2 , v072
-	.byte	W12
-	.byte		        As2 
-	.byte	W12
-	.byte		        Bn2 
-	.byte	W12
-	.byte		        Fs3 
-	.byte	W12
-	.byte		        En3 
-	.byte	W12
-	.byte		        Ds3 
-	.byte	W12
-	.byte	GOTO
-	 .word	bgm_swimeye_3_B1
-	.byte	FINE
-
-@********************** Track  4 **********************@
-
-bgm_swimeye_4:
-	.byte	KEYSH , bgm_swimeye_key+0
-	.byte		VOICE , 80
-	.byte		VOL   , 80*bgm_swimeye_mvl/mxv
-	.byte		PAN   , c_v+48
-	.byte		XCMD  , xIECV , 13
-	.byte		        xIECL , 8
-	.byte		N06   , Bn2 , v052
-	.byte	W24
-	.byte		        Bn3 
-	.byte	W24
-	.byte		N06   
-	.byte	W24
-	.byte		VOICE , 4
-	.byte		VOL   , 80*bgm_swimeye_mvl/mxv
-	.byte		N21   , Ds3 , v060
-	.byte	W12
-	.byte		VOL   , 76*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        65*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        41*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_swimeye_mvl/mxv
-	.byte		N21   , En3 
-	.byte	W12
-	.byte		VOL   , 76*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        65*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        41*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_swimeye_mvl/mxv
-	.byte		N21   , Fs3 
-	.byte	W12
-	.byte		VOL   , 76*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        65*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        41*bgm_swimeye_mvl/mxv
-	.byte	W06
-bgm_swimeye_4_B1:
-	.byte		VOICE , 80
-	.byte		VOL   , 80*bgm_swimeye_mvl/mxv
-	.byte		N21   , Gs3 , v060
-	.byte	W12
-	.byte		VOL   , 76*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        65*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        41*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_swimeye_mvl/mxv
-	.byte		N21   , Gs4 , v052
-	.byte	W12
-	.byte		VOL   , 76*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        65*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        41*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_swimeye_mvl/mxv
-	.byte		N21   , Gs3 , v060
-	.byte	W12
-	.byte		VOL   , 76*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        65*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        41*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_swimeye_mvl/mxv
-	.byte		N21   
-	.byte	W12
-	.byte		VOL   , 76*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        65*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        41*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_swimeye_mvl/mxv
-	.byte		N21   , Gs4 , v052
-	.byte	W12
-	.byte		VOL   , 76*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        65*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        41*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_swimeye_mvl/mxv
-	.byte		N21   , Gs3 , v060
-	.byte	W12
-	.byte		VOL   , 76*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        65*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        41*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_swimeye_mvl/mxv
-	.byte		N12   , Cs4 , v052
-	.byte	W12
-	.byte		        Fs2 , v060
-	.byte	W12
-	.byte		        Fs4 , v052
-	.byte	W12
-	.byte		        Fs2 , v060
-	.byte	W12
-	.byte		        An4 , v052
-	.byte	W12
-	.byte		        Fs2 , v060
-	.byte	W12
-	.byte		N24   , An4 , v052
-	.byte	W12
-	.byte		VOL   , 76*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        65*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        41*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_swimeye_mvl/mxv
-	.byte		N12   , Fs2 , v060
-	.byte	W12
-	.byte		        Bn2 
-	.byte	W12
-	.byte		        Cs3 
-	.byte	W12
-	.byte		        Ds3 
-	.byte	W12
-bgm_swimeye_4_000:
-	.byte		N21   , En3 , v060
-	.byte	W12
-	.byte		VOL   , 75*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        62*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        47*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_swimeye_mvl/mxv
-	.byte		N12   , En3 , v040
-	.byte	W12
-	.byte		        Bn3 
-	.byte	W12
-	.byte		        Gs4 
-	.byte	W12
-	.byte		        Ds5 
-	.byte	W12
-	.byte	PEND
 	.byte	PATT
-	 .word	bgm_swimeye_4_000
-	.byte		N21   , Ds3 , v060
-	.byte	W12
-	.byte		VOL   , 75*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        62*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        47*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_swimeye_mvl/mxv
-	.byte		N12   , Ds3 , v040
-	.byte	W12
-	.byte		        An3 
-	.byte	W12
-	.byte		        Fs4 
-	.byte	W12
-	.byte		        Cs5 
-	.byte	W12
-	.byte		N21   , Fs4 , v060
-	.byte	W12
-	.byte		VOL   , 75*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        62*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        47*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_swimeye_mvl/mxv
-	.byte		N21   , Fs3 
-	.byte	W12
-	.byte		VOL   , 75*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        62*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        47*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_swimeye_mvl/mxv
-	.byte		N21   , Bn3 
-	.byte	W12
-	.byte		VOL   , 75*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        62*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        47*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte	GOTO
-	 .word	bgm_swimeye_4_B1
-	.byte	FINE
-
-@********************** Track  5 **********************@
-
-bgm_swimeye_5:
-	.byte	KEYSH , bgm_swimeye_key+0
-	.byte		VOICE , 81
-	.byte		VOL   , 80*bgm_swimeye_mvl/mxv
-	.byte		XCMD  , xIECV , 13
-	.byte		        xIECL , 8
-	.byte		PAN   , c_v+0
-	.byte		N06   , Fs2 , v052
-	.byte	W24
-	.byte		        Fs3 
-	.byte	W24
-	.byte		N06   
-	.byte	W24
-	.byte		VOICE , 5
-	.byte		VOL   , 80*bgm_swimeye_mvl/mxv
-	.byte		N21   , Fs3 , v060
-	.byte	W12
-	.byte		VOL   , 76*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        65*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        41*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_swimeye_mvl/mxv
-	.byte		N21   , Gs3 
-	.byte	W12
-	.byte		VOL   , 76*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        65*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        41*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_swimeye_mvl/mxv
-	.byte		N21   , An3 
-	.byte	W12
-	.byte		VOL   , 76*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        65*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        41*bgm_swimeye_mvl/mxv
-	.byte	W06
-bgm_swimeye_5_B1:
-	.byte		VOICE , 81
-	.byte		VOL   , 80*bgm_swimeye_mvl/mxv
-	.byte		N21   , Bn3 , v060
-	.byte	W12
-	.byte		VOL   , 76*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        65*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        41*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_swimeye_mvl/mxv
-	.byte		N21   , Bn4 , v052
-	.byte	W12
-	.byte		VOL   , 76*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        65*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        41*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_swimeye_mvl/mxv
-	.byte		N21   , Bn3 , v060
-	.byte	W12
-	.byte		VOL   , 76*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        65*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        41*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_swimeye_mvl/mxv
-	.byte		N21   
-	.byte	W12
-	.byte		VOL   , 76*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        65*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        41*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_swimeye_mvl/mxv
-	.byte		N21   , Bn4 , v052
-	.byte	W12
-	.byte		VOL   , 76*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        65*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        41*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_swimeye_mvl/mxv
-	.byte		N21   , Bn3 , v060
-	.byte	W12
-	.byte		VOL   , 76*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        65*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        41*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_swimeye_mvl/mxv
-	.byte		N12   , Fs4 , v052
-	.byte	W12
-	.byte		        An2 , v060
-	.byte	W12
-	.byte		        An4 , v052
-	.byte	W12
-	.byte		        An2 , v060
-	.byte	W12
-	.byte		        Cs5 , v052
-	.byte	W12
-	.byte		        An2 , v060
-	.byte	W12
-	.byte		N24   , Bn4 , v052
-	.byte	W12
-	.byte		VOL   , 76*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        65*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        41*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_swimeye_mvl/mxv
-	.byte		N12   , An2 , v060
-	.byte	W12
-	.byte		        Ds3 
-	.byte	W12
-	.byte		        En3 
-	.byte	W12
-	.byte		        Fs3 
-	.byte	W12
-bgm_swimeye_5_000:
-	.byte		N21   , Gs3 , v060
-	.byte	W12
-	.byte		VOL   , 75*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        62*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        47*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		N12   , Gs3 , v040
-	.byte	W12
-	.byte		        Ds4 
-	.byte	W12
-	.byte		        Bn4 
-	.byte	W12
-	.byte		N06   , Gs5 
-	.byte	W06
-	.byte	PEND
+	 .word	bgm_swimeye_3_000
 	.byte	PATT
-	 .word	bgm_swimeye_5_000
-	.byte		N21   , Fs3 , v060
+	 .word	bgm_swimeye_3_000
+	.byte	PATT
+	 .word	bgm_swimeye_3_000
 	.byte	W12
-	.byte		VOL   , 75*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        62*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        47*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		N12   , Fs3 , v040
-	.byte	W12
-	.byte		        Cs4 
-	.byte	W12
-	.byte		        An4 
-	.byte	W12
-	.byte		N06   , Fs5 
-	.byte	W06
-	.byte		N21   , An4 , v060
-	.byte	W12
-	.byte		VOL   , 75*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        62*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        47*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_swimeye_mvl/mxv
-	.byte		N21   , An3 
-	.byte	W12
-	.byte		VOL   , 75*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        62*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        47*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte		        80*bgm_swimeye_mvl/mxv
-	.byte		N21   , Ds4 
-	.byte	W12
-	.byte		VOL   , 75*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        62*bgm_swimeye_mvl/mxv
-	.byte	W03
-	.byte		        47*bgm_swimeye_mvl/mxv
-	.byte	W06
-	.byte	GOTO
-	 .word	bgm_swimeye_5_B1
-	.byte	FINE
-
-@********************** Track  6 **********************@
-
-bgm_swimeye_6:
-	.byte	KEYSH , bgm_swimeye_key+0
-	.byte		VOL   , 80*bgm_swimeye_mvl/mxv
-	.byte	W72
-	.byte	W72
-bgm_swimeye_6_B1:
-	.byte		VOICE , 73
-	.byte	W72
-	.byte	W72
-	.byte	W72
-	.byte		N12   , Fs5 , v048
-	.byte	W12
-	.byte		        En5 
-	.byte	W12
-	.byte		        Fs5 
-	.byte	W12
-	.byte		        Bn5 
-	.byte	W12
-	.byte		        An5 
-	.byte	W12
-	.byte		        Gs5 
-	.byte	W12
-	.byte	W72
-	.byte	W72
-	.byte		        An4 
-	.byte	W24
-	.byte		        Bn4 
-	.byte	W24
-	.byte		        An4 
-	.byte	W24
-	.byte		        Fs5 
-	.byte	W12
-	.byte		        En5 
-	.byte	W12
-	.byte		        Fs5 
-	.byte	W12
-	.byte		        An5 
-	.byte	W12
-	.byte		        Gs5 
-	.byte	W12
-	.byte		        Fs5 
-	.byte	W12
-	.byte	GOTO
-	 .word	bgm_swimeye_6_B1
-	.byte	FINE
-
-@********************** Track  7 **********************@
-
-bgm_swimeye_7:
-	.byte	KEYSH , bgm_swimeye_key+0
-	.byte	W72
-	.byte		VOICE , 126
-	.byte		PAN   , c_v-48
-	.byte		VOL   , 75*bgm_swimeye_mvl/mxv
-	.byte		N12   , Gs4 , v040
-	.byte	W24
-	.byte		VOICE , 127
-	.byte		N06   , Gs4 , v052
+	.byte		N17   , As1 , v080
 	.byte	W36
-	.byte		VOICE , 126
-	.byte		N12   , Gs4 , v040
+	.byte		N17   , Cs1 , v080
+	.byte	W24
+	.byte		N17   , Cs1 , v080
+	.byte	W24
+@ 003	----------------------------------------
+bgm_swimeye_3_001:
 	.byte	W12
-bgm_swimeye_7_B1:
-bgm_swimeye_7_000:
-	.byte		VOICE , 127
-	.byte		N06   , Gs4 , v052
-	.byte	W12
-	.byte		        Gs4 , v040
-	.byte	W12
-	.byte		        Gs4 , v052
-	.byte	W12
-	.byte		        Gs4 , v040
-	.byte	W12
-	.byte		        Gs4 , v052
-	.byte	W12
-	.byte		        Gs4 , v040
-	.byte	W12
-	.byte	PEND
-bgm_swimeye_7_001:
-	.byte		N06   , Gs4 , v052
-	.byte	W12
-	.byte		        Gs4 , v040
-	.byte	W12
-	.byte		        Gs4 , v052
-	.byte	W12
-	.byte		        Gs4 , v040
-	.byte	W12
-	.byte		        Gs4 , v052
-	.byte	W12
-	.byte		        Gs4 , v040
-	.byte	W12
+	.byte		N17   , Fn1 , v080
+	.byte	W36
+	.byte		N17   , Gs1 , v080
+	.byte	W24
+	.byte		N17   , Cs1 , v080
+	.byte	W24
+@ 004	----------------------------------------
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_swimeye_7_001
-bgm_swimeye_7_002:
-	.byte		N06   , Gs4 , v052
+	 .word	bgm_swimeye_3_001
+	.byte	PATT
+	 .word	bgm_swimeye_3_001
+	.byte	PATT
+	 .word	bgm_swimeye_3_001
+	.byte	PATT
+	 .word	bgm_swimeye_3_001
+	.byte	PATT
+	 .word	bgm_swimeye_3_001
+	.byte	PATT
+	 .word	bgm_swimeye_3_001
+bgm_swimeye_3_004:
 	.byte	W12
-	.byte		        Gs4 , v040
+	.byte		N17   , Fn1 , v080
+	.byte	W36
+	.byte		N17   , Gs1 , v080
+	.byte	W24
+	.byte		N17   , Fs1 , v080
+	.byte	W24
+@ 005	----------------------------------------
+	.byte	PEND
 	.byte	W12
-	.byte		        Gs4 , v052
-	.byte	W12
-	.byte		        Gs4 , v040
-	.byte	W12
-	.byte		        Gs4 , v052
-	.byte	W12
-	.byte		VOICE , 126
-	.byte		N06   , Gs4 , v040
-	.byte	W12
+	.byte		N17   , As1 , v080
+	.byte	W36
+	.byte		N17   , Cs1 , v080
+	.byte	W18
+	.byte		N17   , Fs1 , v080
+	.byte	W30
+@ 006	----------------------------------------
+bgm_swimeye_3_002:
+	.byte	W06
+	.byte		N17   , As1 , v080
+	.byte	W36
+	.byte		N17   , Cs1 , v080
+	.byte	W24
+	.byte		N17   , Fs1 , v080
+	.byte	W30
+@ 007	----------------------------------------
 	.byte	PEND
 	.byte	PATT
-	 .word	bgm_swimeye_7_000
+	 .word	bgm_swimeye_3_002
 	.byte	PATT
-	 .word	bgm_swimeye_7_001
+	 .word	bgm_swimeye_3_002
 	.byte	PATT
-	 .word	bgm_swimeye_7_001
+	 .word	bgm_swimeye_3_002
 	.byte	PATT
-	 .word	bgm_swimeye_7_002
+	 .word	bgm_swimeye_3_002
+	.byte	PATT
+	 .word	bgm_swimeye_3_002
+	.byte	W06
+	.byte		N17   , As1 , v080
+	.byte	W36
+	.byte		N17   , Cs1 , v080
+	.byte	W24
+	.byte		N17   , Cs1 , v080
+	.byte	W30
+@ 008	----------------------------------------
+bgm_swimeye_3_003:
+	.byte	W06
+	.byte		N17   , Fn1 , v080
+	.byte	W36
+	.byte		N17   , Gs1 , v080
+	.byte	W24
+	.byte		N17   , Cs1 , v080
+	.byte	W30
+@ 009	----------------------------------------
+	.byte	PEND
+	.byte	PATT
+	 .word	bgm_swimeye_3_003
+	.byte	W06
+	.byte		N17   , Fn1 , v080
+	.byte	W36
+	.byte		N17   , Gs1 , v080
+	.byte	W30
+	.byte		N17   , Cs1 , v080
+	.byte	W24
+@ 010	----------------------------------------
+	.byte	PATT
+	 .word	bgm_swimeye_3_001
+	.byte	PATT
+	 .word	bgm_swimeye_3_001
+	.byte	PATT
+	 .word	bgm_swimeye_3_001
+	.byte	PATT
+	 .word	bgm_swimeye_3_001
+	.byte	PATT
+	 .word	bgm_swimeye_3_004
+	.byte	PATT
+	 .word	bgm_swimeye_3_000
 	.byte	GOTO
-	 .word	bgm_swimeye_7_B1
+	 .word	bgm_swimeye_3_005
 	.byte	FINE
 
-@********************** Track  8 **********************@
-
-bgm_swimeye_8:
-	.byte	KEYSH , bgm_swimeye_key+0
-	.byte		VOL   , 80*bgm_swimeye_mvl/mxv
-	.byte	W72
-	.byte		N06   , Cn1 , v112
-	.byte	W24
-	.byte		N06   
-	.byte	W24
-	.byte		N06   
-	.byte	W06
-	.byte		N03   , En1 , v052
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N06   , En1 , v088
-	.byte	W12
-bgm_swimeye_8_B1:
-	.byte		VOICE , 0
-	.byte		N06   , Cn1 , v112
-	.byte	W24
-	.byte		        En1 , v088
-	.byte	W24
-	.byte		        Cn1 , v112
-	.byte	W12
-	.byte		        En1 , v088
-	.byte	W12
-bgm_swimeye_8_000:
-	.byte		N06   , Cn1 , v112
-	.byte	W24
-	.byte		        En1 , v088
-	.byte	W24
-	.byte		        Cn1 , v112
-	.byte	W06
-	.byte		N03   , En1 , v052
-	.byte	W03
-	.byte		N03   
-	.byte	W03
-	.byte		N06   , En1 , v088
-	.byte	W12
-	.byte	PEND
-bgm_swimeye_8_001:
-	.byte		N06   , Cn1 , v112
-	.byte	W24
-	.byte		        En1 , v088
-	.byte	W12
-	.byte		        Cn1 , v112
-	.byte	W12
-	.byte		N06   
-	.byte	W12
-	.byte		        En1 , v088
-	.byte	W12
-	.byte	PEND
-	.byte	PATT
-	 .word	bgm_swimeye_8_000
-	.byte		N06   , Cn1 , v112
-	.byte	W24
-	.byte		        En1 , v088
-	.byte	W24
-	.byte		        Cn1 , v112
-	.byte	W12
-	.byte		        En1 , v088
-	.byte	W12
-	.byte	PATT
-	 .word	bgm_swimeye_8_000
-	.byte	PATT
-	 .word	bgm_swimeye_8_001
-	.byte	PATT
-	 .word	bgm_swimeye_8_000
-	.byte	GOTO
-	 .word	bgm_swimeye_8_B1
-	.byte	FINE
-
-@******************************************************@
+@******************************************@
 	.align	2
 
 bgm_swimeye:
-	.byte	8	@ NumTrks
+	.byte	3	@ NumTrks
 	.byte	0	@ NumBlks
 	.byte	bgm_swimeye_pri	@ Priority
 	.byte	bgm_swimeye_rev	@ Reverb.
@@ -916,10 +758,5 @@ bgm_swimeye:
 	.word	bgm_swimeye_1
 	.word	bgm_swimeye_2
 	.word	bgm_swimeye_3
-	.word	bgm_swimeye_4
-	.word	bgm_swimeye_5
-	.word	bgm_swimeye_6
-	.word	bgm_swimeye_7
-	.word	bgm_swimeye_8
 
 	.end

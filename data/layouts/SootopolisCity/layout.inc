@@ -11,5 +11,5 @@ SootopolisCity_Layout::
 	.4byte SootopolisCity_MapBorder
 	.4byte SootopolisCity_MapBlockdata
 	.4byte gTileset_General
-	.4byte gTileset_Sootopolis
+	.4byte gTileset_Rustboro
 
