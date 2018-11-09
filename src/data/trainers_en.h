@@ -3719,7 +3719,7 @@ const struct Trainer gTrainers[] = {
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
         .doubleBattle = FALSE,
         .aiFlags = 0x7,
-        .partySize = 1,
+        .partySize = 2,
         .party = {.NoItemCustomMoves = gTrainerParty_Roxanne }
     },
 

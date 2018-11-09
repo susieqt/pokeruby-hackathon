@@ -116,28 +116,6 @@ const struct WildPokemon MossdeepCity_FishingMons [] =
 };
 const struct WildPokemonInfo MossdeepCity_FishingMonsInfo = {10, MossdeepCity_FishingMons};
 
-const struct WildPokemon SootopolisCity_LandMons [] =
-{
-    {50, 50, SPECIES_POOCHYENA},
-    {50, 50, SPECIES_TAILLOW},
-    {50, 50, SPECIES_ZIGZAGOON},
-    {50, 50, SPECIES_SHARPEDO},
-#ifdef SAPPHIRE
-    {3, 3, SPECIES_LOTAD},
-    {4, 4, SPECIES_LOTAD},
-#else
-    {50, 50, SPECIES_SWELLOW},
-    {50, 50, SPECIES_SWELLOW},
-#endif
-    {50, 50, SPECIES_POOCHYENA},
-    {50, 50, SPECIES_LINOONE},
-    {50, 50, SPECIES_MIGHTYENA,
-    {45, 45, SPECIES_MEWTWO},
-    {50, 50, SPECIES_SHARPEDO},
-    {50, 50, SPECIES_DUSKULL},
-};
-const struct WildPokemonInfo SootopolisCity_LandMonsInfo = {20, SootopolisCity_LandMons};
-
 const struct WildPokemon SootopolisCity_WaterMons [] =
 {
     {5, 35, SPECIES_MAGIKARP},
@@ -1605,16 +1583,16 @@ const struct WildPokemon Route102_LandMons [] =
     {50, 50, SPECIES_TAILLOW},
     {50, 50, SPECIES_ZIGZAGOON},
     {50, 50, SPECIES_SHARPEDO},
-#ifdef SAPPHIRE
-    {3, 3, SPECIES_LOTAD},
-    {4, 4, SPECIES_LOTAD},
-#else
-    {50, 50, SPECIES_SWELLOW},
-    {50, 50, SPECIES_SWELLOW},
-#endif
+//#ifdef SAPPHIRE
+//    {3, 3, SPECIES_LOTAD},
+//    {4, 4, SPECIES_LOTAD},
+//#else
+//    {50, 50, SPECIES_SWELLOW},
+//    {50, 50, SPECIES_SWELLOW},
+//#endif
     {50, 50, SPECIES_POOCHYENA},
     {50, 50, SPECIES_LINOONE},
-    {50, 50, SPECIES_MIGHTYENA,
+//    {50, 50, SPECIES_MIGHTYENA,
     {45, 45, SPECIES_MEWTWO},
     {50, 50, SPECIES_SHARPEDO},
     {50, 50, SPECIES_DUSKULL},

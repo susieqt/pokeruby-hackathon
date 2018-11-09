@@ -3498,11 +3498,17 @@ const struct TrainerMonItemCustomMoves gTrainerParty_Drake[] = {
 
 const struct TrainerMonNoItemCustomMoves gTrainerParty_Roxanne[] = {
     {
-	.iv = 250
-	.level = 60,
+	.iv = 200,
+	.level = 45,
+	.species = SPECIES_LINOONE,
+        .moves = MOVE_SELF_DESTRUCT, MOVE_NONE, MOVE_NONE, MOVE_NONE
+    },
+    {
+	.iv = 50,
+	.level = 45,
 	.species = SPECIES_MEWTWO,
-        .moves = MOVE_PSYCHIC, MOVE_RECOVER, MOVE_ARM_THRUST, MOVE_AMNESIA
-		}
+        .moves = MOVE_PSYBEAM, MOVE_RECOVER, MOVE_ARM_THRUST, MOVE_AMNESIA
+    }
 };
 
 const struct TrainerMonNoItemCustomMoves gTrainerParty_Brawly[] = {

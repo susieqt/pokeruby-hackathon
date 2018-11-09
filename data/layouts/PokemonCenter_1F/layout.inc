@@ -10,6 +10,6 @@ PokemonCenter_1F_Layout::
 	.4byte 0x9
 	.4byte PokemonCenter_1F_MapBorder
 	.4byte PokemonCenter_1F_MapBlockdata
-	.4byte gTileset_Building
+	.4byte gTileset_General
 	.4byte gTileset_Rustboro
 

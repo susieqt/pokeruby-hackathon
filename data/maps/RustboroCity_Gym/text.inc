@@ -33,22 +33,22 @@ RustboroCity_Gym_Text_183C90:: @ 8183C90
 	.string "That’s got to feel awesome!$"
 
 RustboroCity_Gym_Text_183D99:: @ 8183D99
-	.string "Ｇｅｔ ｏｕｔｔａ ｈｅｒｅ， ｐｕｎｋ！\n"
+	.string "Ｇｅｔ ｏｕｔｔａ ｈｅｒｅ, ｐｕｎｋ！\n"
 	.string "Ｉ’ｌｌ ｐｒｏｔｅｃｔ ｔｈｅ ｌｅａｄｅｒ！$"
 
 RustboroCity_Gym_Text_183DDD:: @ 8183DDD
-	.string "Ｙｏｕ ｗｅｒｅ ｔｏｏ ｇｏｏｄ ｆｏｒ ｍｅ．．．$"
+	.string "Ｙｏｕ ｗｅｒｅ ｔｏｏ ｇｏｏｄ ｆｏｒ ｍｅ...$"
 
 RustboroCity_Gym_Text_183DF9:: @ 8183DF9
 	.string "Ｏｕｒ ｌｅａｄｅｒ ｉｓ ｗａｙ ｓｃａｒｉｅｒ\n"
 	.string "ｔｈａｎ Ｉ ａｍ！$"
 
 RustboroCity_Gym_Text_183E38:: @ 8183E38
-	.string "Ｉｆ ｙｏｕ ｃａｎ’ｔ ｂｅａｔ ｍｅ， ｙｏｕ ｗｏｎ’ｔ ｓｔａｎｄ\n"
+	.string "Ｉｆ ｙｏｕ ｃａｎ’ｔ ｂｅａｔ ｍｅ, ｙｏｕ ｗｏｎ’ｔ ｓｔａｎｄ\n"
 	.string "ａ ｃｈａｎｃｅ ａｇａｉｎｓｔ ＨＩＭ！$"
 
 RustboroCity_Gym_Text_183E78:: @ 8183E78
-	.string "Ｗｏｗ！ Ｙｏｕ’ｖｅ ｇｏｔ ｓｏｍｅ ｐｏｔｅｎｔｉａｌ！$"
+	.string "Ｗｏｗ! Ｙｏｕ’ｖｅ ｇｏｔ ｓｏｍｅ ｐｏｔｅｎｔｉａｌ！$"
 
 RustboroCity_Gym_Text_183E98:: @ 8183E98
 	.string "ＨＥ ｉｓ ｓｔｒｏｎｇｅｒ ｔｈａｎ ｍｅ ｂｙ\n"
@@ -56,22 +56,22 @@ RustboroCity_Gym_Text_183E98:: @ 8183E98
 	.string "Ｙｏｕ’ｄ ｂｅｔｔｅｒ ｂｅ ｏｎ ｙｏｕｒ ｇｕａｒｄ！$"
 
 RustboroCity_Gym_Text_183EE5:: @ 8183EE5
-	.string "ⓈⓊⓅ Ⓚûóⓠ\n" //SUP KID?
-	.string "ûⓉ’Ⓢ Ⓜô.\p" //IT'S ME.
-	.string "óûîⓟôⓡ ⓢîⓝⓢ ⓤⓝóôⓡⓣîⓛô.\p" //DIAPER SANS UNDERTALE.
-	.string "ⓨíⓤ ⓚⓝíⓦ, ûⓣ’ⓢ î ïôîⓤⓣûⓕⓤⓛ\n" //YOU KNOW, ITS A BEAUTIFUL
-	.string "óîⓨ íⓤⓣⓢûóô. ïûⓡóⓢ îⓡô\l" //DAY OUTSIDE. BIRDS ARE
-	.string "ⓢⓘⓝⓖûⓝⓖ, œⓛíⓦôⓡⓢ îⓡô\n" //SINGING, FLOWERS ARE
-	.string "ïⓛííⓜûⓝⓖ. íⓝ óîⓨⓢ ⓛûⓚô\l" //BLOOMING. ON DAYS LIKE
-	.string "ⓣⓗôⓢô, ⓚûóⓢ ⓛⓘⓚô ⓨⓞⓤ...\p" //THESE, KIDS LIKE YOU...
+	.string "ⓈⓊⓅ Ⓚûóⓠ\n" 
+	.string "ûⓉ’Ⓢ Ⓜô.\p" 
+	.string "óûîⓅôⓇ ⓈîⓃⓈ ⓊⓃóôⓇⓉîⓁô.\p" 
+	.string "ⓎíⓊ ⓀⓃíⓌ, ûⓉ’Ⓢ î ïôîⓊⓉûœⓊⓁ\n" 
+	.string "óîⓎ íⓊⓉⓈûóô. ïûⓇóⓈ îⓇô\l" 
+	.string "ⓈûⓃùûⓃù, œⓁíⓌôⓇⓈ îⓇô\n" 
+	.string "ïⓁííⓂûⓃù. íⓃ óîⓎⓈ ⓁûⓀô\l" 
+	.string "ⓉúôⓈô, ⓀûóⓈ ⓁûⓀô ⓎíⓊ...\p" 
 	.string ". . .\p"
-	.string "🇸🇭🇴🇺🇱🇩 🇧🇪 🇧🇺🇷🇳🇮🇳🇬 🇮🇳 🇭🇪🇱🇱.$" //SHOULD BE BURNING IN HELL
+	.string "🇸🇭🇴🇺🇱🇩 🇧🇪 🇧🇺🇷🇳🇮🇳🇬 🇮🇳 🇭🇪🇱🇱.$" 
 
 RustboroCity_Gym_Text_183FC4:: @ 8183FC4
 	.string "ⓌôⓁⓅ.\n"
 	.string "û ⓁíⓈⓉ...\p"
-	.string "òíNùRîTS, KûD.\n"
-	.string "ⓈíⓇⓇⓎ œíⓇ ⓉⒽô ïîûⓉ îⓃⒹ ⓈⓌûⓉòⒽ...\p"
+	.string "òíⓃùⓇîⓉⓈ, Ⓚûó.\n"
+	.string "ⓈíⓇⓇⓎ œíⓇ Ⓣúô ïîûⓉ îⓃó ⓈⓌûⓉòú...\p"
 	.string "ûⓉ ⓌîⓈ ⓈôòⓇôⓉⓁⓎ ⓂôⓂô ⓉⓇîⓈú\l"
 	.string "Ⓣúô ôⓃⓉûⓇô ⓉûⓂô!\p"
 	.string "ⓉúîⓃⓀⓈ œíⓇ îòⓉⓊîⓁⓁⓎ ⓅⓁîⓎûⓃù.\p"
@@ -86,7 +86,7 @@ RustboroCity_Gym_Text_1840D5:: @ 81840D5
 	.string "Ⓣúô óûîⓅôⓇ.\p"
 	.string "ⓉúûⓈ ñíⓀô ûⓈ ïîó îⓃó û\n"
 	.string "ⓇôùⓇôⓉ óíûⓃù ûⓉ ïôœíⓇô û ôⓋôⓃ.\p"
-	.string "œûNûSú TYPûNù TúûS.$"
+	.string "œûⓃûⓈú ⓉⓎⓅûⓃù ⓉúûⓈ.$"
 
 RustboroCity_Gym_Text_184170:: @ 8184170
 	.string "úôⓇôⓈ î ⓉⓂ œíⓇ ⓁûⓀô\p"
@@ -94,7 +94,7 @@ RustboroCity_Gym_Text_184170:: @ 8184170
 
 RustboroCity_Gym_Text_184252:: @ 8184252
 	.string "ⓎíⓊ òîⓃ ñⓊⓈⓉ\n"
-	.string "ⓆⓊûⓉ ⓅⓁîⓎûⓃⒼ ⓃíⓌ $"
+	.string "ⓆⓊûⓉ ⓅⓁîⓎûⓃù ⓃíⓌ $"
 
 RustboroCity_Gym_Text_1842CC:: @ 81842CC
 	.string "NEW PODUNK POKéMON GYM$"

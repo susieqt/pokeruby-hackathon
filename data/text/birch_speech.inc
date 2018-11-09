@@ -48,14 +48,14 @@ gBirchSpeech_AhOkayYouArePlayer:: @ 81C7025
 
 gBirchSpeech_AreYouReady:: @ 81C7074
 	.string "A-anyway! Apparently, there’s\l"
-	.string "something called an “Ultra Wormhole”…\n"
+	.string "something called an “Ultra Wormhole”\n"
 	.string "PROF. KUKUI called me to try to\l"
 	.string "explain it, but I didn’t really get it.\p"
 	.string "Anyway, some strange invaders from \n"
 	.string "another dimension came through one,\l"
-	.string "crashed their ship in the forest near\l"
-	.string "LITTLEROOT, and started taking over\n"
-	.string "everything, and reshaping the region\l"
+	.string "crashed their ship near\n"
+	.string "LITTLEROOT, and started taking over\l"
+	.string "everything, and reshaping the region\n"
 	.string "to look like their own home planet!\p"
 	.string "Can you please go check it out, and\l"
 	.string "Try to convince them to return home?\p"

@@ -14,8 +14,8 @@ SootopolisCity_Text_16972B:: @ 816972B
 	.string "Ｏｕｒ ｌｅａｄｅｒ ｉｓ ｔｈｅｒｅ!$"
 
 SootopolisCity_Text_1697A7:: @ 81697A7
-	.string "Ｉ... Ｉ’ｖｅ ｎｅｖｅｒ ｂｅｅｎ ｏｕｔ ｏｆ ｔｈｉｓ ｃｉｔｙ.\p"
-	.string "Ｉｓ ｉｔ ｔｒｕｅ ｏｔｈｅｒ ｔｏｗｎｓ\n"
+	.string "Ｉ... Ｉ’ｖｅ ｎｅｖｅｒ ｂｅｅｎ ｏｕｔ ｏｆ ｔｈｉｓ\p"
+	.string "ｃｉｔｙ. Ｉｓ ｉｔ ｔｒｕｅ ｏｔｈｅｒ ｔｏｗｎｓ\n"
 	.string "ａｒｅｎ’ｔ ａｓ ｓｌａｎｔｅｄ⸮$"
 
 SootopolisCity_Text_169813:: @ 8169813

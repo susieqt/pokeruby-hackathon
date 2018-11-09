@@ -10,5 +10,5 @@ SootopolisCity::
 	.byte WEATHER_SUNNY
 	.byte MAP_TYPE_CITY
 	.2byte 0
-	.byte 1
+	.byte FALSE
 	.byte MAP_BATTLE_SCENE_NORMAL

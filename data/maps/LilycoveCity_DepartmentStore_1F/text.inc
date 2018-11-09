@@ -1,5 +1,6 @@
 LilycoveCity_DepartmentStore_1F_Text_18BFB5:: @ 818BFB5
-	.string "Welcome to LILYCOVE DEPARTMENT STORE.$"
+	.string "Welcome to DEPARTMENT STORE.\l"
+	.string "We aren’t serving natives now.$"
 
 LilycoveCity_DepartmentStore_1F_Text_18BFDB:: @ 818BFDB
 	.string "Whenever I come to the DEPARTMENT\n"

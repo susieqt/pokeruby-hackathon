@@ -11,5 +11,5 @@ SootopolisCity_House2_Layout::
 	.4byte SootopolisCity_House2_MapBorder
 	.4byte SootopolisCity_House2_MapBlockdata
 	.4byte gTileset_Building
-	.4byte gTileset_GenericBuilding
+	.4byte gTileset_Rustboro
 
