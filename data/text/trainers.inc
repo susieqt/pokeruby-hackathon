@@ -1,15 +1,14 @@
 Route102_Text_1B79C3:: @ 81B79C3
-	.string "If you have POKéMON with you, then\n"
-	.string "you’re an official POKéMON TRAINER!\l"
-	.string "You can’t say no to my challenge!$"
+	.string "Ｈｅｙ, ａ ｎａｔｉｖｅ！\n"
+	.string "Ｌｅｔ’ｓ ｆｉｇｈｔ ｏｕｒ\l"
+	.string "“Ｐｏｃｋｅｔ Ｍｏｎｓｔｅｒｓ”！$"
 
 Route102_Text_1B7A2C:: @ 81B7A2C
-	.string "Arrgh, I lost...\n"
-	.string "I should have trained mine more...$"
+	.string "Ｏｏｆ！$"
 
 Route102_Text_1B7A60:: @ 81B7A60
-	.string "Listen, you. If you’re strong, you\n"
-	.string "should have told me before!$"
+	.string "Ｉ ｌｉｋｅ ｂａｔｔｌｅｓ ｉｎ \n"
+	.string "ｍｙ ｗｏｒｌｄ ｂｅｔｔｅｒ！$"
 
 Route102_Text_1B7A9F:: @ 81B7A9F
 	.string "Ever since I lost to you, I desperately\n"
@@ -25,39 +24,40 @@ Route102_Text_1B7B2F:: @ 81B7B2F
 	.string "get stronger, too.$"
 
 Route102_Text_1B7B68:: @ 81B7B68
-	.string "Did you just become a TRAINER?\n"
-	.string "We’re both beginners!$"
+	.string "Ｈｉ ｔｈｅｒｅ！ Ｉ’ｍ ｊｕｓｔ\n"
+	.string "ＢＥＧＩＮＮＩＮＧ ｍｙ ｃａｒｅｅｒ\l"
+	.string "ａｓ ａ ＴＲＡＩＮＥＲ！$"
 
 Route102_Text_1B7B9D:: @ 81B7B9D
-	.string "I called you because I thought I\n"
-	.string "could beat you...$"
+	.string "Ａｔ ｌｅａｓｔ ｍｙ ｊｏｋｅ \n"
+	.string "ｗａｓ ｆｕｎｎｙ．．．$"
 
 Route102_Text_1B7BD0:: @ 81B7BD0
-	.string "I haven’t won once yet...\n"
-	.string "I wish I would win soon...$"
+	.string "Ｙ-Ｙｏｕ ｄｉｄ ｇｅｔ ｉｔ,\n"
+	.string "ｒｉｇｈｔ．．⸮$"
 
 Route102_Text_1B7C05:: @ 81B7C05
-	.string "Hahah! Our eyes met!\n"
-	.string "I’ll take you on with my BUG POKéMON!$"
+	.string "Ｈｅｙ ａ ｔｒａｉｎｅｒ！ Ｉ’ｍ ｇｏｎｎａ\n"
+	.string "Ｓ Ｍ Ａ Ａ Ａ Ｓ Ｈ ｙｏｕ！$"
 
 Route102_Text_1B7C40:: @ 81B7C40
-	.string "Ow! Down and out!$"
+	.string "Ｏｏｆ！$"
 
 Route102_Text_1B7C52:: @ 81B7C52
-	.string "If you lock eyes with a TRAINER,\n"
-	.string "you have to challenge! It’s a rule!$"
+	.string "Ｄｉｄ ｙｏｕ ｇｅｔ ａ 16-ｈｉｔ\n"
+	.string "ｃｏｍｂｏ ｏｎ ｍｅ⸮$"
 
 Route102_Text_1B7C97:: @ 81B7C97
-	.string "I’m going to keep winning and aim\n"
-	.string "to be the best TRAINER.\p"
-	.string "Help me further my career!$"
+	.string "ＮＥＷ ＰＯＤＵＮＫ ｉｓ ｊｕｓｔ\n"
+	.string "ｕｐ ａｈｅａｄ！ Ｉ’ｌｌ ｓｔｏｐ ｙｏｕ\p"
+	.string "ｈｅｒｅ ｔｈｏｕｇｈ！$"
 
 Route102_Text_1B7CEC:: @ 81B7CEC
-	.string "I ended up furthering your career...$"
+	.string "Ｌｏｏｋｓ ｌｉｋｅ Ｉ ｇｏｔ ｓｔｏｐｐｅｄ！$"
 
 Route102_Text_1B7D11:: @ 81B7D11
-	.string "To keep winning my way up, I see that\n"
-	.string "I have to catch more POKéMON.$"
+	.string "Ｏｈ ｗｅｌｌ．\n"
+	.string "Ｂｅｔｔｅｒ ｌｕｃｋ ｎｅｘｔ ｔｉｍｅ！$"
 
 Route103_Text_1B7D55:: @ 81B7D55
 	.string "Did you feel the tug of our soul-\n"

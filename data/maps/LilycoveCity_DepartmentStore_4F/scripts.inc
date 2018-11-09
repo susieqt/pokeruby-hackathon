@@ -45,10 +45,10 @@ LilycoveCity_DepartmentStore_4F_EventScript_15A03C:: @ 815A03C
 
 	.align 2
 LilycoveCity_DepartmentStore_4F_Items2:: @ 815A054
+	.2byte ITEM_TM35_FLAMETHROWER
 	.2byte ITEM_TM17_PROTECT
-	.2byte ITEM_TM20_SAFEGUARD
-	.2byte ITEM_TM33_REFLECT
-	.2byte ITEM_TM16_LIGHT_SCREEN
+	.2byte ITEM_TM13_ICE_BEAM
+	.2byte ITEM_TM09_BULLET_SEED
 	.2byte ITEM_NONE
 	release
 	end

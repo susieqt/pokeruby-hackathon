@@ -36,13 +36,13 @@ LilycoveCity_DepartmentStore_3F_EventScript_159FB8:: @ 8159FB8
 
 	.align 2
 LilycoveCity_DepartmentStore_3F_Items2:: @ 8159FD0
-	.2byte ITEM_X_SPEED
-	.2byte ITEM_X_SPECIAL
-	.2byte ITEM_X_ATTACK
-	.2byte ITEM_X_DEFEND
-	.2byte ITEM_DIRE_HIT
-	.2byte ITEM_GUARD_SPEC
-	.2byte ITEM_X_ACCURACY
+	.2byte ITEM_FULL_HEAL
+	.2byte ITEM_ANTIDOTE
+	.2byte ITEM_PARALYZE_HEAL
+	.2byte ITEM_BURN_HEAL
+	.2byte ITEM_ICE_HEAL
+	.2byte ITEM_AWAKENING
+	.2byte ITEM_REVIVE
 	.2byte ITEM_NONE
 	release
 	end

@@ -1,4 +1,4 @@
-SootopolisCity_House3:: @ 83069F0
+SootopolisCity_House3::
 	.4byte SootopolisCity_House3_Layout
 	.4byte SootopolisCity_House3_MapEvents
 	.4byte SootopolisCity_House3_MapScripts

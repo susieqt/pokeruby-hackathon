@@ -75,7 +75,7 @@ RustboroCity_Gym_Text_183FC4:: @ 8183FC4
 	.string "ûⓉ ⓌîⓈ ⓈôòⓇôⓉⓁⓎ ⓂôⓂô ⓉⓇîⓈú\l"
 	.string "Ⓣúô ôⓃⓉûⓇô ⓉûⓂô!\p"
 	.string "ⓉúîⓃⓀⓈ œíⓇ îòⓉⓊîⓁⓁⓎ ⓅⓁîⓎûⓃù.\p"
-	.string "íú, úôⓇôⓈ ⓈíⓊⓇ ïîóùô.\p"
+	.string "íú, úôⓇôⓈ ⓎíⓊⓇ ïîóùô.\p"
 
 RustboroCity_Gym_Text_1840AB:: @ 81840AB
 	.string "{PLAYER} received the DIAPER\n"

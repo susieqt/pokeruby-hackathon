@@ -1,4 +1,4 @@
-SootopolisCity_Mart:: @ 830699C
+SootopolisCity_Mart::
 	.4byte PokeMart_Layout
 	.4byte SootopolisCity_Mart_MapEvents
 	.4byte SootopolisCity_Mart_MapScripts

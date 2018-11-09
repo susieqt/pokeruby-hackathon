@@ -1,4 +1,4 @@
-SootopolisCity_PokemonCenter_2F:: @ 8306980
+SootopolisCity_PokemonCenter_2F::
 	.4byte PokemonCenter_2F_Layout
 	.4byte SootopolisCity_PokemonCenter_2F_MapEvents
 	.4byte SootopolisCity_PokemonCenter_2F_MapScripts

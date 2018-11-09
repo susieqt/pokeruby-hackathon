@@ -1,5 +1,5 @@
 Route102_EventScript_1B1439:: @ 81B1439
-	giveitem_std ITEM_POTION, 1, 1
+	giveitem_std ITEM_MASTER_BALL, 1, 1
 	end
 
 Route103_EventScript_1B1446:: @ 81B1446

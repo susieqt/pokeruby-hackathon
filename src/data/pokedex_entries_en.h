@@ -1780,13 +1780,13 @@ static const u8 DexDescription_Dragonite_2[] = _(
   "the safety of land.");
 
 static const u8 DexDescription_Mewtwo_1[] = _(
-  "MEWTWO is a POKéMON that was created\n"
-  "by genetic manipulation.\n"
-  "However, even though the scientific");
+  "It claims to be a normal child\n"
+  "that happens to have\n"
+  "PSYCHIC powers.");
 static const u8 DexDescription_Mewtwo_2[] = _(
-  "power of humans created this POKéMON’s\n"
-  "body, they failed to endow MEWTWO with\n"
-  "a compassionate heart.");
+  "However, if that is\n"
+  "the case, why can it be\n"
+  "captured in BALLs..?");
 
 static const u8 DexDescription_Mew_1[] = _(
   "MEW is said to possess the genetic\n"
@@ -3012,77 +3012,66 @@ static const u8 DexDescription_Swampert_2[] = _(
 
 #ifdef SAPPHIRE
 static const u8 DexDescription_Poochyena_1[] = _(
-  "POOCHYENA is an omnivore - it will eat\n"
-  "anything. A distinguishing feature is\n"
-  "how large its fangs are compared to");
+  "This is a newly discovered POKéMON.\n"
+  "It is currently under investigation.");
 static const u8 DexDescription_Poochyena_2[] = _(
-  "its body. This POKéMON tries to\n"
-  "intimidate its foes by making the hair\n"
-  "on its tail bristle out.");
+  "No detailed information is available\n"
+  "at this time.");
 #else
 static const u8 DexDescription_Poochyena_1[] = _(
-  "At first sight, POOCHYENA takes a bite\n"
-  "at anything that moves.\n"
-  "This POKéMON chases after prey until");
+  "This is a newly discovered POKéMON.\n"
+  "It is currently under investigation.");
 static const u8 DexDescription_Poochyena_2[] = _(
-  "the victim becomes exhausted.\n"
-  "However, it may turn tail if the prey\n"
-  "strikes back.");
+  "No detailed information is available\n"
+  "at this time.");
 #endif
 
 #ifdef SAPPHIRE
 static const u8 DexDescription_Mightyena_1[] = _(
-  "MIGHTYENA travel and act as a pack\n"
-  "in the wild. The memory of its life in the\n"
-  "wild compels the POKéMON to obey only");
+  "This is a newly discovered POKéMON.\n"
+  "It is currently under investigation.");
 static const u8 DexDescription_Mightyena_2[] = _(
-  "those TRAINERS that it recognizes to\n"
-  "possess superior skill.");
+  "No detailed information is available\n"
+  "at this time.");
 #else
 static const u8 DexDescription_Mightyena_1[] = _(
-  "MIGHTYENA gives obvious signals when\n"
-  "it is preparing to attack. It starts to\n"
-  "growl deeply and then flattens its body.");
+  "This is a newly discovered POKéMON.\n"
+  "It is currently under investigation.");
 static const u8 DexDescription_Mightyena_2[] = _(
-  "This POKéMON will bite savagely with its\n"
-  "sharply pointed fangs.");
+  "No detailed information is available\n"
+  "at this time.");
 #endif
 
 #ifdef SAPPHIRE
 static const u8 DexDescription_Zigzagoon_1[] = _(
-  "The hair on ZIGZAGOON’s back is \n"
-  "bristly. It rubs the hard back hair\n"
-  "against trees to leave its territorial");
+  "This is a newly discovered POKéMON.\n"
+  "It is currently under investigation.");
 static const u8 DexDescription_Zigzagoon_2[] = _(
-  "markings.\n"
-  "This POKéMON may play dead to fool foes\n"
-  "in battle.");
+  "No detailed information is available\n"
+  "at this time.");
 #else
 static const u8 DexDescription_Zigzagoon_1[] = _(
-  "ZIGZAGOON restlessly wanders\n"
-  "everywhere at all times. This POKéMON\n"
-  "does so because it is very curious.");
+  "This is a newly discovered POKéMON.\n"
+  "It is currently under investigation.");
 static const u8 DexDescription_Zigzagoon_2[] = _(
-  "It becomes interested in anything\n"
-  "that it happens to see.");
+  "No detailed information is available\n"
+  "at this time.");
 #endif
 
 #ifdef SAPPHIRE
 static const u8 DexDescription_Linoone_1[] = _(
-  "When hunting, LINOONE will make a\n"
-  "beeline straight for the prey at a full\n"
-  "run. While this POKéMON is capable of");
+  "This is a newly discovered POKéMON.\n"
+  "It is currently under investigation.");
 static const u8 DexDescription_Linoone_2[] = _(
-  "topping 60 mph, it has to come to a\n"
-  "screeching halt before it can turn.");
+  "No detailed information is available\n"
+  "at this time.");
 #else
 static const u8 DexDescription_Linoone_1[] = _(
-  "LINOONE always runs full speed and only\n"
-  "in straight lines. If facing an obstacle,\n"
-  "it makes a right-angle turn to evade it.");
+  "This is a newly discovered POKéMON.\n"
+  "It is currently under investigation.");
 static const u8 DexDescription_Linoone_2[] = _(
-  "This POKéMON is very challenged by\n"
-  "gently curving roads.");
+  "No detailed information is available\n"
+  "at this time.");
 #endif
 
 #ifdef SAPPHIRE
@@ -3298,40 +3287,34 @@ static const u8 DexDescription_Shiftry_2[] = _(
 
 #ifdef SAPPHIRE
 static const u8 DexDescription_Taillow_1[] = _(
-  "TAILLOW is young - it has only just\n"
-  "left its nest. As a result, it sometimes\n"
-  "becomes lonesome and cries at night.");
+  "This is a newly discovered POKéMON.\n"
+  "It is currently under investigation.");
 static const u8 DexDescription_Taillow_2[] = _(
-  "This POKéMON feeds on WURMPLE that\n"
-  "live in forests.");
+  "No detailed information is available\n"
+  "at this time.");
 #else
 static const u8 DexDescription_Taillow_1[] = _(
-  "TAILLOW courageously stands its\n"
-  "ground against foes, however strong\n"
-  "they may be.");
+  "This is a newly discovered POKéMON.\n"
+  "It is currently under investigation.");
 static const u8 DexDescription_Taillow_2[] = _(
-  "This gutsy POKéMON will remain defiant\n"
-  "even after a loss. On the other hand,\n"
-  "it cries loudly if it becomes hungry.");
+  "No detailed information is available\n"
+  "at this time.");
 #endif
 
 #ifdef SAPPHIRE
 static const u8 DexDescription_Swellow_1[] = _(
-  "SWELLOW is very conscientious about\n"
-  "the upkeep of its glossy wings.\n"
-  "Once two SWELLOW are gathered, they");
+  "This is a newly discovered POKéMON.\n"
+  "It is currently under investigation.");
 static const u8 DexDescription_Swellow_2[] = _(
-  "diligently take care of cleaning each\n"
-  "other’s wings.");
+  "No detailed information is available\n"
+  "at this time.");
 #else
 static const u8 DexDescription_Swellow_1[] = _(
-  "SWELLOW flies high above our heads,\n"
-  "making graceful arcs in the sky.\n"
-  "This POKéMON dives at a steep angle as");
+  "This is a newly discovered POKéMON.\n"
+  "It is currently under investigation.");
 static const u8 DexDescription_Swellow_2[] = _(
-  "soon as it spots its prey. The hapless\n"
-  "prey is tightly grasped by SWELLOW’s\n"
-  "clawed feet, preventing escape.");
+  "No detailed information is available\n"
+  "at this time.");
 #endif
 
 #ifdef SAPPHIRE
@@ -4112,21 +4095,18 @@ static const u8 DexDescription_Carvanha_2[] = _(
 
 #ifdef SAPPHIRE
 static const u8 DexDescription_Sharpedo_1[] = _(
-  "SHARPEDO can swim at speeds of up to\n"
-  "75 mph by jetting seawater out of its\n"
-  "backside.");
+  "This is a newly discovered POKéMON.\n"
+  "It is currently under investigation.");
 static const u8 DexDescription_Sharpedo_2[] = _(
-  "This POKéMON’s drawback is its inability\n"
-  "to swim long distances.");
+  "No detailed information is available\n"
+  "at this time.");
 #else
 static const u8 DexDescription_Sharpedo_1[] = _(
-  "Nicknamed “the bully of the sea,”\n"
-  "SHARPEDO is widely feared.\n"
-  "Its cruel fangs grow back immediately");
+  "This is a newly discovered POKéMON.\n"
+  "It is currently under investigation.");
 static const u8 DexDescription_Sharpedo_2[] = _(
-  "if they snap off.\n"
-  "Just one of these POKéMON can\n"
-  "thoroughly tear apart a supertanker.");
+  "No detailed information is available\n"
+  "at this time.");
 #endif
 
 #ifdef SAPPHIRE
@@ -4786,21 +4766,18 @@ static const u8 DexDescription_Banette_2[] = _(
 
 #ifdef SAPPHIRE
 static const u8 DexDescription_Duskull_1[] = _(
-  "DUSKULL wanders lost among the deep\n"
-  "darkness of midnight. There is an oft-\n"
-  "told admonishment given to misbehaving");
+  "This is a newly discovered POKéMON.\n"
+  "It is currently under investigation.");
 static const u8 DexDescription_Duskull_2[] = _(
-  "children that this POKéMON will spirit\n"
-  "away bad children who earn scoldings\n"
-  "from their mothers.");
+  "No detailed information is available\n"
+  "at this time.");
 #else
 static const u8 DexDescription_Duskull_1[] = _(
-  "DUSKULL can pass through any wall no\n"
-  "matter how thick it may be.\n"
-  "Once this POKéMON chooses a target,");
+  "This is a newly discovered POKéMON.\n"
+  "It is currently under investigation.");
 static const u8 DexDescription_Duskull_2[] = _(
-  "it will doggedly pursue the intended\n"
-  "victim until the break of dawn.");
+  "No detailed information is available\n"
+  "at this time.");
 #endif
 
 #ifdef SAPPHIRE
@@ -7042,7 +7019,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 4,
     },
     {  //Mewtwo
-        .categoryName = _("GENETIC"),
+        .categoryName = _("PSI"),
         .height = 20,
         .weight = 1220,
         .descriptionPage1 = DexDescription_Mewtwo_1,
@@ -8285,9 +8262,9 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
     {  //Zigzagoon
-        .categoryName = _("TINYRACCOON"),
+        .categoryName = _("CAR"),
         .height = 4,
-        .weight = 175,
+        .weight = 1750,
         .descriptionPage1 = DexDescription_Zigzagoon_1,
         .descriptionPage2 = DexDescription_Zigzagoon_2,
         .pokemonScale = 560,
@@ -8296,9 +8273,9 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
     {  //Linoone
-        .categoryName = _("RUSHING"),
+        .categoryName = _("TRUCK"),
         .height = 5,
-        .weight = 325,
+        .weight = 3250,
         .descriptionPage1 = DexDescription_Linoone_1,
         .descriptionPage2 = DexDescription_Linoone_2,
         .pokemonScale = 321,
@@ -8428,7 +8405,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
     {  //Taillow
-        .categoryName = _("TINYSWALLOW"),
+        .categoryName = _("SMOKY"),
         .height = 3,
         .weight = 23,
         .descriptionPage1 = DexDescription_Taillow_1,
@@ -8439,7 +8416,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
     {  //Swellow
-        .categoryName = _("SWALLOW"),
+        .categoryName = _("BIRD"),
         .height = 7,
         .weight = 198,
         .descriptionPage1 = DexDescription_Swellow_1,

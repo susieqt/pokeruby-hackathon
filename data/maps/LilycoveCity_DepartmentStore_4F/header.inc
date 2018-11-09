@@ -5,7 +5,7 @@ LilycoveCity_DepartmentStore_4F::
 	.4byte 0x0
 	.2byte MUS_FRIENDLY
 	.2byte 261
-	.byte MAPSEC_LILYCOVE_CITY
+	.byte MAPSEC_SOOTOPOLIS_CITY
 	.byte 0
 	.byte WEATHER_NONE
 	.byte MAP_TYPE_INDOOR

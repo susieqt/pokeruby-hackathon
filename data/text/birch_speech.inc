@@ -21,9 +21,9 @@ gBirchSpeech_WorldInhabitedByPokemon:: @ 81C6E1A
 	.string "POKéMON, and battling a\n"
 	.string "DUSKULL? ...Well, I hope\l"
 	.string "it was rewarding......\p"
-	.string "Anyway, that’s not why I’m\l"
-	.string "here! Something big happened!\n"
-	.string "I’ll explain after we reissue\l"
+	.string "Anyway, that’s not why I’m\n"
+	.string "here! Something big happened!\l"
+	.string "I’ll explain after we reissue\n"
 	.string "your TRAINER CARD.\p"
 
 gBirchSpeech_AndYouAre:: @ 81C6FCB
@@ -42,15 +42,15 @@ gBirchSpeech_SoItsPlayer:: @ 81C7017
 
 gBirchSpeech_AhOkayYouArePlayer:: @ 81C7025
 	.string "Ah, right!\p"
-	.string "You’re {PLAYER}{KUN} who became\l"
+	.string "You’re {PLAYER}{KUN} who became\n"
 	.string "CHAMPION back in 2004!\l"
 	.string "Boy, what a match that was!$"
 
 gBirchSpeech_AreYouReady:: @ 81C7074
-	.string "A-anyway! Apparently, there’s\l"
-	.string "something called an “Ultra Wormhole”\n"
-	.string "PROF. KUKUI called me to try to\l"
-	.string "explain it, but I didn’t really get it.\p"
+	.string "A-anyway! Apparently, there’s\n"
+	.string "something called an “Ultra Wormhole”\l"
+	.string "PROF. KUKUI called me to try to\n"
+	.string "explain it but I didn’t really get it.\p"
 	.string "Anyway, some strange invaders from \n"
 	.string "another dimension came through one,\l"
 	.string "crashed their ship near\n"
@@ -58,7 +58,7 @@ gBirchSpeech_AreYouReady:: @ 81C7074
 	.string "everything, and reshaping the region\n"
 	.string "to look like their own home planet!\p"
 	.string "Can you please go check it out, and\l"
-	.string "Try to convince them to return home?\p"
+	.string "onvince them to return home?\p"
 	.string "We’ve all been run off, so we’re\n"
 	.string "taking refuge in SOOTOPOLIS for the\l"
 	.string "time being. They can’t get to us yet\n"
