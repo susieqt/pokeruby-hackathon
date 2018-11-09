@@ -11,5 +11,5 @@ RustboroCity_Gym_Layout::
 	.4byte RustboroCity_Gym_MapBorder
 	.4byte RustboroCity_Gym_MapBlockdata
 	.4byte gTileset_Building
-	.4byte gTileset_RustboroGym
+	.4byte gTileset_Mossdeep
 

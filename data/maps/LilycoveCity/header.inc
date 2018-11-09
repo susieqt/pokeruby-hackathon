@@ -1,4 +1,4 @@
-LilycoveCity:: @ 83054D4
+LilycoveCity::
 	.4byte LilycoveCity_Layout
 	.4byte LilycoveCity_MapEvents
 	.4byte LilycoveCity_MapScripts

@@ -1,0 +1,4 @@
+undertale=regional indicators
+comic sans=circled (caps)
+mother=fullwidth
+

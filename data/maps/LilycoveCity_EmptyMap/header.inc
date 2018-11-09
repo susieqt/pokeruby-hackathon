@@ -1,4 +1,4 @@
-LilycoveCity_EmptyMap:: @ 8306654
+LilycoveCity_EmptyMap::
 	.4byte LilycoveCity_EmptyMap_Layout
 	.4byte LilycoveCity_EmptyMap_MapEvents
 	.4byte LilycoveCity_EmptyMap_MapScripts

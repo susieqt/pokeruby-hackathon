@@ -1,11 +1,11 @@
-RustboroCity_Gym:: @ 8306280
+RustboroCity_Gym::
 	.4byte RustboroCity_Gym_Layout
 	.4byte RustboroCity_Gym_MapEvents
 	.4byte RustboroCity_Gym_MapScripts
 	.4byte 0x0
 	.2byte MUS_GIM
 	.2byte 94
-	.byte MAPSEC_RUSTBORO_CITY
+	.byte MAPSEC_SOOTOPOLIS_CITY
 	.byte 0
 	.byte WEATHER_NONE
 	.byte MAP_TYPE_INDOOR

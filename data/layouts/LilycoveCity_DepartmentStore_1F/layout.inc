@@ -11,5 +11,5 @@ LilycoveCity_DepartmentStore_1F_Layout::
 	.4byte LilycoveCity_DepartmentStore_1F_MapBorder
 	.4byte LilycoveCity_DepartmentStore_1F_MapBlockdata
 	.4byte gTileset_Building
-	.4byte gTileset_Shop
+	.4byte gTileset_Rustboro
 

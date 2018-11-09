@@ -1,4 +1,4 @@
-LilycoveCity_DepartmentStore_4F:: @ 8306750
+LilycoveCity_DepartmentStore_4F::
 	.4byte LilycoveCity_DepartmentStore_4F_Layout
 	.4byte LilycoveCity_DepartmentStore_4F_MapEvents
 	.4byte LilycoveCity_DepartmentStore_4F_MapScripts

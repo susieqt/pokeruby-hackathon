@@ -1,4 +1,4 @@
-LilycoveCity_UnusedMart:: @ 8306600
+LilycoveCity_UnusedMart::
 	.4byte PokeMart_Layout
 	.4byte LilycoveCity_UnusedMart_MapEvents
 	.4byte LilycoveCity_UnusedMart_MapScripts

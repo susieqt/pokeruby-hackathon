@@ -1,4 +1,4 @@
-LilycoveCity_PokemonTrainerFanClub:: @ 830661C
+LilycoveCity_PokemonTrainerFanClub::
 	.4byte LilycoveCity_PokemonTrainerFanClub_Layout
 	.4byte LilycoveCity_PokemonTrainerFanClub_MapEvents
 	.4byte LilycoveCity_PokemonTrainerFanClub_MapScripts

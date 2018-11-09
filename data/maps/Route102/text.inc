@@ -15,24 +15,18 @@ PetalburgCity_Text_16D408:: @ 816D408
 	.string "Let’s go back to the GYM!$"
 
 Route102_Text_16D431:: @ 816D431
-	.string "I’m...not very tall, so I sink right\n"
-	.string "into tall grass.\p"
-	.string "The grass goes up my nose and...\n"
-	.string "Fwafwafwafwafwa...\p"
-	.string "Fwatchoo!$"
+	.string "Ｔｈｉｓ ｗｏｒｌｄ ｉｓ ｓｏ ｗｅｉｒｄ.\n"
+	.string "Ｗｈａｔ ｅｖｅｎ ｉｓ ａ ＰＯＫＥＭＯＮ⸮$"
 
 UnknownString_816D4A5: @ 816D4A5
-	.string "Fufufufu...\n"
-	.string "Watch me.$"
+	.string "Ｈｅｌｌｏ ｔｈｅｒｅ!$"
 
 UnknownString_816D4BB: @ 816D4BB
-	.string "Ta-daaaah! Awesome, huh?\p"
-	.string "There are some ledges that you can’t\n"
-	.string "climb up, but you can jump down.$"
+	.string "ＮＥＷ ＰＯＤＵＮＫ ｉｓ ｔｏ ｔｈｅ ＥＡＳＴ.$"
 
 Route102_Text_16D51A:: @ 816D51A
-	.string "I’m going to catch a whole bunch of\n"
-	.string "POKéMON!$"
+	.string "Ｉ’ｍ ｇｏｉｎｇ ｔｏ ｃａｔｃｈ ａ ｗｈｏｌｅ ｂｕｎｃｈ ｏｆ\n"
+	.string "ＰＯＫＥＭＯＮ!$"
 
 Route102_Text_16D547:: @ 816D547
 	.string "ROUTE 102\n"

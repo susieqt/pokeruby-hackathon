@@ -874,7 +874,7 @@ static void sub_80737A4(u16 a1, u8 a2)
     v1 = a1 % 8;
     if (gTilesetAnims_Rustboro0[v1])
     {
-        QueueTilesetAnimDma(gTilesetAnims_Rustboro0[v1], gTilesetAnims_RustboroVDests0[a2], 0x80);
+        //QueueTilesetAnimDma(gTilesetAnims_Rustboro0[v1], gTilesetAnims_RustboroVDests0[a2], 0x80);
     }
 }
 
@@ -882,7 +882,7 @@ static void sub_80737E0(u16 a1)
 {
     int v1;
     v1 = a1 % 2;
-    QueueTilesetAnimDma(gTilesetAnims_Rustboro1[v1], BG_TILE_ADDR(240), 0x80);
+    //QueueTilesetAnimDma(gTilesetAnims_Rustboro1[v1], BG_TILE_ADDR(240), 0x80);
 }
 
 static void sub_8073808(u16 a1)

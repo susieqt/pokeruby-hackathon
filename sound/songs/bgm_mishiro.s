@@ -17,7 +17,7 @@
 
 bgm_mishiro_1:
 	.byte	KEYSH , bgm_mishiro_key+0
-	.byte	TEMPO , 108*bgm_mishiro_tbs/2
+	.byte	TEMPO , 54*bgm_mishiro_tbs/2
 	.byte		VOICE , 48
 	.byte		LFOS  , 44
 	.byte		PAN   , c_v+4

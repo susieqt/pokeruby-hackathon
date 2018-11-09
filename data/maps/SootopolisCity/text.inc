@@ -2,38 +2,31 @@ ClosedSootopolisDoorText: @ 8169690
 	.string "The door is closed.$"
 
 SootopolisCity_Text_1696A4:: @ 81696A4
-	.string "Who might you be?\p"
-	.string "This is the CAVE OF ORIGIN.\p"
-	.string "The spirits of POKéMON, becalmed at\n"
-	.string "MT. PYRE, are said to be revived here.\p"
-	.string "Please leave.$"
+	.string "Ｗｈｏ ｍｉｇｈｔ ｙｏｕ ｂｅ⸮\p"
+	.string "Ｔｈｉｓ ｉｓ ＮＥＷ ＰＯＤＵＮＫ.\p"
+	.string "Ｏｎｌｙ ＣＯＯＬ ＫＩＤＳ ａｒｅ\n"
+	.string "ａｌｌｏｗｅｄ ｈｅｒｅ.\p"
+	.string "Ｐｌｅａｓｅ ｌｅａｖｅ.$"
 
 SootopolisCity_Text_16972B:: @ 816972B
-	.string "Diving in the sea. Climbing up and\n"
-	.string "down stairs all the time...\p"
-	.string "If you live in this town, you end up\n"
-	.string "getting physically fit.$"
+	.string "Ｄｏｎ’ｔ ｇｏ ｉｎ ｔｈｅ\n"
+	.string "ＣＲＹＰＴ ｉｎ ｔｈｅ ＧＲＡＶＥＹＡＲＤ!\p"
+	.string "Ｏｕｒ ｌｅａｄｅｒ ｉｓ ｔｈｅｒｅ!$"
 
 SootopolisCity_Text_1697A7:: @ 81697A7
-	.string "I... I’ve never been out of this city.\p"
-	.string "I wonder what the world is like on the\n"
-	.string "other side of this round sky?$"
+	.string "Ｉ... Ｉ’ｖｅ ｎｅｖｅｒ ｂｅｅｎ ｏｕｔ ｏｆ ｔｈｉｓ ｃｉｔｙ.\p"
+	.string "Ｉｓ ｉｔ ｔｒｕｅ ｏｔｈｅｒ ｔｏｗｎｓ\n"
+	.string "ａｒｅｎ’ｔ ａｓ ｓｌａｎｔｅｄ⸮$"
 
 SootopolisCity_Text_169813:: @ 8169813
-	.string "Hm!\n"
-	.string "You’ve come all the way to SOOTOPOLIS?\l"
-	.string "You’re no ordinary tourist.\p"
-	.string "But I suppose that doesn’t make you an\n"
-	.string "extraordinary tourist, either.$"
+	.string "Ｈｍ!\n"
+	.string "Ｔｈｉｓ ｒｏｍｈａｃｋ ｓｔｉｎｋｓ!$"
 
 SootopolisCity_Text_1698A0:: @ 81698A0
-	.string "SOOTOPOLIS sprang up as a town in the\n"
-	.string "crater of a volcano.\p"
-	.string "If you look up at the sky, the lip of\n"
-	.string "the crater is also visible.\l"
-	.string "So, all you see is the sky in a circle.\p"
-	.string "But that’s what makes the sky above\n"
-	.string "SOOTOPOLIS the most beautiful.$"
+	.string "ＮＥＷ ＰＯＤＵＮＫ ｉｓ ｎａｍｅｄ\n"
+	.string "ａｆｔｅｒ ｓｏｍｅ ｏｌｄ ｃｉｔｙ\p"
+	.string "ｏｕｒ ｌｅａｄｅｒ ｕｓｅｄ ｔｏ\n"
+	.string "ｌｉｖｅ ｉｎ, ａｐｐａｒｅｎｔｌｙ.$"
 
 SootopolisCity_Text_169988:: @ 8169988
 	.string "STEVEN: {PLAYER}{KUN}, you came, too?\n"
@@ -132,11 +125,7 @@ SootopolisCity_Text_16A06C:: @ 816A06C
 	.string "you inside the CAVE...$"
 
 SootopolisCity_Text_16A13E:: @ 816A13E
-	.string "STEVEN: {PLAYER}{KUN}, I never expected you\n"
-	.string "to be holding the RED ORB.\p"
-	.string "You’ll be okay. With your POKéMON,\n"
-	.string "you’ll get things done no matter what.\p"
-	.string "I’m convinced of it!$"
+	.string "ＯＵＴＴＡ ＭＹ ＷＡＹ ＫＩＤ!$"
 
 SootopolisCity_Text_16A1DB:: @ 816A1DB
 	.string "WALLACE: You must go together with\n"
@@ -145,10 +134,8 @@ SootopolisCity_Text_16A1DB:: @ 816A1DB
 	.string "you inside the CAVE...$"
 
 SootopolisCity_Text_16A249:: @ 816A249
-	.string "STEVEN: You’ll be okay. With your\n"
-	.string "POKéMON, you’ll get things done\l"
-	.string "whatever happens.\p"
-	.string "I’m convinced of it!$"
+	.string "ＯＨ ＮＯ Ｉ ＭＩＳＳＥＤ \n"
+	.string "ＴＨＥ ＳＡＬＥ!$"
 
 SootopolisCity_Text_16A2B2:: @ 816A2B2
 	.string "The legend told by the old man on\n"
@@ -171,45 +158,41 @@ SootopolisCity_Text_16A33E:: @ 816A33E
 	.string "Give it your best shot.$"
 
 SootopolisCity_Text_16A455:: @ 816A455
-	.string "All life starts at the CAVE OF ORIGIN,\n"
-	.string "and it all ends on MT. PYRE...\p"
-	.string "Where do people and POKéMON come\n"
-	.string "from? Where are we bound?$"
+	.string "Ａｌｌ ｌｉｆｅ ｓｔａｒｔｓ ｗｉｔｈ ｂｏｎｅｓ,\n"
+	.string "ａｎｄ ｉｔ ａｌｌ ｅｎｄｓ ｗｉｔｈ ｂｏｎｅｓ...\p"
+	.string "Ｗｈｅｒｅ ｄｏ ｔｈｅ ｓｋｅｌｅｔｏｎｓ\n"
+	.string "ｃｏｍｅ ｆｒｏｍ ａｎｙｗａｙ⸮⸮⸮$"
 
 SootopolisCity_Text_16A4D6:: @ 816A4D6
-	.string "Let me guess, you’re going to challenge\n"
-	.string "WALLACE?\p"
-	.string "Oh, you are really?\n"
-	.string "You’re awfully brave!$"
+	.string "Ｌｅｔ ｍｅ ｇｕｅｓｓ, ｙｏｕ’ｒｅ ｇｏｉｎｇ ｔｏ\n"
+	.string "ｃｈａｌｌｅｎｇｅ ｏｕｒ ｌｅａｄｅｒ⸮\p"
+	.string "Ｏｈ, ｙｏｕ ａｒｅ ｒｅａｌｌｙ⸮\n"
+	.string "Ｙｏｕ’ｒｅ ａｗｆｕｌｌｙ ｂｒａｖｅ!$"
 
 SootopolisCity_Text_16A531:: @ 816A531
-	.string "Let me guess, you’ve beaten WALLACE!\n"
-	.string "Oh, you did, really?\p"
-	.string "Maybe I’ll become your fan!$"
+	.string "Ｌｅｔ ｍｅ ｇｕｅｓｓ, ｙｏｕ’ｖｅ ｂｅａｔｅｎ ｈｉｍ!\n"
+	.string "Ｏｈ, ｙｏｕ ｄｉｄ, ｒｅａｌｌｙ⸮\p"
+	.string "Ｗｅｒｅ ｙｏｕ ｅｘｐｅｃｔｉｎｇ ｔｈａｔ⸮$"
 
 SootopolisCity_Text_16A587:: @ 816A587
-	.string "Hm!\n"
-	.string "You’ve come all the way to SOOTOPOLIS?\l"
-	.string "You’re no ordinary tourist.\p"
-	.string "But I suppose that doesn’t make you an\n"
-	.string "extraordinary tourist, either.$"
+	.string "Ｈｍ!\n"
+	.string "Ｔｈｉｓ ｒｏｍｈａｃｋ ｓｔｉｎｋｓ!$"
 
 SootopolisCity_Text_16A614:: @ 816A614
-	.string "A circle of a night sky framed by the\n"
-	.string "crater of a volcano...\p"
-	.string "And in that ring, stars flicker and\n"
-	.string "blink as if they were alive...\l"
-	.string "It’s my favorite scenery.$"
+	.string "Ｉ’ｍ ｇｌａｄ ｗｅ ｇｏｔ \n"
+	.string "ｔｒａｎｓｐｏｒｔｅｄ ｈｅｒｅ...\p"
+	.string "Ｔｈｅ ｇｒａｐｈｉｃｓ ｌｏｏｋ ｓｏ\n"
+	.string "ｍｕｃｈ ｎｉｃｅｒ ｏｎ ＧＢＡ!$"
 
 SootopolisCity_Text_16A6AE:: @ 816A6AE
-	.string "Hunh? Where is my house?$"
+	.string "Ｈｕｎｈ⸮ Ｗｈｅｒｅ ｉｓ ｍｙ ｈｏｕｓｅ ?$"
 
 SootopolisCity_Text_16A6C7:: @ 816A6C7
-	.string "SOOTOPOLIS CITY POKéMON GYM\n"
-	.string "LEADER: WALLACE\p"
-	.string "“Artist, and lover of WATER.”$"
+	.string "NEW PODUNK CITY POKéMON GYM\n"
+	.string "LEADER: SANESS\p"
+	.string "“diaper sans undertale”$"
 
 SootopolisCity_Text_16A711:: @ 816A711
-	.string "SOOTOPOLIS CITY\p"
-	.string "“The mystical city where history\n"
-	.string "slumbers.”$"
+	.string "Ｔｈｅ ｇｒａｖｅｙａｒｄ\n"
+	.string "ａｎｄ “ｇｙｍ”\l"
+	.string "ｉｓ ｊｕｓｔ ｕｐ ａｈｅａｄ!$"

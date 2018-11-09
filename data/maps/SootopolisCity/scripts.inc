@@ -10,8 +10,6 @@ SootopolisCity_MapScript1_14D08D:: @ 814D08D
 	end
 
 SootopolisCity_EventScript_14D0A0:: @ 814D0A0
-	setobjectxyperm 3, 31, 18
-	setmetatile 31, 32, 592, 1
 	return
 
 SootopolisCity_EventScript_14D0B1:: @ 814D0B1
@@ -19,15 +17,8 @@ SootopolisCity_EventScript_14D0B1:: @ 814D0B1
 	return
 
 SootopolisCity_EventScript_14D0BB:: @ 814D0BB
-	setmetatile 9, 6, 584, 1
-	setmetatile 9, 17, 584, 1
-	setmetatile 9, 26, 584, 1
-	setmetatile 44, 17, 584, 1
-	setmetatile 8, 35, 584, 1
-	setmetatile 53, 28, 584, 1
-	setmetatile 45, 6, 584, 1
-	setmetatile 48, 25, 584, 1
-	setmetatile 31, 32, 592, 1
+	trainerbattle 0, TRAINER_EDDIE, 0, SootopolisCity_Text_16A13E, SootopolisCity_Text_16A249
+	msgbox SootopolisCity_Text_16A13E, 6
 	return
 
 SootopolisCity_MapScript1_14D10D:: @ 814D10D
@@ -84,23 +75,7 @@ SootopolisCity_EventScript_14D196:: @ 814D196
 SootopolisCity_EventScript_14D19F:: @ 814D19F
 	lock
 	faceplayer
-	dodailyevents
-	special GetPlayerBigGuyGirlString
-	goto_if_set FLAG_DAILY_RECEIVED_BERRY_SOOTOPOLIS, SootopolisCity_EventScript_14D241
-	msgbox SootopolisCity_Text_1C63F2, 4
-	random 10
-	addvar RESULT, 20
-	addvar RESULT, ITEM_CHERI_BERRY
-	giveitem_std RESULT
-	compare RESULT, 0
-	goto_if_eq SootopolisCity_EventScript_1A029B
-	setflag FLAG_DAILY_RECEIVED_BERRY_SOOTOPOLIS
-	msgbox SootopolisCity_Text_1C64D0, 4
-	random 2
-	compare RESULT, 0
-	goto_if_eq SootopolisCity_EventScript_14D1FF
-	compare RESULT, 1
-	goto_if_eq SootopolisCity_EventScript_14D220
+	msgbox SootopolisCity_Text_16A711, 3
 	end
 
 SootopolisCity_EventScript_14D1FF:: @ 814D1FF

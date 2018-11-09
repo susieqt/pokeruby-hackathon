@@ -33,79 +33,73 @@ RustboroCity_Gym_Text_183C90:: @ 8183C90
 	.string "That’s got to feel awesome!$"
 
 RustboroCity_Gym_Text_183D99:: @ 8183D99
-	.string "Don’t take us GYM TRAINERS lightly!\n"
-	.string "I’ll show you why we’re better!$"
+	.string "Ｇｅｔ ｏｕｔｔａ ｈｅｒｅ， ｐｕｎｋ！\n"
+	.string "Ｉ’ｌｌ ｐｒｏｔｅｃｔ ｔｈｅ ｌｅａｄｅｒ！$"
 
 RustboroCity_Gym_Text_183DDD:: @ 8183DDD
-	.string "You were too good for me...$"
+	.string "Ｙｏｕ ｗｅｒｅ ｔｏｏ ｇｏｏｄ ｆｏｒ ｍｅ．．．$"
 
 RustboroCity_Gym_Text_183DF9:: @ 8183DF9
-	.string "You haven’t seen anything of the ROCK\n"
-	.string "type’s terrifying power!$"
+	.string "Ｏｕｒ ｌｅａｄｅｒ ｉｓ ｗａｙ ｓｃａｒｉｅｒ\n"
+	.string "ｔｈａｎ Ｉ ａｍ！$"
 
 RustboroCity_Gym_Text_183E38:: @ 8183E38
-	.string "If you can’t beat me, you won’t stand\n"
-	.string "a chance against ROXANNE!$"
+	.string "Ｉｆ ｙｏｕ ｃａｎ’ｔ ｂｅａｔ ｍｅ， ｙｏｕ ｗｏｎ’ｔ ｓｔａｎｄ\n"
+	.string "ａ ｃｈａｎｃｅ ａｇａｉｎｓｔ ＨＩＭ！$"
 
 RustboroCity_Gym_Text_183E78:: @ 8183E78
-	.string "Wow! You’ve got some potential!$"
+	.string "Ｗｏｗ！ Ｙｏｕ’ｖｅ ｇｏｔ ｓｏｍｅ ｐｏｔｅｎｔｉａｌ！$"
 
 RustboroCity_Gym_Text_183E98:: @ 8183E98
-	.string "ROXANNE is stronger than me by\n"
-	.string "several times.\p"
-	.string "You’d better be on your guard!$"
+	.string "ＨＥ ｉｓ ｓｔｒｏｎｇｅｒ ｔｈａｎ ｍｅ ｂｙ\n"
+	.string "ｓｅｖｅｒａｌ ｔｉｍｅｓ．\p"
+	.string "Ｙｏｕ’ｄ ｂｅｔｔｅｒ ｂｅ ｏｎ ｙｏｕｒ ｇｕａｒｄ！$"
 
 RustboroCity_Gym_Text_183EE5:: @ 8183EE5
-	.string "Hello, I am ROXANNE, the RUSTBORO\n"
-	.string "POKéMON GYM LEADER.\p"
-	.string "I became a GYM LEADER so that I may\n"
-	.string "apply what I learned at the POKéMON\l"
-	.string "TRAINER’S SCHOOL in battle.\p"
-	.string "Would you kindly demonstrate how you\n"
-	.string "battle, and with which POKéMON?$"
+	.string "ⓈⓊⓅ Ⓚûóⓠ\n" //SUP KID?
+	.string "ûⓉ’Ⓢ Ⓜô.\p" //IT'S ME.
+	.string "óûîⓟôⓡ ⓢîⓝⓢ ⓤⓝóôⓡⓣîⓛô.\p" //DIAPER SANS UNDERTALE.
+	.string "ⓨíⓤ ⓚⓝíⓦ, ûⓣ’ⓢ î ïôîⓤⓣûⓕⓤⓛ\n" //YOU KNOW, ITS A BEAUTIFUL
+	.string "óîⓨ íⓤⓣⓢûóô. ïûⓡóⓢ îⓡô\l" //DAY OUTSIDE. BIRDS ARE
+	.string "ⓢⓘⓝⓖûⓝⓖ, œⓛíⓦôⓡⓢ îⓡô\n" //SINGING, FLOWERS ARE
+	.string "ïⓛííⓜûⓝⓖ. íⓝ óîⓨⓢ ⓛûⓚô\l" //BLOOMING. ON DAYS LIKE
+	.string "ⓣⓗôⓢô, ⓚûóⓢ ⓛⓘⓚô ⓨⓞⓤ...\p" //THESE, KIDS LIKE YOU...
+	.string ". . .\p"
+	.string "🇸🇭🇴🇺🇱🇩 🇧🇪 🇧🇺🇷🇳🇮🇳🇬 🇮🇳 🇭🇪🇱🇱.$" //SHOULD BE BURNING IN HELL
 
 RustboroCity_Gym_Text_183FC4:: @ 8183FC4
-	.string "So...\n"
-	.string "I lost...\p"
-	.string "It seems that I still have much more\n"
-	.string "to learn...\p"
-	.string "I understand.\p"
-	.string "The POKéMON LEAGUE’s rules state\n"
-	.string "that TRAINERS are to be given this\l"
-	.string "if they defeat a GYM LEADER.\p"
-	.string "Please accept the official POKéMON\n"
-	.string "LEAGUE STONE BADGE.$"
+	.string "ⓌôⓁⓅ.\n"
+	.string "û ⓁíⓈⓉ...\p"
+	.string "òíNùRîTS, KûD.\n"
+	.string "ⓈíⓇⓇⓎ œíⓇ ⓉⒽô ïîûⓉ îⓃⒹ ⓈⓌûⓉòⒽ...\p"
+	.string "ûⓉ ⓌîⓈ ⓈôòⓇôⓉⓁⓎ ⓂôⓂô ⓉⓇîⓈú\l"
+	.string "Ⓣúô ôⓃⓉûⓇô ⓉûⓂô!\p"
+	.string "ⓉúîⓃⓀⓈ œíⓇ îòⓉⓊîⓁⓁⓎ ⓅⓁîⓎûⓃù.\p"
+	.string "íú, úôⓇôⓈ ⓈíⓊⓇ ïîóùô.\p"
 
 RustboroCity_Gym_Text_1840AB:: @ 81840AB
-	.string "{PLAYER} received the STONE BADGE\n"
-	.string "from ROXANNE.$"
+	.string "{PLAYER} received the DIAPER\n"
+	.string "from SANS UNDERTALE.$"
 
 RustboroCity_Gym_Text_1840D5:: @ 81840D5
-	.string "The STONE BADGE heightens the ATTACK\n"
-	.string "power of your POKéMON.\p"
-	.string "It also enables them to use the HM move\n"
-	.string "CUT outside of battle.\p"
-	.string "Please take this with you, too.$"
+	.string "Ⓣúô ïîóùô ûⓈ ûⓃ \n"
+	.string "Ⓣúô óûîⓅôⓇ.\p"
+	.string "ⓉúûⓈ ñíⓀô ûⓈ ïîó îⓃó û\n"
+	.string "ⓇôùⓇôⓉ óíûⓃù ûⓉ ïôœíⓇô û ôⓋôⓃ.\p"
+	.string "œûNûSú TYPûNù TúûS.$"
 
 RustboroCity_Gym_Text_184170:: @ 8184170
-	.string "That TM39 contains ROCK TOMB.\p"
-	.string "It not only inflicts damage by dropping\n"
-	.string "rocks, it also lowers SPEED.\p"
-	.string "If you use a TM, it instantly teaches\n"
-	.string "the move to a POKéMON.\p"
-	.string "Remember, a TM can be used only once,\n"
-	.string "so think before you use it.$"
+	.string "úôⓇôⓈ î ⓉⓂ œíⓇ ⓁûⓀô\p"
+	.string "ⓈíⓂô ⓇíòⓀ ⓂíⓋô û ⓉúûⓃⓀ$"
 
 RustboroCity_Gym_Text_184252:: @ 8184252
-	.string "Since you are so strong, you should\n"
-	.string "challenge other GYM LEADERS.\p"
-	.string "By battling many TRAINERS, you should\n"
-	.string "learn many things.$"
+	.string "ⓎíⓊ òîⓃ ñⓊⓈⓉ\n"
+	.string "ⓆⓊûⓉ ⓅⓁîⓎûⓃⒼ ⓃíⓌ $"
 
 RustboroCity_Gym_Text_1842CC:: @ 81842CC
-	.string "RUSTBORO CITY POKéMON GYM$"
+	.string "NEW PODUNK POKéMON GYM$"
 
 RustboroCity_Gym_Text_1842E6:: @ 81842E6
-	.string "RUSTBORO CITY POKéMON GYM\p"
-	.string "ROXANNE’S CERTIFIED TRAINERS:\n"
+	.string "NEW PODUNK POKéMON GYM\p"
+	.string "SANESS’S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"

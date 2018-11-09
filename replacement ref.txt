@@ -1,0 +1,20 @@
+bug catcher=wally		X
+kindler=hippy		X
+lass=little girl		X
+parasol lady=bag lady	X
+pokefan F=BB gang member	X
+pokefan M=gang zombie	X
+youngster=gang boss/thug	X
+roxanne=sans		X
+
+duskull=shroudly		X
+taillow=smokey (crow)	x
+swellow=eagle		x
+poochyena=dog		x
+mightyena=wolf		x	
+zigzagoon=psycho car	x
+linoone=mad truck		x
+sudowoodo=woodoh
+mewtwo=ness		X
+probopass?=R7307
+sharpedo=alligator		X
