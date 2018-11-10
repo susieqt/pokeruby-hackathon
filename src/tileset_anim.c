@@ -585,21 +585,21 @@ static void sub_8073098(u16 a1)
 {
     u8 v1;
     v1 = a1 % 8;
-    QueueTilesetAnimDma(gTilesetAnims_General1[v1], BG_TILE_ADDR(108), 0x3c0);
+    //QueueTilesetAnimDma(gTilesetAnims_General1[v1], BG_TILE_ADDR(108), 0x3c0);
 }
 
 static void sub_80730C0(u16 a1)
 {
     int v1;
     v1 = a1 % 8;
-    QueueTilesetAnimDma(gTilesetAnims_General2[v1], BG_TILE_ADDR(116), 0x140);
+    //QueueTilesetAnimDma(gTilesetAnims_General2[v1], BG_TILE_ADDR(116), 0x140);
 }
 
 static void sub_80730E8(u16 a1)
 {
     int v1;
     v1 = a1 % 4;
-    QueueTilesetAnimDma(gTilesetAnims_General3[v1], BG_TILE_ADDR(124), 0xc0);
+    //QueueTilesetAnimDma(gTilesetAnims_General3[v1], BG_TILE_ADDR(124), 0xc0);
 }
 
 void TilesetCB_Petalburg(void)
@@ -815,37 +815,37 @@ static void sub_807361C(u16 a1)
 {
     int v1;
     v1 = a1 % 4;
-    QueueTilesetAnimDma(gTilesetAnims_General4[v1], BG_TILE_ADDR(120), 0x140);
+    //QueueTilesetAnimDma(gTilesetAnims_General4[v1], BG_TILE_ADDR(120), 0x140);
 }
 
 static void sub_8073644(u8 a1)
 {
     u8 v1;
     v1 = a1 % 4;
-    QueueTilesetAnimDma(gTilesetAnims_Lavaridge0[v1], BG_TILE_ADDR(200), 0x80);
+    //QueueTilesetAnimDma(gTilesetAnims_Lavaridge0[v1], BG_TILE_ADDR(200), 0x80);
     v1 = (a1 + 2) % 4;
-    QueueTilesetAnimDma(gTilesetAnims_Lavaridge0[v1], BG_TILE_ADDR(201), 0x80);
+    //QueueTilesetAnimDma(gTilesetAnims_Lavaridge0[v1], BG_TILE_ADDR(201), 0x80);
 }
 
 static void sub_807368C(u8 a1)
 {
     int v1;
     v1 = a1 % 4;
-    QueueTilesetAnimDma(gTilesetAnims_Pacifidlog0[v1], BG_TILE_ADDR(244), 0x3c0);
+    //QueueTilesetAnimDma(gTilesetAnims_Pacifidlog0[v1], BG_TILE_ADDR(244), 0x3c0);
 }
 
 static void sub_80736B4(u8 a1)
 {
     int v1;
     v1 = a1 % 4;
-    QueueTilesetAnimDma(gTilesetAnims_Underwater0[v1], BG_TILE_ADDR(252), 0x80);
+    //QueueTilesetAnimDma(gTilesetAnims_Underwater0[v1], BG_TILE_ADDR(252), 0x80);
 }
 
 static void sub_80736DC(u8 a1)
 {
     int v1;
     v1 = a1 % 8;
-    QueueTilesetAnimDma(gTilesetAnims_Pacifidlog1[v1], BG_TILE_ADDR(252), 0x100);
+    //QueueTilesetAnimDma(gTilesetAnims_Pacifidlog1[v1], BG_TILE_ADDR(252), 0x100);
 }
 
 static void sub_8073704(u16 a1, u8 a2)
@@ -855,14 +855,14 @@ static void sub_8073704(u16 a1, u8 a2)
     if (a1 < 12)
     {
         v1 = a1 % 12;
-        QueueTilesetAnimDma(gTilesetAnims_Mauville0[v1], gTilesetAnims_MauvilleVDests0[a2], 0x80);
-        QueueTilesetAnimDma(gTilesetAnims_Mauville1[v1], gTilesetAnims_MauvilleVDests1[a2], 0x80);
+        //QueueTilesetAnimDma(gTilesetAnims_Mauville0[v1], gTilesetAnims_MauvilleVDests0[a2], 0x80);
+        //QueueTilesetAnimDma(gTilesetAnims_Mauville1[v1], gTilesetAnims_MauvilleVDests1[a2], 0x80);
     }
     else
     {
         v1 = a1 % 4;
-        QueueTilesetAnimDma(gTilesetAnims_Mauville2[v1], gTilesetAnims_MauvilleVDests0[a2], 0x80);
-        QueueTilesetAnimDma(gTilesetAnims_Mauville3[v1], gTilesetAnims_MauvilleVDests1[a2], 0x80);
+        //QueueTilesetAnimDma(gTilesetAnims_Mauville2[v1], gTilesetAnims_MauvilleVDests0[a2], 0x80);
+        //QueueTilesetAnimDma(gTilesetAnims_Mauville3[v1], gTilesetAnims_MauvilleVDests1[a2], 0x80);
     }
 }
 
@@ -904,7 +904,7 @@ static void sub_8073868(u16 a1)
 {
     int v1;
     v1 = a1 % 4;
-    QueueTilesetAnimDma(gTilesetAnims_Lavaridge1_Cave0[v1], BG_TILE_ADDR(232), 0x80);
+    //QueueTilesetAnimDma(gTilesetAnims_Lavaridge1_Cave0[v1], BG_TILE_ADDR(232), 0x80);
 }
 
 static void sub_8073890(u16 a1)
@@ -951,41 +951,41 @@ static void sub_8073904(u16 a1)
 {
     int v1;
     v1 = a1 % 2;
-    QueueTilesetAnimDma(gTilesetAnims_InsideBuilding0[v1], BG_TILE_ADDR(124), 0x80);
+    //QueueTilesetAnimDma(gTilesetAnims_InsideBuilding0[v1], BG_TILE_ADDR(124), 0x80);
 }
 
 static void sub_807392C(u16 a1)
 {
     int v1;
     v1 = a1 % 3;
-    QueueTilesetAnimDma(gTilesetAnims_SootopolisGym0[v1], BG_TILE_ADDR(252), 0x180);
-    QueueTilesetAnimDma(gTilesetAnims_SootopolisGym1[v1], BG_TILE_ADDR(244), 0x280);
+    //QueueTilesetAnimDma(gTilesetAnims_SootopolisGym0[v1], BG_TILE_ADDR(252), 0x180);
+    //QueueTilesetAnimDma(gTilesetAnims_SootopolisGym1[v1], BG_TILE_ADDR(244), 0x280);
 }
 
 static void sub_8073974(u16 a1)
 {
     int v1;
     v1 = a1 % 4;
-    QueueTilesetAnimDma(gTilesetAnims_EliteFour1[v1], BG_TILE_ADDR(254), 0x20);
+    //QueueTilesetAnimDma(gTilesetAnims_EliteFour1[v1], BG_TILE_ADDR(254), 0x20);
 }
 
 static void sub_807399C(u16 a1)
 {
     int v1;
     v1 = a1 % 2;
-    QueueTilesetAnimDma(gTilesetAnims_EliteFour0[v1], BG_TILE_ADDR(248), 0x80);
+    //QueueTilesetAnimDma(gTilesetAnims_EliteFour0[v1], BG_TILE_ADDR(248), 0x80);
 }
 
 static void sub_80739C4(u16 a1)
 {
     int v1;
     v1 = a1 % 2;
-    QueueTilesetAnimDma(gTilesetAnims_MauvilleGym0[v1], BG_TILE_ADDR(164), 0x200);
+    //QueueTilesetAnimDma(gTilesetAnims_MauvilleGym0[v1], BG_TILE_ADDR(164), 0x200);
 }
 
 static void sub_80739EC(u16 a1)
 {
     int v1;
     v1 = a1 % 2;
-    QueueTilesetAnimDma(gTilesetAnims_BikeShop0[v1], BG_TILE_ADDR(252), 0x120);
+    //QueueTilesetAnimDma(gTilesetAnims_BikeShop0[v1], BG_TILE_ADDR(252), 0x120);
 }

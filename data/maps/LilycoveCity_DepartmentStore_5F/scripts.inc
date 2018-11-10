@@ -13,18 +13,8 @@ LilycoveCity_DepartmentStore_5F_EventScript_15A061:: @ 815A061
 
 	.align 2
 LilycoveCity_DepartmentStore_5F_Items1:: @ 815A078
-	.2byte ITEM_X_DEFEND
-	.2byte ITEM_X_SPEED
-	.2byte ITEM_X_ACCURACY
-	.2byte ITEM_SUPER_REPEL
-	.2byte 91
-	.2byte 92
-	.2byte ITEM_SUN_STONE
-	.2byte ITEM_MOON_STONE
-	.2byte ITEM_FIRE_STONE
-	.2byte ITEM_THUNDER_STONE
-	.2byte ITEM_WATER_STONE
-	.2byte ITEM_LEAF_STONE
+	.2byte ITEM_MACH_BIKE
+	.2byte ITEM_ACRO_BIKE
 	.2byte ITEM_NONE
 	release
 	end
@@ -66,15 +56,15 @@ LilycoveCity_DepartmentStore_5F_EventScript_15A0C2:: @ 815A0C2
 
 	.align 2
 LilycoveCity_DepartmentStore_5F_Items3:: @ 815A0DC
-	.2byte ITEM_CARBOS
-	.2byte ITEM_CALCIUM
+	.2byte ITEM_MACH_BIKE
+	.2byte ITEM_ACRO_BIKE
 	.2byte ITEM_RARE_CANDY
-	.2byte ITEM_PP_UP
-	.2byte ITEM_ZINC
-	.2byte ITEM_PP_MAX
-	.2byte 72
-	.2byte ITEM_GUARD_SPEC
-	.2byte ITEM_DIRE_HIT
+//	.2byte ITEM_PP_UP
+//	.2byte ITEM_ZINC
+//	.2byte ITEM_PP_MAX
+//	.2byte 72
+//	.2byte ITEM_GUARD_SPEC
+//	.2byte ITEM_DIRE_HIT
 	.2byte ITEM_NONE
 	release
 	end
@@ -95,12 +85,8 @@ LilycoveCity_DepartmentStore_5F_Items4:: @ 815A10C
 	.2byte 60
 	.2byte 61
 	.2byte 62
-	.2byte ITEM_HP_UP
-	.2byte ITEM_PROTEIN
-	.2byte ITEM_IRON
-	.2byte ITEM_RED_SHARD
-	.2byte ITEM_BLUE_SHARD
-	.2byte ITEM_YELLOW_SHARD
+	.2byte ITEM_MACH_BIKE
+	.2byte ITEM_ACRO_BIKE
 	.2byte ITEM_NONE
 	release
 	end

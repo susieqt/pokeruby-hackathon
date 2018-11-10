@@ -44,7 +44,8 @@ RustboroCity_Gym_Text_183DF9:: @ 8183DF9
 	.string "ｔｈａｎ Ｉ ａｍ！$"
 
 RustboroCity_Gym_Text_183E38:: @ 8183E38
-	.string "Ｉｆ ｙｏｕ ｃａｎ’ｔ ｂｅａｔ ｍｅ, ｙｏｕ ｗｏｎ’ｔ ｓｔａｎｄ\n"
+	.string "Ｉｆ ｙｏｕ ｃａｎ’ｔ ｂｅａｔ ｍｅ,\n"
+	.string "ｙｏｕ ｗｏｎ’ｔ ｓｔａｎｄ\l"
 	.string "ａ ｃｈａｎｃｅ ａｇａｉｎｓｔ ＨＩＭ！$"
 
 RustboroCity_Gym_Text_183E78:: @ 8183E78
