@@ -8,7 +8,7 @@ LilycoveCity_DepartmentStore_5F_EventObjects::
 	object_event 7, EVENT_OBJ_GFX_WOMAN_3, 0, 15, 5, 3, MOVEMENT_TYPE_FACE_RIGHT, 1, 1, 0, 0, LilycoveCity_DepartmentStore_5F_EventScript_15A12D, 0
 
 LilycoveCity_DepartmentStore_5F_MapWarps::
-	warp_def 2, 2, 0, 1, MAP_LILYCOVE_CITY_DEPARTMENT_STORE_4F
+	warp_def 4, 2, 0, 1, MAP_LILYCOVE_CITY_DEPARTMENT_STORE_4F
 	warp_def 4, 1, 0, 0, MAP_LILYCOVE_CITY_DEPARTMENT_STORE_ELEVATOR
 	warp_def -3, 13, 0, 0, MAP_LILYCOVE_CITY_DEPARTMENT_STORE_ROOFTOP
 
